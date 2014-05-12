@@ -800,7 +800,9 @@ terminal_screen_profile_changed_cb (GSettings     *profile,
       prop_name == I_(TERMINAL_PROFILE_HIGHLIGHT_COLORS_SET_KEY) ||
       prop_name == I_(TERMINAL_PROFILE_HIGHLIGHT_BACKGROUND_COLOR_KEY) ||
       prop_name == I_(TERMINAL_PROFILE_HIGHLIGHT_FOREGROUND_COLOR_KEY) ||
-      prop_name == I_(TERMINAL_PROFILE_PALETTE_KEY))
+      prop_name == I_(TERMINAL_PROFILE_PALETTE_KEY) ||
+      prop_name == I_(TERMINAL_PROFILE_USE_TRANSPARENT_BACKGROUND) ||
+      prop_name == I_(TERMINAL_PROFILE_BACKGROUND_TRANSPARENCY_PERCENT))
     update_color_scheme (screen);
 
   if (!prop_name || prop_name == I_(TERMINAL_PROFILE_AUDIBLE_BELL_KEY))
@@ -877,6 +879,8 @@ update_color_scheme (TerminalScreen *screen)
   GdkRGBA *cursor_bgp = NULL, *cursor_fgp = NULL;
   GdkRGBA *highlight_bgp = NULL, *highlight_fgp = NULL;
   GtkStyleContext *context;
+  GtkWidget *toplevel;
+  gboolean transparent;
   gboolean use_theme_colors;
 
   context = gtk_widget_get_style_context (widget);
@@ -918,6 +922,18 @@ update_color_scheme (TerminalScreen *screen)
     }
 
   colors = terminal_g_settings_get_rgba_palette (priv->profile, TERMINAL_PROFILE_PALETTE_KEY, &n_colors);
+
+  transparent = g_settings_get_boolean (profile, TERMINAL_PROFILE_USE_TRANSPARENT_BACKGROUND);
+  if (transparent)
+    {
+      gint transparency_percent;
+
+      transparency_percent = g_settings_get_int (profile, TERMINAL_PROFILE_BACKGROUND_TRANSPARENCY_PERCENT);
+      bg.alpha = (100 - transparency_percent) / 100.0;
+    }
+  else
+    bg.alpha = 1.0;
+
   vte_terminal_set_colors (VTE_TERMINAL (screen), &fg, &bg,
                            colors, n_colors);
   vte_terminal_set_color_bold (VTE_TERMINAL (screen), boldp);
@@ -925,6 +941,10 @@ update_color_scheme (TerminalScreen *screen)
   vte_terminal_set_color_cursor_foreground (VTE_TERMINAL (screen), cursor_fgp);
   vte_terminal_set_color_highlight (VTE_TERMINAL (screen), highlight_bgp);
   vte_terminal_set_color_highlight_foreground (VTE_TERMINAL (screen), highlight_fgp);
+
+  toplevel = gtk_widget_get_toplevel (GTK_WIDGET (screen));
+  if (toplevel != NULL && gtk_widget_is_toplevel (toplevel))
+    gtk_widget_set_app_paintable (toplevel, transparent);
 }
 
 static void
