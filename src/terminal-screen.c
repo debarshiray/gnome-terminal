@@ -750,7 +750,9 @@ terminal_screen_profile_changed_cb (GSettings     *profile,
       prop_name == I_(TERMINAL_PROFILE_BACKGROUND_COLOR_KEY) ||
       prop_name == I_(TERMINAL_PROFILE_BOLD_COLOR_SAME_AS_FG_KEY) ||
       prop_name == I_(TERMINAL_PROFILE_BOLD_COLOR_KEY) ||
-      prop_name == I_(TERMINAL_PROFILE_PALETTE_KEY))
+      prop_name == I_(TERMINAL_PROFILE_PALETTE_KEY) ||
+      prop_name == I_(TERMINAL_PROFILE_USE_TRANSPARENT_BACKGROUND) ||
+      prop_name == I_(TERMINAL_PROFILE_BACKGROUND_TRANSPARENCY_PERCENT))
     update_color_scheme (screen);
 
   if (!prop_name || prop_name == I_(TERMINAL_PROFILE_AUDIBLE_BELL_KEY))
@@ -809,6 +811,8 @@ update_color_scheme (TerminalScreen *screen)
   GdkRGBA fg, bg, bold, theme_fg, theme_bg;
   GdkRGBA *boldp;
   GtkStyleContext *context;
+  GtkWidget *toplevel;
+  gboolean transparent;
 
   context = gtk_widget_get_style_context (widget);
   gtk_style_context_get_color (context, GTK_STATE_FLAG_NORMAL, &theme_fg);
@@ -829,9 +833,25 @@ update_color_scheme (TerminalScreen *screen)
     boldp = NULL;
 
   colors = terminal_g_settings_get_rgba_palette (priv->profile, TERMINAL_PROFILE_PALETTE_KEY, &n_colors);
+
+  transparent = g_settings_get_boolean (profile, TERMINAL_PROFILE_USE_TRANSPARENT_BACKGROUND);
+  if (transparent)
+    {
+      gint transparency_percent;
+
+      transparency_percent = g_settings_get_int (profile, TERMINAL_PROFILE_BACKGROUND_TRANSPARENCY_PERCENT);
+      bg.alpha = (100 - transparency_percent) / 100.0;
+    }
+  else
+    bg.alpha = 1.0;
+
   vte_terminal_set_colors (VTE_TERMINAL (screen), &fg, &bg,
                            colors, n_colors);
   vte_terminal_set_color_bold (VTE_TERMINAL (screen), boldp);
+
+  toplevel = gtk_widget_get_toplevel (GTK_WIDGET (screen));
+  if (toplevel != NULL && gtk_widget_is_toplevel (toplevel))
+    gtk_widget_set_app_paintable (toplevel, transparent);
 }
 
 static void
