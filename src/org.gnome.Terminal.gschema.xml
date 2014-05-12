@@ -326,6 +326,15 @@
       <default>'current'</default>
       <summary>Which encoding to use</summary>
     </key>
+    <key name="use-transparent-background" type="b">
+      <default>false</default>
+      <summary>Whether to use a transparent background</summary>
+    </key>
+    <key name="background-transparency-percent" type="i">
+      <default>50</default>
+      <summary>Adjust the amount of transparency</summary>
+      <description>A value between 0 and 100, where 0 is opaque and 100 is fully transparent.</description>
+    </key>
   </schema>
 
   <!-- Keybinding settings -->
