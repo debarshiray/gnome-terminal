@@ -992,6 +992,16 @@ terminal_profile_edit (GSettings  *profile,
                             "sensitive",
                             FALSE);
 
+  g_settings_bind (profile, TERMINAL_PROFILE_USE_TRANSPARENT_BACKGROUND,
+                   gtk_builder_get_object (builder, "use-transparent-background"),
+                   "active", G_SETTINGS_BIND_GET | G_SETTINGS_BIND_SET);
+  g_settings_bind (profile, TERMINAL_PROFILE_USE_TRANSPARENT_BACKGROUND,
+                   gtk_builder_get_object (builder, "background-transparent-scale-box"),
+                   "sensitive", G_SETTINGS_BIND_GET | G_SETTINGS_BIND_NO_SENSITIVITY);
+  g_settings_bind (profile, TERMINAL_PROFILE_BACKGROUND_TRANSPARENCY_PERCENT,
+                   gtk_builder_get_object (builder, "background-transparent-adjustment"),
+                   "value", G_SETTINGS_BIND_GET | G_SETTINGS_BIND_SET);
+
   terminal_util_bind_mnemonic_label_sensitivity (editor);
 
   terminal_util_dialog_focus_widget (editor, widget_name);

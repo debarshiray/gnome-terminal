@@ -1804,6 +1804,8 @@ terminal_window_init (TerminalWindow *window)
   TerminalWindowPrivate *priv;
   TerminalApp *app;
   TerminalSettingsList *profiles_list;
+  GdkScreen *screen;
+  GdkVisual *visual;
   GtkActionGroup *action_group;
   GtkAction *action;
   GtkUIManager *manager;
@@ -1814,6 +1816,11 @@ terminal_window_init (TerminalWindow *window)
   GtkClipboard *clipboard;
 
   priv = window->priv = G_TYPE_INSTANCE_GET_PRIVATE (window, TERMINAL_TYPE_WINDOW, TerminalWindowPrivate);
+
+  screen = gtk_widget_get_screen (GTK_WIDGET (window));
+  visual = gdk_screen_get_rgba_visual (screen);
+  if (visual != NULL)
+    gtk_widget_set_visual (GTK_WIDGET (window), visual);
 
   g_signal_connect (G_OBJECT (window), "delete_event",
                     G_CALLBACK(terminal_window_delete_event),
