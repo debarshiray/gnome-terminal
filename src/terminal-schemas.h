@@ -73,6 +73,9 @@ G_BEGIN_DECLS
 #define TERMINAL_PROFILE_VISIBLE_NAME_KEY               "visible-name"
 #define TERMINAL_PROFILE_WORD_CHAR_EXCEPTIONS_KEY       "word-char-exceptions"
 
+#define TERMINAL_PROFILE_USE_TRANSPARENT_BACKGROUND      "use-transparent-background"
+#define TERMINAL_PROFILE_BACKGROUND_TRANSPARENCY_PERCENT "background-transparency-percent"
+
 #define TERMINAL_SETTING_CONFIRM_CLOSE_KEY              "confirm-close"
 #define TERMINAL_SETTING_DEFAULT_SHOW_MENUBAR_KEY       "default-show-menubar"
 #define TERMINAL_SETTING_ENABLE_MENU_BAR_ACCEL_KEY      "menu-accelerator-enabled"
