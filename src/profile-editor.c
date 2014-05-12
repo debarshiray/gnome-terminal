@@ -1431,6 +1431,22 @@ profile_prefs_load (const char *uuid, GSettings *profile)
   profile_prefs_settings_bind (profile, TERMINAL_PROFILE_ENABLE_SIXEL_KEY, w,
                                "active", G_SETTINGS_BIND_GET | G_SETTINGS_BIND_SET);
   gtk_widget_set_visible (w, (vte_get_feature_flags() & VTE_FEATURE_FLAG_SIXEL) != 0);
+
+  profile_prefs_settings_bind (profile,
+                               TERMINAL_PROFILE_USE_TRANSPARENT_BACKGROUND,
+                               gtk_builder_get_object (builder, "use-transparent-background"),
+                               "active",
+                               G_SETTINGS_BIND_GET | G_SETTINGS_BIND_SET);
+  profile_prefs_settings_bind (profile,
+                               TERMINAL_PROFILE_USE_TRANSPARENT_BACKGROUND,
+                               gtk_builder_get_object (builder, "background-transparent-scale"),
+                               "sensitive",
+                               G_SETTINGS_BIND_GET | G_SETTINGS_BIND_NO_SENSITIVITY);
+  profile_prefs_settings_bind (profile,
+                               TERMINAL_PROFILE_BACKGROUND_TRANSPARENCY_PERCENT,
+                               gtk_builder_get_object (builder, "background-transparent-adjustment"),
+                               "value",
+                               G_SETTINGS_BIND_GET | G_SETTINGS_BIND_SET);
 }
 
 /* Called once per Preferences window, to destroy stuff that doesn't depend on the profile being edited */
