@@ -332,6 +332,7 @@
     </key>
     <key name="background-transparency-percent" type="i">
       <default>50</default>
+      <range min="0" max="100"/>
       <summary>Adjust the amount of transparency</summary>
       <description>A value between 0 and 100, where 0 is opaque and 100 is fully transparent.</description>
     </key>
