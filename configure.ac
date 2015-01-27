@@ -350,7 +350,7 @@ AC_SUBST([AM_LDFLAGS])
 
 AC_CONFIG_FILES([
 Makefile
-gnome-terminal.desktop.in
+org.gnome.Terminal.desktop.in
 src/Makefile
 src/terminal-version.h
 help/Makefile
