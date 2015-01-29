@@ -38,6 +38,7 @@ _terminal_debug_init(void)
     { "profile",       TERMINAL_DEBUG_PROFILE       },
     { "settings-list", TERMINAL_DEBUG_SETTINGS_LIST },
     { "search",        TERMINAL_DEBUG_SEARCH        },
+    { "notifications", TERMINAL_DEBUG_NOTIFICATIONS },
   };
 
   _terminal_debug_flags = g_parse_debug_string (g_getenv ("GNOME_TERMINAL_DEBUG"),
