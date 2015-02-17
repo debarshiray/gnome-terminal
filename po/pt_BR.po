@@ -2116,11 +2116,11 @@ msgstr "_Fechar janela"
 #~ msgid "TITLE"
 #~ msgstr "TÍTULO"
 
-#~ msgid "Whether to use a dark theme variant"
-#~ msgstr "Se deve ou não usar uma variante de tema escuro"
+msgid "Whether to use a dark theme variant"
+msgstr "Se deve ou não usar uma variante de tema escuro"
 
-#~ msgid "Use _dark theme variant"
-#~ msgstr "Usar variante de tema es_curo"
+msgid "Use _dark theme variant"
+msgstr "Usar variante de tema es_curo"
 
 #~ msgid "COMMAND"
 #~ msgstr "COMANDO"
@@ -2878,3 +2878,6 @@ msgstr "_Fechar janela"
 #~ "terminal poderão usar. Essa é a paleta, na forma de uma lista de nomes de "
 #~ "cores separada por dois pontos. Os nomes de cores devem estar no formato "
 #~ "hexadecimal. Exemplo: \"#FF00FF\""
+
+msgid "Transparent background"
+msgstr "Fundo transparente"

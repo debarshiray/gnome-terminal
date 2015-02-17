@@ -2040,11 +2040,11 @@ msgstr "ปิ_ดหน้าต่าง"
 #~ msgid "Missing command"
 #~ msgstr "ขาดคำสั่ง"
 
-#~ msgid "Whether to use a dark theme variant"
-#~ msgstr "ใช้ชุดตกแต่งแบบสีเข้มหรือไม่"
+msgid "Whether to use a dark theme variant"
+msgstr "ใช้ชุดตกแต่งแบบสีเข้มหรือไม่"
 
-#~ msgid "Use _dark theme variant"
-#~ msgstr "ใช้ชุดตกแต่งแบบสีเ_ข้ม"
+msgid "Use _dark theme variant"
+msgstr "ใช้ชุดตกแต่งแบบสีเ_ข้ม"
 
 #~ msgid "_Use the system fixed width font"
 #~ msgstr "ใ_ช้แบบอักษรความกว้างคงที่ของระบบ"
@@ -2622,8 +2622,8 @@ msgstr "ปิ_ดหน้าต่าง"
 #~ msgid "_Solid color"
 #~ msgstr "สี_ทึบ"
 
-#~ msgid "_Transparent background"
-#~ msgstr "พื้นหลังโปร่งแ_สง"
+msgid "Transparent background"
+msgstr "พื้นหลังโปร่งแสง"
 
 #~ msgid ""
 #~ "You already have a profile called “%s”. Do you want to create another "

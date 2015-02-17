@@ -2094,11 +2094,11 @@ msgstr "_Luk vindue"
 #~ msgid "Missing command"
 #~ msgstr "Manglende kommando"
 
-#~ msgid "Whether to use a dark theme variant"
-#~ msgstr "Om der skal bruges en mørk temavariant"
+msgid "Whether to use a dark theme variant"
+msgstr "Om der skal bruges en mørk temavariant"
 
-#~ msgid "Use _dark theme variant"
-#~ msgstr "Brug _mørk temavariant"
+msgid "Use _dark theme variant"
+msgstr "Brug _mørk temavariant"
 
 #~ msgid "COMMAND"
 #~ msgstr "KOMMANDO"
@@ -2999,8 +2999,8 @@ msgstr "_Luk vindue"
 #~ msgid "_Solid color"
 #~ msgstr "_Ensfarvet"
 
-#~ msgid "_Transparent background"
-#~ msgstr "_Gennemsigtig baggrund"
+msgid "Transparent background"
+msgstr "Gennemsigtig baggrund"
 
 #~ msgid ""
 #~ "You already have a profile called “%s”. Do you want to create another "

@@ -2096,11 +2096,11 @@ msgstr "П_ӯшонидани равзана"
 #~ msgid "Show server options"
 #~ msgstr "Намоиши имконоти сервер"
 
-#~ msgid "Whether to use a dark theme variant"
-#~ msgstr "Оё варианти мавзӯи торик истифода шавад"
+msgid "Whether to use a dark theme variant"
+msgstr "Оё варианти мавзӯи торик истифода шавад"
 
-#~ msgid "Use _dark theme variant"
-#~ msgstr "Истифодаи _варианти мавзӯи торик"
+msgid "Use _dark theme variant"
+msgstr "Истифодаи _варианти мавзӯи торик"
 
 #~ msgid "_Use the system fixed width font"
 #~ msgstr "_Истифодаи шрифти бараш бо система таъиншуда"

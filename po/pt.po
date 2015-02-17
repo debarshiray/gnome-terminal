@@ -2077,11 +2077,11 @@ msgstr "Fechar jane_La"
 #~ "Se verdadeiro, os registos de sistema de início de sessão utmp e wtmp "
 #~ "serão atualizados ao iniciar um comando dentro do terminal."
 
-#~ msgid "Whether to use a dark theme variant"
-#~ msgstr "Se utilizar ou não uma variante escura do tema"
+msgid "Whether to use a dark theme variant"
+msgstr "Se utilizar ou não uma variante escura do tema"
 
-#~ msgid "Use _dark theme variant"
-#~ msgstr "Utilizar variante _escura de tema"
+msgid "Use _dark theme variant"
+msgstr "Utilizar variante _escura de tema"
 
 #~ msgid "_Update login records when command is launched"
 #~ msgstr "_Atualizar os registos de início de sessão ao executar um comando"
@@ -2975,8 +2975,8 @@ msgstr "Fechar jane_La"
 #~ msgid "Background image _scrolls"
 #~ msgstr "Imagem de fundo _rola"
 
-#~ msgid "_Transparent background"
-#~ msgstr "Fundo _transparente"
+msgid "Transparent background"
+msgstr "Fundo transparente"
 
 #~ msgid "S_hade transparent or image background:"
 #~ msgstr "Transparente som_breado ou imagem de fundo:"

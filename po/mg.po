@@ -566,8 +566,8 @@ msgid "_Text color:"
 msgstr "Lokon'ny _soratra:"
 
 #: ../src/gnome-terminal.glade2.h:86
-msgid "_Transparent background"
-msgstr "_Afara tatera-pahazavana"
+msgid "Transparent background"
+msgstr "Afara tatera-pahazavana"
 
 #: ../src/gnome-terminal.glade2.h:87
 msgid "_Update login records when command is launched"

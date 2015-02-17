@@ -2105,3 +2105,6 @@ msgstr "Chiudi _finestra"
 
 #~ msgid "_Update login records when command is launched"
 #~ msgstr "_Aggiornare i record di login quando il comando viene eseguito"
+
+msgid "Transparent background"
+msgstr "Sfondo trasparente"

@@ -2090,11 +2090,11 @@ msgstr "_Ablak bezárása"
 #~ msgid "Missing command"
 #~ msgstr "Hiányzó parancs"
 
-#~ msgid "Whether to use a dark theme variant"
-#~ msgstr "Használja-e a sötét témaváltozatot"
+msgid "Whether to use a dark theme variant"
+msgstr "Használja-e a sötét témaváltozatot"
 
-#~ msgid "Use _dark theme variant"
-#~ msgstr "_Sötét témaváltozat használata"
+msgid "Use _dark theme variant"
+msgstr "_Sötét témaváltozat használata"
 
 #~ msgid "Set the terminal title"
 #~ msgstr "A terminál címének beállítása"
@@ -2513,3 +2513,6 @@ msgstr "_Ablak bezárása"
 
 #~ msgid "Background type"
 #~ msgstr "Háttér típusa"
+
+msgid "Transparent background"
+msgstr "Áttetsző háttér"

@@ -2979,8 +2979,8 @@ msgstr "উইন্ডো বন্ধ কৰক (_l)"
 #~ msgid "Background image _scrolls"
 #~ msgstr "পটভূমিৰ ছবি স্ক্ৰল কৰক (_s)"
 
-#~ msgid "_Transparent background"
-#~ msgstr "স্বচ্চ পটভূমি (_T)"
+msgid "Transparent background"
+msgstr "স্বচ্চ পটভূমি "
 
 #~ msgid "S_hade transparent or image background:"
 #~ msgstr "স্বচ্ছ বা ছবিৰ সৈতে পটভূমি ছায়া আচ্ছন্ন কৰক (_h):"

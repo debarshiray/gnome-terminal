@@ -2240,3 +2240,6 @@ msgstr "_بستن پنجره"
 
 #~ msgid "_Title:"
 #~ msgstr "_عنوان:"
+
+msgid "Transparent background"
+msgstr "پس‌زمینه‌ی شفاف"

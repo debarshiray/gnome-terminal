@@ -3015,8 +3015,8 @@ msgstr "चौकट बंद करा (_l)"
 #~ msgid "_Solid color"
 #~ msgstr "गडद रंग (_S)"
 
-#~ msgid "_Transparent background"
-#~ msgstr "पारदर्शी पार्श्वभूमी(_T)"
+msgid "Transparent background"
+msgstr "पारदर्शी पार्श्वभूमी"
 
 #~ msgid "Disabled"
 #~ msgstr "अकार्यान्वीतित"

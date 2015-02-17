@@ -2136,8 +2136,11 @@ msgstr "Fermer _la fenêtre"
 #~ msgid "Missing command"
 #~ msgstr "Commande manquante"
 
-#~ msgid "Whether to use a dark theme variant"
-#~ msgstr "Indique s'il faut utiliser une variante de thème foncée"
+msgid "Whether to use a dark theme variant"
+msgstr "Indique s'il faut utiliser une variante de thème foncée"
 
-#~ msgid "Use _dark theme variant"
-#~ msgstr "Utiliser une variante de thème _foncée"
+msgid "Use _dark theme variant"
+msgstr "Utiliser une variante de thème _foncée"
+
+msgid "Transparent background"
+msgstr "Arrière-plan transparent"

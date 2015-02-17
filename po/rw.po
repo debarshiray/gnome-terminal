@@ -748,7 +748,7 @@ msgstr "Ibara ry'Inyandiko..."
 
 #: ../src/gnome-terminal.glade2.h:102
 #, fuzzy
-msgid "_Transparent background"
+msgid "Transparent background"
 msgstr "Mbuganyuma"
 
 #: ../src/gnome-terminal.glade2.h:103

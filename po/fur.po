@@ -562,6 +562,10 @@ msgstr ""
 "Indiche se tornâ a adatâ in automatic i contignûts dal terminâl al modificâ "
 "de dimension dal barcon"
 
+#: ../src/gnome-terminal.glade2.h:86
+msgid "Transparent background"
+msgstr "Fondâl trasparent"
+
 #: ../src/org.gnome.Terminal.gschema.xml.h:50
 msgid "Which encoding to use"
 msgstr "Codifiche di doprâ"

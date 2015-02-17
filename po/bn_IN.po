@@ -2358,3 +2358,6 @@ msgstr "উইন্ডো বন্ধ করুন (_l)"
 
 #~ msgid "_Title:"
 #~ msgstr "শিরোনাম: (_T)"
+
+msgid "Transparent background"
+msgstr "স্বচ্চ পটভূমি "

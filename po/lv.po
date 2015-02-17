@@ -2049,3 +2049,6 @@ msgstr ""
 #: ../src/terminal-window.c:3694
 msgid "C_lose Window"
 msgstr "Aizvērt _logu"
+
+msgid "Transparent background"
+msgstr "Caurspīdīgs fons"

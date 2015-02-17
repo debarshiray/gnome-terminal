@@ -2343,6 +2343,12 @@ msgstr "Tampar _la fenèstra"
 #~ msgid "Choose Paleta Color %u"
 #~ msgstr "Causissètz la color de paleta %u"
 
+msgid "Whether to use a dark theme variant"
+msgstr "Indica se cal utilizar una variante de tèma foncée"
+
+msgid "Use _dark theme variant"
+msgstr "Utilizar una variante de tèma _foncée"
+
 #~ msgid "Paleta entry %u"
 #~ msgstr "Entrada de paleta %u"
 
@@ -3419,8 +3425,8 @@ msgstr "Tampar _la fenèstra"
 #~ msgid "Run;"
 #~ msgstr "Executar;Consòla;Shell;"
 
-#~ msgid "_Transparent background"
-#~ msgstr "Rèireplan _transparent"
+msgid "_Transparent background"
+msgstr "Rèireplan _transparent"
 
 #~ msgid ""
 #~ "A subset of possible encodings are presented in the Encoding submenu. "

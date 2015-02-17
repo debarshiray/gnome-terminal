@@ -2102,8 +2102,11 @@ msgstr "关闭窗口(_L)"
 #~ msgid "Missing command"
 #~ msgstr "遗漏命令"
 
-#~ msgid "Whether to use a dark theme variant"
-#~ msgstr "是否使用暗色主题"
+msgid "Whether to use a dark theme variant"
+msgstr "是否使用暗色主题"
+
+msgid "Use _dark theme variant"
+msgstr "使用暗色主题(_D)"
 
 #~ msgid "COMMAND"
 #~ msgstr "命令"
@@ -2336,3 +2339,6 @@ msgstr "关闭窗口(_L)"
 
 #~ msgid "_Find..."
 #~ msgstr "查找(_F)..."
+
+msgid "Transparent background"
+msgstr "透明背景"

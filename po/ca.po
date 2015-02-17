@@ -2106,8 +2106,11 @@ msgstr "Tanca la _finestra"
 #~ msgid "Missing command"
 #~ msgstr "Manca l'ordre"
 
-#~ msgid "Whether to use a dark theme variant"
-#~ msgstr "Si s'ha d'utilitzar la variant de tema fosc"
+msgid "Whether to use a dark theme variant"
+msgstr "Si s'ha d'utilitzar la variant de tema fosc"
 
-#~ msgid "Use _dark theme variant"
-#~ msgstr "Utilitza la variant de tema _fosc"
+msgid "Use _dark theme variant"
+msgstr "Utilitza la variant de tema _fosc"
+
+msgid "Transparent background"
+msgstr "Fons transparent"

@@ -2046,3 +2046,6 @@ msgstr ""
 #: ../src/terminal-window.c:3694
 msgid "C_lose Window"
 msgstr "_Lukk vindu"
+
+msgid "Transparent background"
+msgstr "Gjennomsiktig bakgrunn"

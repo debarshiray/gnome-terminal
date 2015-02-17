@@ -2075,11 +2075,11 @@ msgstr "Закр_ити вікно"
 #~ msgid "Missing command"
 #~ msgstr "Бракує команди"
 
-#~ msgid "Whether to use a dark theme variant"
-#~ msgstr "Чи використовувати темний варіант теми"
+msgid "Whether to use a dark theme variant"
+msgstr "Чи використовувати темний варіант теми"
 
-#~ msgid "Use _dark theme variant"
-#~ msgstr "Використовувати _темний варіант теми"
+msgid "Use _dark theme variant"
+msgstr "Використовувати _темний варіант теми"
 
 #~ msgid "COMMAND"
 #~ msgstr "КОМАНДА"
@@ -2946,8 +2946,8 @@ msgstr "Закр_ити вікно"
 #~ msgid "_Solid color"
 #~ msgstr "_Суцільний колір"
 
-#~ msgid "_Transparent background"
-#~ msgstr "П_розоре тло"
+msgid "Transparent background"
+msgstr "Прозоре тло"
 
 #~ msgid "Switch to Tab 2"
 #~ msgstr "До вкладки 2"

@@ -2075,11 +2075,11 @@ msgstr "It_xi leihoa"
 #~ msgid "Missing command"
 #~ msgstr "Komandoa falta da"
 
-#~ msgid "Whether to use a dark theme variant"
-#~ msgstr "Gai ilunaren aldaera erabili edo ez"
+msgid "Whether to use a dark theme variant"
+msgstr "Gai ilunaren aldaera erabili edo ez"
 
-#~ msgid "Use _dark theme variant"
-#~ msgstr "Erabili gai _ilunaren aldaera"
+msgid "Use _dark theme variant"
+msgstr "Erabili gai _ilunaren aldaera"
 
 #~ msgid "COMMAND"
 #~ msgstr "KOMANDOA"
@@ -2976,8 +2976,8 @@ msgstr "It_xi leihoa"
 #~ msgid "_Solid color"
 #~ msgstr "_Kolore solidoa"
 
-#~ msgid "_Transparent background"
-#~ msgstr "_Atzeko plano gardena"
+msgid "Transparent background"
+msgstr "Atzeko plano gardena"
 
 #~ msgid ""
 #~ "You already have a profile called “%s”. Do you want to create another "

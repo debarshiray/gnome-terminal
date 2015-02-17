@@ -2074,12 +2074,11 @@ msgstr "أغ_لق النافذة"
 #~ msgid "Missing command"
 #~ msgstr "خطأ أثناء تحليل الأمر: %s"
 
-#, fuzzy
-#~ msgid "Whether to use a dark theme variant"
-#~ msgstr "فيما إذا سيستعمل خط النظام ثابت العرض"
+msgid "Whether to use a dark theme variant"
+msgstr "فيما إذا سيستعمل خط النظام ثابت العرض"
 
-#~ msgid "Use _dark theme variant"
-#~ msgstr "استخدم سمة _داكنة"
+msgid "Use _dark theme variant"
+msgstr "استخدم سمة _داكنة"
 
 #~ msgid "COMMAND"
 #~ msgstr "الأمر"
@@ -2929,8 +2928,8 @@ msgstr "أغ_لق النافذة"
 #~ msgid "Background image _scrolls"
 #~ msgstr "صورة الخلفية ت_لتف"
 
-#~ msgid "_Transparent background"
-#~ msgstr "خلفية _شفافة"
+msgid "Transparent background"
+msgstr "خلفية شفافة"
 
 #~ msgid "S_hade transparent or image background:"
 #~ msgstr "_ظلل شفافية أو صورة الخلفية:"

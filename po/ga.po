@@ -1925,3 +1925,6 @@ msgstr "_Dún Fuinneog"
 #: ../src/terminal-window.c:3582
 msgid "C_lose Terminal"
 msgstr "_Dún Teirminéal"
+
+msgid "Transparent background"
+msgstr "Cúlra trédhearcach"

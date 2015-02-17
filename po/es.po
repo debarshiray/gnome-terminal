@@ -2120,11 +2120,11 @@ msgstr "_Cerrar ventana"
 #~ msgid "Missing command"
 #~ msgstr "Falta el comando"
 
-#~ msgid "Whether to use a dark theme variant"
-#~ msgstr "Indica si se debe usar la variante oscura del tema"
+msgid "Whether to use a dark theme variant"
+msgstr "Indica si se debe usar la variante oscura del tema"
 
-#~ msgid "Use _dark theme variant"
-#~ msgstr "Usar la variante _oscura del tema"
+msgid "Use _dark theme variant"
+msgstr "Usar la variante _oscura del tema"
 
 #~ msgid "Set the terminal title"
 #~ msgstr "Establece el título de la terminal"
@@ -3103,8 +3103,8 @@ msgstr "_Cerrar ventana"
 #~ msgid "_Solid color"
 #~ msgstr "Color _sólido"
 
-#~ msgid "_Transparent background"
-#~ msgstr "Fondo _transparente"
+msgid "Transparent background"
+msgstr "Fondo transparente"
 
 #~ msgid "No such profile \"%s\", using default profile\n"
 #~ msgstr "No existe el perfil «%s», usando el perfil predeterminado\n"

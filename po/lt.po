@@ -2085,8 +2085,11 @@ msgstr "_Užverti langą"
 #~ msgid "Missing command"
 #~ msgstr "Trūksta komandos"
 
-#~ msgid "Whether to use a dark theme variant"
-#~ msgstr "Ar naudoti tamsų temos variantą"
+msgid "Whether to use a dark theme variant"
+msgstr "Ar naudoti tamsų temos variantą"
 
-#~ msgid "Use _dark theme variant"
-#~ msgstr "Nau_doti tamsų temos variantą"
+msgid "Use _dark theme variant"
+msgstr "Nau_doti tamsų temos variantą"
+
+msgid "Transparent background"
+msgstr "Permatomas fonas"

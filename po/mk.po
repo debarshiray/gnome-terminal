@@ -1166,8 +1166,8 @@ msgid "_Text color:"
 msgstr "_Боја на текстот:"
 
 #: ../src/profile-preferences.glade.h:77
-msgid "_Transparent background"
-msgstr "_Транспарентна позадина"
+msgid "Transparent background"
+msgstr "Транспарентна позадина"
 
 #: ../src/profile-preferences.glade.h:78
 #| msgid "_Text color:"

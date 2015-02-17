@@ -2080,11 +2080,11 @@ msgstr "Đón_g cửa sổ"
 #~ msgid "Missing command"
 #~ msgstr "Thiếu lệnh"
 
-#~ msgid "Whether to use a dark theme variant"
-#~ msgstr "Có nên dùng biến thể chủ đề tối hay không"
+msgid "Whether to use a dark theme variant"
+msgstr "Có nên dùng biến thể chủ đề tối hay không"
 
-#~ msgid "Use _dark theme variant"
-#~ msgstr "Dùng biến thể chủ đề tố_i"
+msgid "Use _dark theme variant"
+msgstr "Dùng biến thể chủ đề tố_i"
 
 #~ msgid "Set the terminal title"
 #~ msgstr "Đặt tựa đề thiết bị cuối"
@@ -2689,3 +2689,6 @@ msgstr "Đón_g cửa sổ"
 #~ "Phím tắt để đặt lại thiết bị cuối. Dùng dạng chuỗi có cùng một khuôn dạng "
 #~ "với tập tin tài nguyên GTK+. Nếu bạn đặt tùy chọn là chuỗi “disabled” (bị "
 #~ "tắt), nghĩa là không có phím tắt cho hành động này."
+
+msgid "Transparent background"
+msgstr "Nền trong suốt"

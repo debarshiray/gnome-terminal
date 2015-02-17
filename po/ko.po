@@ -2079,8 +2079,11 @@ msgstr "창 닫기(_L)"
 #~ msgid "Missing command"
 #~ msgstr "명령어 없음"
 
-#~ msgid "Whether to use a dark theme variant"
-#~ msgstr "어두운 테마를 사용할 지 여부"
+msgid "Whether to use a dark theme variant"
+msgstr "어두운 테마를 사용할 지 여부"
 
-#~ msgid "Use _dark theme variant"
-#~ msgstr "어두운 테마 사용(_D)"
+msgid "Use _dark theme variant"
+msgstr "어두운 테마 사용(_D)"
+
+msgid "Transparent background"
+msgstr "투명한 배경"

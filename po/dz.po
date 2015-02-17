@@ -1551,8 +1551,8 @@ msgid "_Text color:"
 msgstr "ཚིག་ཡིག་ཚོས་གཞི་:(_T)"
 
 #: ../src/profile-preferences.glade.h:77
-msgid "_Transparent background"
-msgstr "དྭངས་གསལ་རྒྱབ་གཞི།(_T)"
+msgid "Transparent background"
+msgstr "དྭངས་གསལ་རྒྱབ་གཞི།"
 
 #: ../src/profile-preferences.glade.h:78
 #, fuzzy

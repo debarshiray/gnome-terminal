@@ -2066,11 +2066,11 @@ msgstr "_Zapri okno"
 #~ msgid "Missing command"
 #~ msgstr "Manjka ukaz"
 
-#~ msgid "Whether to use a dark theme variant"
-#~ msgstr "Ali naj se uporabi temna tema okna"
+msgid "Whether to use a dark theme variant"
+msgstr "Ali naj se uporabi temna tema okna"
 
-#~ msgid "Use _dark theme variant"
-#~ msgstr "Uporabi _temno temo"
+msgid "Use _dark theme variant"
+msgstr "Uporabi _temno temo"
 
 #~ msgid "Set the terminal title"
 #~ msgstr "Nastavi naziv terminala"
@@ -2322,3 +2322,6 @@ msgstr "_Zapri okno"
 
 #~ msgid "_Profile Preferences…"
 #~ msgstr "Možnosti _profila ..."
+
+msgid "Transparent background"
+msgstr "Prosojno ozadje"

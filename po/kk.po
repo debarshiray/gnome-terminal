@@ -2024,14 +2024,17 @@ msgstr "Терезені жа_бу"
 #~ msgid "Missing command"
 #~ msgstr "Команда жоқ болып тұр"
 
-#~ msgid "Whether to use a dark theme variant"
-#~ msgstr "Қараңғылау тема нұсқасын қолдану керек пе"
+msgid "Whether to use a dark theme variant"
+msgstr "Қараңғылау тема нұсқасын қолдану керек пе"
 
-#~ msgid "Use _dark theme variant"
-#~ msgstr "Теманың қ_араңғы нұсқасын қолдану"
+msgid "Use _dark theme variant"
+msgstr "Теманың қ_араңғы нұсқасын қолдану"
 
 #~ msgid "COMMAND"
 #~ msgstr "КОМАНДА"
 
 #~ msgid "Be quiet"
 #~ msgstr "Тыныш болу"
+
+msgid "Transparent background"
+msgstr "Мөлдір фон"

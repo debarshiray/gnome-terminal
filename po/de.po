@@ -2134,11 +2134,11 @@ msgstr "Fenster _schließen"
 #~ msgid "Missing command"
 #~ msgstr "Fehlender Befehl"
 
-#~ msgid "Whether to use a dark theme variant"
-#~ msgstr "Legt fest, ob eine dunkle Themenvariante verwendet wird"
+msgid "Whether to use a dark theme variant"
+msgstr "Legt fest, ob eine dunkle Themenvariante verwendet wird"
 
-#~ msgid "Use _dark theme variant"
-#~ msgstr "Die _dunkle Themenvariante verwenden"
+msgid "Use _dark theme variant"
+msgstr "Die _dunkle Themenvariante verwenden"
 
 #~ msgid "Set the terminal title"
 #~ msgstr "Den Titel des Terminals festlegen"
@@ -3066,8 +3066,8 @@ msgstr "Fenster _schließen"
 #~ msgid "Background image _scrolls"
 #~ msgstr "Hintergrundbild _folgt Bildlauf"
 
-#~ msgid "_Transparent background"
-#~ msgstr "_Transparenter Hintergrund"
+msgid "Transparent background"
+msgstr "Transparenter Hintergrund"
 
 #~ msgid "S_hade transparent or image background:"
 #~ msgstr "Transparenz und Bildhintergründe _abdunkeln:"

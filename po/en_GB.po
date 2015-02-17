@@ -2732,8 +2732,8 @@ msgstr "_Title:"
 #~ msgid "Background image _scrolls"
 #~ msgstr "Background image _scrolls"
 
-#~ msgid "_Transparent background"
-#~ msgstr "_Transparent background"
+msgid "Transparent background"
+msgstr "Transparent background"
 
 #~ msgid "S_hade transparent or image background:"
 #~ msgstr "S_hade transparent or image background:"

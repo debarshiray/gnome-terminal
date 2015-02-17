@@ -2751,8 +2751,8 @@ msgstr "ടെര്‍മിനല്‍ അ_ടയ്ക്കുക"
 #~ msgid "_Solid color"
 #~ msgstr "_സോളിഡ് നിറം"
 
-#~ msgid "_Transparent background"
-#~ msgstr "_പുറകിലുള്ളവ കാണാവുന്ന പശ്ചാത്തലം"
+msgid "Transparent background"
+msgstr "പുറകിലുള്ളവ കാണാവുന്ന പശ്ചാത്തലം"
 
 #~ msgid "S/Key Challenge Response"
 #~ msgstr "S/Key ചാലഞ്ച് മറുപടി"

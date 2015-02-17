@@ -2344,3 +2344,6 @@ msgstr "ಕಿಟಕಿಯನ್ನು ಮುಚ್ಚು  (_l)"
 
 #~ msgid "_Title:"
 #~ msgstr "ಶೀರ್ಷಿಕೆ(_T):"
+
+msgid "Transparent background"
+msgstr "ಪಾರದರ್ಶಕ ಹಿನ್ನಲೆ"

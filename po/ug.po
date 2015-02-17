@@ -2616,8 +2616,8 @@ msgstr "ماۋزۇ (_T):"
 #~ msgid "_Solid color"
 #~ msgstr "ساپ رەڭ(_S)"
 
-#~ msgid "_Transparent background"
-#~ msgstr "سۈزۈك تەگلىك(_T)"
+msgid "Transparent background"
+msgstr "سۈزۈك تەگلىك"
 
 #~ msgid ""
 #~ "You already have a profile called “%s”. Do you want to create another "

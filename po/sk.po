@@ -2165,11 +2165,11 @@ msgstr "_Zavrieť okno"
 #~ msgstr "TITULOK"
 
 # gsetting summary
-#~ msgid "Whether to use a dark theme variant"
-#~ msgstr "Či použiť tmavú verziu témy"
+msgid "Whether to use a dark theme variant"
+msgstr "Či použiť tmavú verziu témy"
 
-#~ msgid "Use _dark theme variant"
-#~ msgstr "Použiť _tmavú verziu témy"
+msgid "Use _dark theme variant"
+msgstr "Použiť _tmavú verziu témy"
 
 #~ msgid "COMMAND"
 #~ msgstr "PRÍKAZ"
@@ -2188,3 +2188,6 @@ msgstr "_Zavrieť okno"
 #~ "  shell   Spustí použivateľský shell v novom termináli\n"
 #~ "\n"
 #~ "Viac informácii o jednotlivých príkazoch získate pomocou „%s PRÍKAZ --help“.\n"
+
+msgid "Transparent background"
+msgstr "Priehľadné pozadie"

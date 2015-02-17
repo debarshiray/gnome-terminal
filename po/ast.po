@@ -1598,8 +1598,8 @@ msgid "_Text color:"
 msgstr "Color del _testu:"
 
 #: ../src/profile-preferences.glade.h:77
-msgid "_Transparent background"
-msgstr "Fondu _tresparente"
+msgid "Transparent background"
+msgstr "Fondu tresparente"
 
 #: ../src/profile-preferences.glade.h:78
 msgid "_Underline color:"

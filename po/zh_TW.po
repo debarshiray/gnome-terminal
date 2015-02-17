@@ -2034,11 +2034,11 @@ msgstr "關閉視窗(_L)"
 #~ msgid "Missing command"
 #~ msgstr "遺失指令"
 
-#~ msgid "Whether to use a dark theme variant"
-#~ msgstr "是否使用暗色系布景主題變體"
+msgid "Whether to use a dark theme variant"
+msgstr "是否使用暗色系布景主題變體"
 
-#~ msgid "Use _dark theme variant"
-#~ msgstr "使用暗色系布景主題變體(_D)"
+msgid "Use _dark theme variant"
+msgstr "使用暗色系布景主題變體(_D)"
 
 #~ msgid "_Use the system fixed width font"
 #~ msgstr "使用系統的固定寬度字型(_U)"
@@ -2383,3 +2383,6 @@ msgstr "關閉視窗(_L)"
 
 #~ msgid "Show session management options"
 #~ msgstr "顯示作業階段管理選項"
+
+msgid "Transparent background"
+msgstr "透明背景"

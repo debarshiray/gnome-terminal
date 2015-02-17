@@ -2128,11 +2128,11 @@ msgstr "Κ_λείσιμο παραθύρου"
 #~ msgid "Missing command"
 #~ msgstr "Λείπει εντολή"
 
-#~ msgid "Whether to use a dark theme variant"
-#~ msgstr "Εάν θα χρησιμοποιεί παραλλαγή σκοτεινού θέματος"
+msgid "Whether to use a dark theme variant"
+msgstr "Εάν θα χρησιμοποιεί παραλλαγή σκοτεινού θέματος"
 
-#~ msgid "Use _dark theme variant"
-#~ msgstr "Χρήση παραλλαγής _σκοτεινού θέματος"
+msgid "Use _dark theme variant"
+msgstr "Χρήση παραλλαγής _σκοτεινού θέματος"
 
 #~ msgid "_Use the system fixed width font"
 #~ msgstr "_Χρήση της γραμματοσειράς σταθερού πλάτους του συστήματος"
@@ -2296,3 +2296,6 @@ msgstr "Κ_λείσιμο παραθύρου"
 
 #~ msgid "_Input Methods"
 #~ msgstr "_Μέθοδοι εισαγωγής"
+
+msgid "Transparent background"
+msgstr "Διάφανο παρασκήνιο"

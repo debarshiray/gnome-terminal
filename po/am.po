@@ -613,8 +613,8 @@ msgid "_Text color:"
 msgstr "የ_ጽሑፍ ቀለም፦"
 
 #: ../src/gnome-terminal.glade2.h:102
-msgid "_Transparent background"
-msgstr "_የሚያሳይ መደብ"
+msgid "Transparent background"
+msgstr "የሚያሳይ መደብ"
 
 #: ../src/gnome-terminal.glade2.h:103
 msgid "_Update login records when command is launched"

@@ -2106,3 +2106,6 @@ msgid ""
 msgstr ""
 "Wartość między 0 a 100, gdzie 0 oznacza nieprzezroczystość, a 100 oznacza "
 "całkowitą przezroczystość."
+
+msgid "Transparent background"
+msgstr "Przezroczyste tło"

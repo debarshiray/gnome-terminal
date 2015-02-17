@@ -2898,8 +2898,8 @@ msgstr "కిటికీని మూసివేయి (_l)"
 #~ msgid "Background image _scrolls"
 #~ msgstr "నేపథ్యచిత్రము స్క్రాల్స్ (_s)"
 
-#~ msgid "_Transparent background"
-#~ msgstr "పారదర్శక నేపథ్యం (_T)"
+msgid "Transparent background"
+msgstr "పారదర్శక నేపథ్యం"
 
 #~ msgid "S_hade transparent or image background:"
 #~ msgstr "పారదర్శకంగా మారు లేదా చిత్రము బ్యాక్‌గ్రౌండ్ కు మారు(_h):"

@@ -2126,9 +2126,8 @@ msgstr "_Dùin an uinneag"
 #~ msgid "Missing command"
 #~ msgstr "Tha àithne a dhìth"
 
-#~ msgid "Whether to use a dark theme variant"
-#~ msgstr ""
-#~ "Co-dhiù an tèid tionndadh dorcha dhen ùrlar a chleachdadh gus nach tèid"
+msgid "Whether to use a dark theme variant"
+msgstr "Co-dhiù an tèid tionndadh dorcha dhen ùrlar a chleachdadh gus nach tèid"
 
-#~ msgid "Use _dark theme variant"
-#~ msgstr "Cleachd tionndadh _dorcha dhen ùrlar"
+msgid "Use _dark theme variant"
+msgstr "Cleachd tionndadh _dorcha dhen ùrlar"

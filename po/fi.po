@@ -2069,6 +2069,9 @@ msgstr ""
 msgid "C_lose Window"
 msgstr "_Sulje ikkuna"
 
+msgid "Transparent background"
+msgstr "Läpinäkyvä tausta"
+
 #~ msgid "Set the terminal title"
 #~ msgstr "Aseta päätteen otsikko"
 
@@ -2079,8 +2082,8 @@ msgstr "_Sulje ikkuna"
 #~ msgid "Missing command"
 #~ msgstr "Puuttuva komento"
 
-#~ msgid "Whether to use a dark theme variant"
-#~ msgstr "Käytetäänkö teeman tummaan muunnelmaa"
+msgid "Whether to use a dark theme variant"
+msgstr "Käytetäänkö teeman tummaan muunnelmaa"
 
-#~ msgid "Use _dark theme variant"
-#~ msgstr "Käytä _teeman tummaa muunnelmaa"
+msgid "Use _dark theme variant"
+msgstr "Käytä _teeman tummaa muunnelmaa"
