@@ -2306,3 +2306,15 @@ msgstr "It_xi leihoa"
 
 #~ msgid "_Detach Tab"
 #~ msgstr "_Desuztartu fitxa"
+
+msgid "Title"
+msgstr "Titulua"
+
+msgid "_Title:"
+msgstr "_Titulua:"
+
+msgid "Set Title"
+msgstr "Ezarri titulua"
+
+msgid "Transparent background"
+msgstr "Atzeko plano gardena"

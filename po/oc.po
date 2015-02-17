@@ -2944,8 +2944,8 @@ msgstr "Tampar _la fenèstra"
 #~ msgid "Save as..."
 #~ msgstr "Enregistrar jos..."
 
-#~ msgid "_Title:"
-#~ msgstr "_Títol :"
+msgid "_Title:"
+msgstr "_Títol :"
 
 #~ msgid "_Detach tab"
 #~ msgstr "Des_tacar l'onglet"
@@ -3405,8 +3405,8 @@ msgstr "Tampar _la fenèstra"
 #~ msgid "_Use the system fixed width font"
 #~ msgstr "_Utilizar la poliça de chassa fixa del sistèma"
 
-#~ msgid "Set Title"
-#~ msgstr "Definir lo títol"
+msgid "Set Title"
+msgstr "Definir lo títol"
 
 #~ msgid "The shortcut key “%s” is already bound to the “%s” action"
 #~ msgstr "L'acorchi de clavièr « %s » es ja atribuit a l'accion « %s »"
@@ -3723,8 +3723,8 @@ msgstr "Tampar _la fenèstra"
 #~ msgid "Run;"
 #~ msgstr "Executar;Consòla;Shell;"
 
-#~ msgid "_Transparent background"
-#~ msgstr "Rèireplan _transparent"
+msgid "Transparent background"
+msgstr "Rèireplan transparent"
 
 #~ msgid ""
 #~ "A subset of possible encodings are presented in the Encoding submenu. "

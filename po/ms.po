@@ -2717,8 +2717,8 @@ msgstr "T_utup Tetingkap"
 #~ msgid "_Profile name:"
 #~ msgstr "_Nama profil: "
 
-#~ msgid "_Transparent background"
-#~ msgstr "LatarBelakang _Telus"
+msgid "Transparent background"
+msgstr "LatarBelakang Telus"
 
 #~ msgid "_Update login records when command is launched"
 #~ msgstr "_Kemaskini rekod logmasuk bila arahan dilancarkan"

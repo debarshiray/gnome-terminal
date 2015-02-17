@@ -2296,8 +2296,8 @@ msgstr "উইন্ডো বন্ধ করুন (_l)"
 #~ msgid "Close Window"
 #~ msgstr "উইন্ডো বন্ধ করুন"
 
-#~ msgid "Set Title"
-#~ msgstr "শিরোনাম নির্ধারণ করুন"
+msgid "Set Title"
+msgstr "শিরোনাম নির্ধারণ করুন"
 
 #~ msgid "Switch to Tab 2"
 #~ msgstr "ট্যাব ২-এ পরিবর্তন করুন"
@@ -2356,5 +2356,8 @@ msgstr "উইন্ডো বন্ধ করুন (_l)"
 #~ msgid "_Input Methods"
 #~ msgstr "ইনপুট পদ্ধতি (_I)"
 
-#~ msgid "_Title:"
-#~ msgstr "শিরোনাম: (_T)"
+msgid "_Title:"
+msgstr "শিরোনাম: (_T)"
+
+msgid "Transparent background"
+msgstr "স্বচ্চ পটভূমি "

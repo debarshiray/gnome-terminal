@@ -2484,3 +2484,15 @@ msgstr "ウィンドウを閉じる(_L)"
 
 #~ msgid "_Incremental Search…"
 #~ msgstr "インクリメンタル検索(_I)…"
+
+msgid "Transparent background"
+msgstr "透過な画像にする"
+
+msgid "Title"
+msgstr "タイトル"
+
+msgid "_Title:"
+msgstr "タイトル(_T):"
+
+msgid "Set Title"
+msgstr "タイトルを設定する"

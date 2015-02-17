@@ -2398,8 +2398,8 @@ msgstr "सञ्झ्याल बन्द गर्नुहोस्"
 #~ msgid "_None (use solid color)"
 #~ msgstr "कुनै पनि होइन (एउटै रङ प्रयोग गर्नुहोस्)"
 
-#~ msgid "_Transparent background"
-#~ msgstr "पारदर्शी पृष्ठभूमि"
+msgid "Transparent background"
+msgstr "पारदर्शी पृष्ठभूमि"
 
 #~ msgid "_Use the system fixed width font"
 #~ msgstr "प्रणाली निश्चित गरिएको फन्ट चौडाइ प्रयोग गर्नुहोस्"
@@ -3052,8 +3052,8 @@ msgstr "सञ्झ्याल बन्द गर्नुहोस्"
 #~ msgid "Close Tab"
 #~ msgstr "ट्याब बन्द गर्नुहोस्"
 
-#~ msgid "Set Title"
-#~ msgstr "शीर्षक सेट गर्नुहोस्"
+msgid "Set Title"
+msgstr "शीर्षक सेट गर्नुहोस्"
 
 #~ msgid "Switch to Tab 2"
 #~ msgstr "ट्याब २ मा स्विच गर्नुहोस्"
@@ -3232,8 +3232,8 @@ msgstr "सञ्झ्याल बन्द गर्नुहोस्"
 #~ msgid "_Input Methods"
 #~ msgstr "आगत विधि"
 
-#~ msgid "_Title:"
-#~ msgstr "शीर्षक:"
+msgid "_Title:"
+msgstr "शीर्षक:"
 
 #~ msgid ""
 #~ "text/plain dropped on terminal had wrong format (%d) or length (%d)\n"

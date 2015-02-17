@@ -2434,3 +2434,15 @@ msgstr "_Luk vindue"
 
 #~ msgid "_Detach Tab"
 #~ msgstr "_Løsriv faneblad"
+
+msgid "Title"
+msgstr "Titel"
+
+msgid "_Title:"
+msgstr "_Titel:"
+
+msgid "Set Title"
+msgstr "Sæt titel"
+
+msgid "Transparent background"
+msgstr "Gennemsigtig baggrund"

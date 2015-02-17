@@ -2577,3 +2577,6 @@ msgstr "ജാലകം അടയ്ക്കുക (_l)"
 
 #~ msgid "_Unlimited"
 #~ msgstr "പരിധിയില്ല (_U)"
+
+msgid "Transparent background"
+msgstr "പുറകിലുള്ളവ കാണാവുന്ന പശ്ചാത്തലം"
