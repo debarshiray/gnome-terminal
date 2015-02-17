@@ -2354,11 +2354,11 @@ msgstr "أغ_لق النافذة"
 #~ msgid "Default size:"
 #~ msgstr "الحجم المبدئي:"
 
-#~ msgid "Title"
-#~ msgstr "العنوان"
+msgid "Title"
+msgstr "العنوان"
 
-#~ msgid "_Title:"
-#~ msgstr "ال_عنوان:"
+msgid "_Title:"
+msgstr "ال_عنوان:"
 
 #~ msgid "Title and Command"
 #~ msgstr "العنوان والأمر"
@@ -2366,14 +2366,14 @@ msgstr "أغ_لق النافذة"
 #~ msgid "_Unlimited"
 #~ msgstr "_غير محدود"
 
-#~ msgid "Set Title"
-#~ msgstr "حدد العنوان"
+msgid "Set Title"
+msgstr "حدد العنوان"
 
 #~ msgid "Current Locale"
 #~ msgstr "المحليّة الحالية"
 
-#~ msgid "_Set Title…"
-#~ msgstr "اضبط ال_عنوان…"
+msgid "_Set Title…"
+msgstr "اضبط ال_عنوان…"
 
 #~ msgid "_Next Tab"
 #~ msgstr "اللسان ال_تالي"
@@ -3149,8 +3149,8 @@ msgstr "أغ_لق النافذة"
 #~ msgid "Background image _scrolls"
 #~ msgstr "صورة الخلفية ت_لتف"
 
-#~ msgid "_Transparent background"
-#~ msgstr "خلفية _شفافة"
+msgid "Transparent background"
+msgstr "خلفية شفافة"
 
 #~ msgid "S_hade transparent or image background:"
 #~ msgstr "_ظلل شفافية أو صورة الخلفية:"

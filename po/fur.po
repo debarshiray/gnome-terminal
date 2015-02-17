@@ -631,6 +631,10 @@ msgstr ""
 msgid "Which encoding to use"
 msgstr "Codifiche di doprâ"
 
+#: ../src/gnome-terminal.glade2.h:86
+msgid "Transparent background"
+msgstr "Fondâl trasparent"
+
 #: ../src/org.gnome.Terminal.gschema.xml.h:63
 msgid ""
 "Whether ambiguous-width characters are narrow or wide when using UTF-8 "
@@ -3118,8 +3122,8 @@ msgstr "_Siere barcon"
 #~ msgid "Close Tab"
 #~ msgstr "Siere schede"
 
-#~ msgid "Set Title"
-#~ msgstr "Imposte titul"
+msgid "Set Title"
+msgstr "Imposte titul"
 
 #~ msgid "Switch to Tab 2"
 #~ msgstr "Passe a la schede 2"
@@ -3182,8 +3186,8 @@ msgstr "_Siere barcon"
 #~ msgid "_Input Methods"
 #~ msgstr "_Cemût inserî test"
 
-#~ msgid "_Title:"
-#~ msgstr "_Titul:"
+msgid "_Title:"
+msgstr "_Titul:"
 
 #~ msgid ""
 #~ "text/plain dropped on terminal had wrong format (%d) or length (%d)\n"
@@ -3248,8 +3252,8 @@ msgstr "_Siere barcon"
 #~ msgid "Show Menu_bar"
 #~ msgstr "Mostre ba_re di menu"
 
-#~ msgid "_Set Title..."
-#~ msgstr "_Imposte titul..."
+msgid "_Set Title…"
+msgstr "_Imposte titul…"
 
 #~ msgid "_Next Tab"
 #~ msgstr "Schede di _dopo"

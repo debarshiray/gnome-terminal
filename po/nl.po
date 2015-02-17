@@ -2345,3 +2345,18 @@ msgstr ""
 #: ../src/terminal-window.c:3953
 msgid "C_lose Window"
 msgstr "Venster sl_uiten"
+
+msgid "Title"
+msgstr "Titel"
+
+msgid "_Title:"
+msgstr "_Titel:"
+
+msgid "Set Title"
+msgstr "Titel instellen"
+
+msgid "_Set Title…"
+msgstr "Titel _instellen…"
+
+msgid "Transparent background"
+msgstr "Transparante achtergrond"

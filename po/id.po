@@ -2298,3 +2298,18 @@ msgstr ""
 #: ../src/terminal-window.c:3953
 msgid "C_lose Window"
 msgstr "Tutup Jende_la"
+
+msgid "Transparent background"
+msgstr "Latar belakang transparan"
+
+msgid "Title"
+msgstr "Judul"
+
+msgid "_Title:"
+msgstr "_Judul:"
+
+msgid "Set Title"
+msgstr "Atur Judul"
+
+msgid "_Set Title…"
+msgstr "_Atur Judul…"

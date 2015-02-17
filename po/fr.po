@@ -2355,3 +2355,18 @@ msgstr "Fermer _la fenêtre"
 
 #~ msgid "_Same as text color"
 #~ msgstr "_Même couleur que le texte"
+
+msgid "Transparent background"
+msgstr "Arrière-plan transparent"
+
+msgid "Title"
+msgstr "Titre"
+
+msgid "_Title:"
+msgstr "_Titre :"
+
+msgid "Set Title"
+msgstr "Définir le titre"
+
+msgid "_Set Title…"
+msgstr "_Modifier le titre…"

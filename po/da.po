@@ -2311,3 +2311,17 @@ msgstr ""
 msgid "C_lose Window"
 msgstr "_Luk vindue"
 
+msgid "Title"
+msgstr "Titel"
+
+msgid "_Title:"
+msgstr "_Titel:"
+
+msgid "Set Title"
+msgstr "Sæt titel"
+
+msgid "_Set Title…"
+msgstr "_Sæt titel …"
+
+msgid "Transparent background"
+msgstr "Gennemsigtig baggrund"

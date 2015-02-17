@@ -2284,3 +2284,18 @@ msgstr ""
 #: ../src/terminal-window.c:3953
 msgid "C_lose Window"
 msgstr "_Lukk vindu"
+
+msgid "Transparent background"
+msgstr "Gjennomsiktig bakgrunn"
+
+msgid "Title"
+msgstr "Tittel"
+
+msgid "_Title:"
+msgstr "_Tittel:"
+
+msgid "Set Title"
+msgstr "Sett tittel"
+
+msgid "_Set Title…"
+msgstr "_Sett tittel …"
