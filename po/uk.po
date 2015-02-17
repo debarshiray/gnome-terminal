@@ -2353,11 +2353,11 @@ msgstr "Закр_ити вікно"
 #~ msgid "Default size:"
 #~ msgstr "Типовий розмір:"
 
-#~ msgid "Title"
-#~ msgstr "Заголовок"
+msgid "Title"
+msgstr "Заголовок"
 
-#~ msgid "_Title:"
-#~ msgstr "За_головок:"
+msgid "_Title:"
+msgstr "За_головок:"
 
 #~ msgid "Title and Command"
 #~ msgstr "Заголовок та команда"
@@ -2365,14 +2365,14 @@ msgstr "Закр_ити вікно"
 #~ msgid "_Unlimited"
 #~ msgstr "_Нескінченно"
 
-#~ msgid "Set Title"
-#~ msgstr "Встановлення заголовка"
+msgid "Set Title"
+msgstr "Встановлення заголовка"
 
 #~ msgid "Current Locale"
 #~ msgstr "Теперішня локаль"
 
-#~ msgid "_Set Title…"
-#~ msgstr "_Встановити заголовок…"
+msgid "_Set Title…"
+msgstr "_Встановити заголовок…"
 
 #~ msgid "_Next Tab"
 #~ msgstr "_Наступна вкладка"
@@ -3134,8 +3134,8 @@ msgstr "Закр_ити вікно"
 #~ msgid "_Solid color"
 #~ msgstr "_Суцільний колір"
 
-#~ msgid "_Transparent background"
-#~ msgstr "П_розоре тло"
+msgid "Transparent background"
+msgstr "Прозоре тло"
 
 #~ msgid "Switch to Tab 2"
 #~ msgstr "До вкладки 2"

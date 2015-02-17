@@ -2696,17 +2696,17 @@ msgstr "P_echar a xanela"
 #~ msgid "Default size:"
 #~ msgstr "Tamaño predeterminado:"
 
-#~ msgid "Title"
-#~ msgstr "Título"
+msgid "Title"
+msgstr "Título"
 
-#~ msgid "_Title:"
-#~ msgstr "_Título:"
+msgid "_Title:"
+msgstr "_Título:"
 
 #~ msgid "Title and Command"
 #~ msgstr "Título e orde"
 
-#~ msgid "Set Title"
-#~ msgstr "Definir o título"
+msgid "Set Title"
+msgstr "Definir o título"
 
 #~ msgid "Current Locale"
 #~ msgstr "Configuración rexional actual"
@@ -3520,8 +3520,8 @@ msgstr "P_echar a xanela"
 #~ msgid "Background image _scrolls"
 #~ msgstr "A imaxe de fondo _desprázase"
 
-#~ msgid "_Transparent background"
-#~ msgstr "Fondo _transparente"
+msgid "Transparent background"
+msgstr "Fondo transparente"
 
 #~ msgid "S_hade transparent or image background:"
 #~ msgstr "_Sombra transparente ou imaxe de fondo:"

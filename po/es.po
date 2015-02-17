@@ -2738,17 +2738,17 @@ msgstr "_Cerrar ventana"
 #~ msgid "Default size:"
 #~ msgstr "Tamaño predeterminado:"
 
-#~ msgid "Title"
-#~ msgstr "Título"
+msgid "Title"
+msgstr "Título"
 
-#~ msgid "_Title:"
-#~ msgstr "_Título:"
+msgid "_Title:"
+msgstr "_Título:"
 
 #~ msgid "Title and Command"
 #~ msgstr "Título y comando"
 
-#~ msgid "Set Title"
-#~ msgstr "Establecer título"
+msgid "Set Title"
+msgstr "Establecer título"
 
 #~ msgid "Current Locale"
 #~ msgstr "Configuración regional actual"
@@ -3574,8 +3574,8 @@ msgstr "_Cerrar ventana"
 #~ msgid "_Solid color"
 #~ msgstr "Color _sólido"
 
-#~ msgid "_Transparent background"
-#~ msgstr "Fondo _transparente"
+msgid "Transparent background"
+msgstr "Fondo transparente"
 
 #~ msgid "No such profile \"%s\", using default profile\n"
 #~ msgstr "No existe el perfil «%s», usando el perfil predeterminado\n"

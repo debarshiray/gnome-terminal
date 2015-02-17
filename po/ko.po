@@ -2306,3 +2306,15 @@ msgstr "창 닫기(_L)"
 
 #~ msgid "Verbose output"
 #~ msgstr "많이 출력"
+
+msgid "Transparent background"
+msgstr "투명한 배경"
+
+msgid "Title"
+msgstr "제목"
+
+msgid "_Title:"
+msgstr "제목(_T):"
+
+msgid "Set Title"
+msgstr "제목 설정"

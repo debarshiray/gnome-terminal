@@ -1304,8 +1304,8 @@ msgid "_Base on:"
 msgstr "_Basáu en:"
 
 #: ../src/profile-preferences.glade.h:1
-msgid "<b>Command</b>"
-msgstr "<b>Comandu</b>"
+msgid "Command"
+msgstr "Comandu"
 
 #: ../src/profile-preferences.glade.h:2
 msgid "<b>Foreground, Background, Bold and Underline</b>"
@@ -1598,8 +1598,8 @@ msgid "_Text color:"
 msgstr "Color del _testu:"
 
 #: ../src/profile-preferences.glade.h:77
-msgid "_Transparent background"
-msgstr "Fondu _tresparente"
+msgid "Transparent background"
+msgstr "Fondu tresparente"
 
 #: ../src/profile-preferences.glade.h:78
 msgid "_Underline color:"

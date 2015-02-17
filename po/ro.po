@@ -3358,8 +3358,8 @@ msgstr "Î_nchide fereastra"
 #~ msgid "_Solid color"
 #~ msgstr "Culoare _solidă"
 
-#~ msgid "_Transparent background"
-#~ msgstr "Fundal _transparent"
+msgid "Transparent background"
+msgstr "Fundal transparent"
 
 #~ msgid "_Unlimited"
 #~ msgstr "_Neliminat"

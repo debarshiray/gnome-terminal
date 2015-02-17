@@ -2559,3 +2559,15 @@ msgstr "Tutup Jende_la"
 
 #~ msgid "_Add or Remove…"
 #~ msgstr "T_ambah atau Hapus…"
+
+msgid "Transparent background"
+msgstr "Latar belakang transparan"
+
+msgid "Title"
+msgstr "Judul"
+
+msgid "_Title:"
+msgstr "_Judul:"
+
+msgid "Set Title"
+msgstr "Atur Judul"

@@ -227,8 +227,8 @@ msgstr "<b>LatarBelakang</b>"
 # help-browser/toc-man.c:19
 # help-browser/toc2-man.c:21
 #: ../src/gnome-terminal.glade2.h:2
-msgid "<b>Command</b>"
-msgstr "<b>Arahan</b>"
+msgid "Command"
+msgstr "Arahan"
 
 #: ../src/gnome-terminal.glade2.h:3
 msgid "<b>Compatibility</b>"
@@ -631,8 +631,8 @@ msgid "_Text color:"
 msgstr "Warna _Teks:"
 
 #: ../src/gnome-terminal.glade2.h:102
-msgid "_Transparent background"
-msgstr "LatarBelakang _Telus"
+msgid "Transparent background"
+msgstr "LatarBelakang Telus"
 
 #: ../src/gnome-terminal.glade2.h:103
 msgid "_Update login records when command is launched"

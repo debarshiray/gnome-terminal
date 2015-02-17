@@ -2527,3 +2527,19 @@ msgstr "Aizvērt _logu"
 
 #~ msgid "_Add or Remove…"
 #~ msgstr "_Pievienot vai izņemt…"
+
+msgid "Transparent background"
+msgstr "Caurspīdīgs fons"
+
+msgid "Title"
+msgstr "Nosaukums"
+
+msgid "_Title:"
+msgstr "_Nosaukums:"
+
+msgctxt "title"
+msgid "'Terminal'"
+msgstr "“Terminālis”"
+
+msgid "Set Title"
+msgstr "Iestatīt nosaukumu"

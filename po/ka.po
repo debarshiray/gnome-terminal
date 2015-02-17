@@ -219,8 +219,8 @@ msgid "<b>Background</b>"
 msgstr "b>ფონი</b>"
 
 #: ../src/gnome-terminal.glade2.h:3
-msgid "<b>Command</b>"
-msgstr "<b>ბრძანება</b>"
+msgid "Command"
+msgstr "ბრძანება"
 
 #: ../src/gnome-terminal.glade2.h:4
 msgid "<b>Compatibility</b>"
@@ -569,7 +569,7 @@ msgstr "_ტექსტის ფერი:"
 
 #: ../src/gnome-terminal.glade2.h:86
 #, fuzzy
-msgid "_Transparent background"
+msgid "Transparent background"
 msgstr "გამჭირვალე"
 
 #: ../src/gnome-terminal.glade2.h:87

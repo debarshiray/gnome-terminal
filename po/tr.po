@@ -2570,3 +2570,15 @@ msgstr "_Pencereyi Kapat"
 
 #~ msgid "_Same as text color"
 #~ msgstr "_Metin rengiyle aynı"
+
+msgid "Transparent background"
+msgstr "Şeffaf arkaplan"
+
+msgid "_Title:"
+msgstr "_Başlık:"
+
+msgid "Set Title"
+msgstr "Başlığı Düzenle"
+
+msgid "_Set Title…"
+msgstr "_Başlığı Ata..."

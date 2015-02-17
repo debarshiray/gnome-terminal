@@ -2916,3 +2916,15 @@ msgstr "_Zavrieť okno"
 #~ "\n"
 #~ "Viac informácii o jednotlivých príkazoch získate pomocou „%s PRÍKAZ --"
 #~ "help“.\n"
+
+msgid "Transparent background"
+msgstr "Priehľadné pozadie"
+
+msgid "Title"
+msgstr "Titulok"
+
+msgid "_Title:"
+msgstr "_Titulok:"
+
+msgid "Set Title"
+msgstr "Nastaviť titulok"

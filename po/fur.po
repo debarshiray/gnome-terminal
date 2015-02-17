@@ -445,6 +445,10 @@ msgstr ""
 msgid "Which encoding to use"
 msgstr "Codifiche di doprâ"
 
+#: ../src/gnome-terminal.glade2.h:86
+msgid "Transparent background"
+msgstr "Fondâl trasparent"
+
 #: ../src/org.gnome.Terminal.gschema.xml.h:66
 msgid ""
 "Whether ambiguous-width characters are narrow or wide when using UTF-8 "
@@ -3384,6 +3388,9 @@ msgstr "_Siere barcon"
 #~ msgid "The text you clicked on doesn't seem to be a valid OTP challenge."
 #~ msgstr "Il test fracât nol samee jessi un OTP challenge."
 
+msgid "Set Title"
+msgstr "Imposte titul"
+
 #~ msgid "Switch to Tab 3"
 #~ msgstr "Passe a la schede 3"
 
@@ -3439,8 +3446,8 @@ msgstr "_Siere barcon"
 #~ msgid "_Input Methods"
 #~ msgstr "_Cemût inserî test"
 
-#~ msgid "_Title:"
-#~ msgstr "_Titul:"
+msgid "_Title:"
+msgstr "_Titul:"
 
 #~ msgid ""
 #~ "text/plain dropped on terminal had wrong format (%d) or length (%d)\n"

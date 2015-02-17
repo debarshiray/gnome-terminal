@@ -2574,3 +2574,13 @@ msgstr "_Zatvori prozor"
 
 #~ msgid "Use transparency from system theme"
 #~ msgstr "Koristi prozirnost iz teme sustava"
+
+#: ../src/profile-preferences.glade.h:69
+msgid "Transparent background"
+msgstr "Prozirna pozadina"
+
+msgid "_Title:"
+msgstr "_Naslov:"
+
+msgid "Set Title"
+msgstr "Postavi naslov"

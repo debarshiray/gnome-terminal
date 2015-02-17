@@ -2219,8 +2219,8 @@ msgstr "चौकट बंद करा (_l)"
 #~ msgid "Default size:"
 #~ msgstr "पूर्वनिर्धारीत आकार:"
 
-#~ msgid "Title"
-#~ msgstr "शीर्षक"
+msgid "Title"
+msgstr "शीर्षक"
 
 #~ msgid "When terminal commands set their o_wn titles:"
 #~ msgstr "जेव्हा टर्मिनल आदेश स्वतःचे शिर्षक निश्चित करते (_w):"
@@ -2240,8 +2240,8 @@ msgstr "चौकट बंद करा (_l)"
 #~ msgid "Close Window"
 #~ msgstr "चौकट बंद करा"
 
-#~ msgid "Set Title"
-#~ msgstr "शिर्षक निश्चित करा"
+msgid "Set Title"
+msgstr "शिर्षक निश्चित करा"
 
 #~ msgid "The shortcut key “%s” is already bound to the “%s” action"
 #~ msgstr "“%s” ही शार्टकट कि “%s” या कृतीशी संलग्न आहे"
@@ -2267,8 +2267,8 @@ msgstr "चौकट बंद करा (_l)"
 #~ msgid "_Input Methods"
 #~ msgstr "इनपुट पध्दती (_I)"
 
-#~ msgid "_Title:"
-#~ msgstr "शिर्षक (_T):"
+msgid "_Title:"
+msgstr "शिर्षक (_T):"
 
 #~ msgid "Keyboard shortcut to switch to tab 1"
 #~ msgstr "टॅब 1 वापरण्याकरीता कळफलक शॉर्टकट"
@@ -3015,8 +3015,8 @@ msgstr "चौकट बंद करा (_l)"
 #~ msgid "_Solid color"
 #~ msgstr "गडद रंग (_S)"
 
-#~ msgid "_Transparent background"
-#~ msgstr "पारदर्शी पार्श्वभूमी(_T)"
+msgid "Transparent background"
+msgstr "पारदर्शी पार्श्वभूमी"
 
 #~ msgid "Disabled"
 #~ msgstr "अकार्यान्वीतित"

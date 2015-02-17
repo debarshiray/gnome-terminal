@@ -1747,3 +1747,6 @@ msgstr "Su_lge aken"
 
 #~ msgid "Choose base profile"
 #~ msgstr "Vali põhiprofiil"
+
+msgid "Transparent background"
+msgstr "Läbipaistev taust"

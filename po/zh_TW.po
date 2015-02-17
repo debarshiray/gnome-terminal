@@ -2584,17 +2584,17 @@ msgstr "關閉視窗(_L)"
 #~ msgid "Default size:"
 #~ msgstr "預設大小："
 
-#~ msgid "Title"
-#~ msgstr "標題"
+msgid "Title"
+msgstr "標題"
 
-#~ msgid "_Title:"
-#~ msgstr "標題(_T):"
+msgid "_Title:"
+msgstr "標題(_T):"
 
 #~ msgid "Title and Command"
 #~ msgstr "標題及指令"
 
-#~ msgid "Set Title"
-#~ msgstr "設定標題"
+msgid "Set Title"
+msgstr "設定標題"
 
 #~ msgid "Current Locale"
 #~ msgstr "目前的地區設定"
@@ -2806,3 +2806,6 @@ msgstr "關閉視窗(_L)"
 
 #~ msgid "Show session management options"
 #~ msgstr "顯示作業階段管理選項"
+
+msgid "Transparent background"
+msgstr "透明背景"

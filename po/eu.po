@@ -2172,3 +2172,14 @@ msgstr "Oraindik prozesu bat exekutatzen ari da terminal honetan. Terminal hau i
 msgid "C_lose Window"
 msgstr "It_xi leihoa"
 
+msgid "Title"
+msgstr "Titulua"
+
+msgid "_Title:"
+msgstr "_Titulua:"
+
+msgid "Set Title"
+msgstr "Ezarri titulua"
+
+msgid "Transparent background"
+msgstr "Atzeko plano gardena"
