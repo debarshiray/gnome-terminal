@@ -2364,3 +2364,15 @@ msgstr "Fenster _schließen"
 
 #~ msgid "_Quit"
 #~ msgstr "_Beenden"
+
+msgid "Title"
+msgstr "Titel"
+
+msgid "_Title:"
+msgstr "_Titel:"
+
+msgid "Set Title"
+msgstr "Titel festlegen"
+
+msgid "Transparent background"
+msgstr "Transparenter Hintergrund"

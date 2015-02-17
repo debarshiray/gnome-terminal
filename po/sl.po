@@ -2680,17 +2680,17 @@ msgstr "_Zapri okno"
 #~ msgid "Default size:"
 #~ msgstr "Privzeta velikost:"
 
-#~ msgid "Title"
-#~ msgstr "Naslov"
+msgid "Title"
+msgstr "Naslov"
 
-#~ msgid "_Title:"
-#~ msgstr "_Naziv:"
+msgid "_Title:"
+msgstr "_Naziv:"
 
 #~ msgid "Title and Command"
 #~ msgstr "Naziv in ukaz"
 
-#~ msgid "Set Title"
-#~ msgstr "Določitev naziva okna"
+msgid "Set Title"
+msgstr "Določitev naziva okna"
 
 #~ msgid "Current Locale"
 #~ msgstr "Trenutne jezikovne nastavitve"
@@ -2805,3 +2805,6 @@ msgstr "_Zapri okno"
 
 #~ msgid "_Profile Preferences…"
 #~ msgstr "Možnosti _profila ..."
+
+msgid "Transparent background"
+msgstr "Prosojno ozadje"

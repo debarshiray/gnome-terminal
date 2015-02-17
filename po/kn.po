@@ -2261,8 +2261,8 @@ msgstr "ಕಿಟಕಿಯನ್ನು ಮುಚ್ಚು  (_l)"
 #~ msgid "Use custom default terminal si_ze"
 #~ msgstr "ಅಗತ್ಯಾನುಗುಣ ಆದೇಶತೆರೆ ಗಾತ್ರವನ್ನು ಬಳಸು (_z)"
 
-#~ msgid "Title"
-#~ msgstr "ಶೀರ್ಷಿಕೆ"
+msgid "Title"
+msgstr "ಶೀರ್ಷಿಕೆ"
 
 #~ msgid "When terminal commands set their o_wn titles:"
 #~ msgstr "ಆದೇಶಗಳು ತಮ್ಮದೆ ಆದ ಹೆಸರಗಳನ್ನು ಇರಿಸಿಕೊಂಡಾಗ (_w):"
@@ -2282,8 +2282,8 @@ msgstr "ಕಿಟಕಿಯನ್ನು ಮುಚ್ಚು  (_l)"
 #~ msgid "Close Window"
 #~ msgstr "ಕಿಟಕಿಯನ್ನು ಮುಚ್ಚು"
 
-#~ msgid "Set Title"
-#~ msgstr "ಶೀರ್ಷಿಕೆಯನ್ನು ನೀಡು"
+msgid "Set Title"
+msgstr "ಶೀರ್ಷಿಕೆಯನ್ನು ನೀಡು"
 
 #~ msgid "Switch to Tab 2"
 #~ msgstr "2 ನೆ ಟ್ಯಾಬ್‌ಗೆ ಬದಲಾಯಿಸಿ"
@@ -2342,5 +2342,8 @@ msgstr "ಕಿಟಕಿಯನ್ನು ಮುಚ್ಚು  (_l)"
 #~ msgid "_Input Methods"
 #~ msgstr "ಇನ್‌ಪುಟ್ ಕ್ರಮಗಳು (_I)"
 
-#~ msgid "_Title:"
-#~ msgstr "ಶೀರ್ಷಿಕೆ(_T):"
+msgid "_Title:"
+msgstr "ಶೀರ್ಷಿಕೆ(_T):"
+
+msgid "Transparent background"
+msgstr "ಪಾರದರ್ಶಕ ಹಿನ್ನಲೆ"

@@ -2337,3 +2337,14 @@ msgstr "_Luk vindue"
 #~ msgid "Open the terminal file manager Midnight Commander"
 #~ msgstr "Åbn terminalfilhåndteringen Midnight Commander"
 
+msgid "Title"
+msgstr "Titel"
+
+msgid "_Title:"
+msgstr "_Titel:"
+
+msgid "Set Title"
+msgstr "Sæt titel"
+
+msgid "Transparent background"
+msgstr "Gennemsigtig baggrund"

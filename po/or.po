@@ -2705,8 +2705,8 @@ msgstr "ଶୀର୍ଷକ (_T):"
 #~ msgid "Background image _scrolls"
 #~ msgstr "ପୃଷ୍ଠଭୂମି ଚିତ୍ର ସ୍କ୍ରୋଲଗୁଡିକ (_s)"
 
-#~ msgid "_Transparent background"
-#~ msgstr "ସ୍ବଚ୍ଛ ପୃଷ୍ଠଭୂମି (_T)"
+msgid "Transparent background"
+msgstr "ସ୍ବଚ୍ଛ ପୃଷ୍ଠଭୂମି"
 
 #~ msgid "S_hade transparent or image background:"
 #~ msgstr "ଛାୟା ସ୍ବଚ୍ଛ କିମ୍ବା ଚିତ୍ର ପୃଷ୍ଠଭୂମି (_h):"

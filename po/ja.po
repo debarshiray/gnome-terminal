@@ -2524,3 +2524,15 @@ msgstr "ウィンドウを閉じる(_L)"
 
 #~ msgid "_Add or Remove…"
 #~ msgstr "追加/削除(_A)…"
+
+msgid "Transparent background"
+msgstr "透過な画像にする"
+
+msgid "Title"
+msgstr "タイトル"
+
+msgid "_Title:"
+msgstr "タイトル(_T):"
+
+msgid "Set Title"
+msgstr "タイトルを設定する"

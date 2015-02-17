@@ -2796,8 +2796,8 @@ msgstr "C_lose Window"
 #~ msgid "Default size:"
 #~ msgstr "Default size:"
 
-#~ msgid "Title"
-#~ msgstr "Title"
+msgid "Title"
+msgstr "Title"
 
 #~ msgid "When terminal commands set their o_wn titles:"
 #~ msgstr "When terminal commands set their o_wn titles:"
@@ -2814,8 +2814,8 @@ msgstr "C_lose Window"
 #~ msgid "_Unlimited"
 #~ msgstr "_Unlimited"
 
-#~ msgid "Set Title"
-#~ msgstr "Set Title"
+msgid "Set Title"
+msgstr "Set Title"
 
 #~ msgid "Switch to Tab 3"
 #~ msgstr "Switch to Tab 3"
@@ -2856,8 +2856,8 @@ msgstr "C_lose Window"
 #~ msgid "_Input Methods"
 #~ msgstr "_Input Methods"
 
-#~ msgid "_Title:"
-#~ msgstr "_Title:"
+msgid "_Title:"
+msgstr "_Title:"
 
 #~ msgid "Add or Remove Terminal Encodings"
 #~ msgstr "Add or Remove Terminal Encodings"
@@ -3552,8 +3552,8 @@ msgstr "C_lose Window"
 #~ msgid "Background image _scrolls"
 #~ msgstr "Background image _scrolls"
 
-#~ msgid "_Transparent background"
-#~ msgstr "_Transparent background"
+msgid "Transparent background"
+msgstr "Transparent background"
 
 #~ msgid "S_hade transparent or image background:"
 #~ msgstr "S_hade transparent or image background:"

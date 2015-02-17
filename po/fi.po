@@ -2591,9 +2591,21 @@ msgstr "_Sulje ikkuna"
 #~ msgid "_Update login records when command is launched"
 #~ msgstr "_Päivitä kirjautumistallenne kun komento käynnistetään"
 
+msgid "Transparent background"
+msgstr "Läpinäkyvä tausta"
+
 #~| msgid "Error parsing command: %s"
 #~ msgid "Missing command"
 #~ msgstr "Puuttuva komento"
 
 #~ msgid "Whether to use a dark theme variant"
 #~ msgstr "Käytetäänkö teeman tummaan muunnelmaa"
+
+msgid "Title"
+msgstr "Otsikko"
+
+msgid "_Title:"
+msgstr "_Otsikko:"
+
+msgid "Set Title"
+msgstr "Aseta otsikko"

@@ -2705,17 +2705,17 @@ msgstr "_Fechar janela"
 #~ msgid "Default size:"
 #~ msgstr "Tamanho padrão:"
 
-#~ msgid "Title"
-#~ msgstr "Título"
+msgid "Title"
+msgstr "Título"
 
-#~ msgid "_Title:"
-#~ msgstr "_Título:"
+msgid "_Title:"
+msgstr "_Título:"
 
 #~ msgid "Title and Command"
 #~ msgstr "Título e comando"
 
-#~ msgid "Set Title"
-#~ msgstr "Definir título"
+msgid "Set Title"
+msgstr "Definir título"
 
 #~ msgid "Current Locale"
 #~ msgstr "Codificação atual"
@@ -3341,3 +3341,6 @@ msgstr "_Fechar janela"
 #~ "terminal poderão usar. Essa é a paleta, na forma de uma lista de nomes de "
 #~ "cores separada por dois pontos. Os nomes de cores devem estar no formato "
 #~ "hexadecimal. Exemplo: \"#FF00FF\""
+
+msgid "Transparent background"
+msgstr "Fundo transparente"

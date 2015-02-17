@@ -2589,3 +2589,15 @@ msgstr "_Užverti langą"
 
 #~ msgid "Whether to use a dark theme variant"
 #~ msgstr "Ar naudoti tamsų temos variantą"
+
+msgid "Transparent background"
+msgstr "Permatomas fonas"
+
+msgid "Title"
+msgstr "Pavadinimas"
+
+msgid "_Title:"
+msgstr "_Pavadinimas:"
+
+msgid "Set Title"
+msgstr "Nustatyti pavadinimą"

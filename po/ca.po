@@ -2315,3 +2315,15 @@ msgstr ""
 #: ../src/terminal-window.c:3246
 msgid "C_lose Window"
 msgstr "Tanca la _finestra"
+
+msgid "Transparent background"
+msgstr "Fons transparent"
+
+msgid "Title"
+msgstr "Títol"
+
+msgid "_Title:"
+msgstr "Tít_ol:"
+
+msgid "Set Title"
+msgstr "Estableix el títol"

@@ -2582,5 +2582,17 @@ msgstr "Stän_g fönster"
 #~ msgid "Unknown completion request for \"%s\""
 #~ msgstr "Okänd kompletteringsbegäran för \"%s\""
 
+msgid "Transparent background"
+msgstr "Genomskinlig bakgrund"
+
 #~ msgid "Missing command"
 #~ msgstr "Kommando saknas"
+
+msgid "_Title:"
+msgstr "_Titel:"
+
+msgid "Set Title"
+msgstr "Ställ in titel"
+
+msgid "_Set Title…"
+msgstr "A_nge titel..."
