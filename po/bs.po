@@ -680,6 +680,10 @@ msgstr "Kratica tastature za povećavanje fonta"
 msgid "Keyboard shortcut to make font smaller"
 msgstr "Kratica tastature za smanjivanje fonta"
 
+#: ../src/gnome-terminal.glade2.h:102
+msgid "Transparent background"
+msgstr "Providna pozadina"
+
 #: ../src/org.gnome.Terminal.gschema.xml.h:78
 msgid "Keyboard shortcut to make font normal-size"
 msgstr "Kratica tastature za postavljanje fonta na normalnu veličinu"
@@ -2054,3 +2058,9 @@ msgstr ""
 #: ../src/terminal-window.c:3652
 msgid "C_lose Window"
 msgstr "_Zatvori prozor"
+
+msgid "_Title:"
+msgstr "_Naslov:"
+
+msgid "Set Title"
+msgstr "Postavi naslov"

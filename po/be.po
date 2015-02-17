@@ -2392,3 +2392,6 @@ msgstr "_Закрыць акно"
 
 #~ msgid "_Set Title…"
 #~ msgstr "Прызначыць _загаловак..."
+
+msgid "Transparent background"
+msgstr "Празрысты фон"

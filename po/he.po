@@ -2333,17 +2333,17 @@ msgstr "סגירת ה_חלון"
 #~ msgid "Default size:"
 #~ msgstr "גודל בררת מחדל:"
 
-#~ msgid "Title"
-#~ msgstr "כותרת"
+msgid "Title"
+msgstr "כותרת"
 
-#~ msgid "_Title:"
-#~ msgstr "_כותרת:"
+msgid "_Title:"
+msgstr "_כותרת:"
 
 #~ msgid "Title and Command"
 #~ msgstr "כותרת ופקודה"
 
-#~ msgid "Set Title"
-#~ msgstr "הגדרת כותרת"
+msgid "Set Title"
+msgstr "הגדרת כותרת"
 
 #~ msgid "Current Locale"
 #~ msgstr "השפה הנוכחית"
@@ -3194,8 +3194,8 @@ msgstr "סגירת ה_חלון"
 #~ msgid "_Solid color"
 #~ msgstr "צבע _אחיד"
 
-#~ msgid "_Transparent background"
-#~ msgstr "רקע _שקוף"
+msgid "Transparent background"
+msgstr "רקע שקוף"
 
 #~ msgid "No such profile \"%s\", using default profile\n"
 #~ msgstr "No such profile \"%s\", using default profile\n"

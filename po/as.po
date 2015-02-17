@@ -2163,11 +2163,11 @@ msgstr "উইন্ডো বন্ধ কৰক (_l)"
 #~ msgid "Default size:"
 #~ msgstr "অবিকল্পিত আকাৰ:"
 
-#~ msgid "Title"
-#~ msgstr "শীৰ্ষক"
+msgid "Title"
+msgstr "শীৰ্ষক"
 
-#~ msgid "_Title:"
-#~ msgstr "শীৰ্ষক (_T):"
+msgid "_Title:"
+msgstr "শীৰ্ষক (_T):"
 
 #~ msgid "Title and Command"
 #~ msgstr "শীৰ্ষক আৰু কমান্ড"
@@ -2175,8 +2175,8 @@ msgstr "উইন্ডো বন্ধ কৰক (_l)"
 #~ msgid "_Unlimited"
 #~ msgstr "অসীমিত (_U)"
 
-#~ msgid "Set Title"
-#~ msgstr "শীৰ্ষক নিৰ্ধাৰণ কৰক"
+msgid "Set Title"
+msgstr "শীৰ্ষক নিৰ্ধাৰণ কৰক"
 
 #~ msgid "Current Locale"
 #~ msgstr "বৰ্তমান স্থানীয়"
@@ -2979,8 +2979,8 @@ msgstr "উইন্ডো বন্ধ কৰক (_l)"
 #~ msgid "Background image _scrolls"
 #~ msgstr "পটভূমিৰ ছবি স্ক্ৰল কৰক (_s)"
 
-#~ msgid "_Transparent background"
-#~ msgstr "স্বচ্চ পটভূমি (_T)"
+msgid "Transparent background"
+msgstr "স্বচ্চ পটভূমি "
 
 #~ msgid "S_hade transparent or image background:"
 #~ msgstr "স্বচ্ছ বা ছবিৰ সৈতে পটভূমি ছায়া আচ্ছন্ন কৰক (_h):"

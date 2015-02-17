@@ -2215,8 +2215,8 @@ msgstr "_Fermi la fenestron"
 #~ msgid "Close Window"
 #~ msgstr "Fermi la fenestron"
 
-#~ msgid "Set Title"
-#~ msgstr "Agordi titolon"
+msgid "Set Title"
+msgstr "Agordi titolon"
 
 #~ msgid "Switch to Tab 2"
 #~ msgstr "Ŝalti al langeto 2"
@@ -2299,8 +2299,8 @@ msgstr "_Fermi la fenestron"
 #~ msgid "_Input Methods"
 #~ msgstr "_Enigmetodoj"
 
-#~ msgid "_Title:"
-#~ msgstr "_Titolo:"
+msgid "_Title:"
+msgstr "_Titolo:"
 
 #~ msgid "On the left side"
 #~ msgstr "Maldekstre"

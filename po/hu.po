@@ -2370,3 +2370,15 @@ msgstr "_Ablak bezárása"
 
 #~ msgid "_Profile Preferences"
 #~ msgstr "_Profil beállításai"
+
+msgid "Title"
+msgstr "Cím"
+
+msgid "_Title:"
+msgstr "_Cím:"
+
+msgid "Set Title"
+msgstr "Cím beállítása"
+
+msgid "Transparent background"
+msgstr "Áttetsző háttér"

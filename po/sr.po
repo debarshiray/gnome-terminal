@@ -2341,10 +2341,9 @@ msgstr "_Затвори прозор"
 #~ msgid "GNOME Terminal Client"
 #~ msgstr "Клијент Гномовог терминала"
 
-#~| msgid "Terminal"
-#~ msgctxt "title"
-#~ msgid "'Terminal'"
-#~ msgstr "„Терминал“"
+msgctxt "title"
+msgid "'Terminal'"
+msgstr "„Терминал“"
 
 #~ msgid "Title for terminal"
 #~ msgstr "Наслов за терминал"
@@ -2390,11 +2389,11 @@ msgstr "_Затвори прозор"
 #~ msgid "Default size:"
 #~ msgstr "Основна величина:"
 
-#~ msgid "Title"
-#~ msgstr "Наслов"
+msgid "Title"
+msgstr "Наслов"
 
-#~ msgid "_Title:"
-#~ msgstr "_Наслов:"
+msgid "_Title:"
+msgstr "_Наслов:"
 
 #~ msgid "Title and Command"
 #~ msgstr "Наслов и наредба"
@@ -2402,14 +2401,14 @@ msgstr "_Затвори прозор"
 #~ msgid "_Unlimited"
 #~ msgstr "_Неограничено"
 
-#~ msgid "Set Title"
-#~ msgstr "Постави наслов"
+msgid "Set Title"
+msgstr "Постави наслов"
 
 #~ msgid "Current Locale"
 #~ msgstr "Текући локалитет"
 
-#~ msgid "_Set Title…"
-#~ msgstr "Постави _наслов…"
+msgid "_Set Title…"
+msgstr "Постави _наслов…"
 
 #~ msgid "Always visible"
 #~ msgstr "Увек видљив"
@@ -2431,3 +2430,6 @@ msgstr "_Затвори прозор"
 
 #~ msgid "Close Window"
 #~ msgstr "Затвори прозор"
+
+msgid "Transparent background"
+msgstr "Провидна позадина"

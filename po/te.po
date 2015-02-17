@@ -2055,10 +2055,9 @@ msgstr "కిటికీని మూసివేయి (_l)"
 #~ msgid "Show server options"
 #~ msgstr "సేవకము ఐచ్చికాలను చూపించు"
 
-#, fuzzy
-#~ msgctxt "title"
-#~ msgid "'Terminal'"
-#~ msgstr "టెర్మినల్"
+msgctxt "title"
+msgid "'Terminal'"
+msgstr "టెర్మినల్"
 
 #~ msgid "Title for terminal"
 #~ msgstr "టెర్మినల్ కు శీర్షిక"
@@ -2104,11 +2103,11 @@ msgstr "కిటికీని మూసివేయి (_l)"
 #~ msgid "Default size:"
 #~ msgstr "అప్రమేయ పరిమాణం:"
 
-#~ msgid "Title"
-#~ msgstr "శీర్షిక:"
+msgid "Title"
+msgstr "శీర్షిక:"
 
-#~ msgid "_Title:"
-#~ msgstr "శీర్షిక (_T):"
+msgid "_Title:"
+msgstr "శీర్షిక (_T):"
 
 #~ msgid "Title and Command"
 #~ msgstr "శీర్షిక మరియు ఆదేశం"
@@ -2116,14 +2115,14 @@ msgstr "కిటికీని మూసివేయి (_l)"
 #~ msgid "_Unlimited"
 #~ msgstr "అపరిమితమైన (_U)"
 
-#~ msgid "Set Title"
-#~ msgstr "శీర్షికను అమర్చు"
+msgid "Set Title"
+msgstr "శీర్షికను అమర్చు"
 
 #~ msgid "Current Locale"
 #~ msgstr "ప్రస్తుత స్థానికం"
 
-#~ msgid "_Set Title…"
-#~ msgstr "శీర్షికను అమర్చు... (_S)"
+msgid "_Set Title…"
+msgstr "శీర్షికను అమర్చు... (_S)"
 
 #~ msgid "_Next Tab"
 #~ msgstr "తరువాతి ట్యాబ్(_N)"
@@ -2898,8 +2897,8 @@ msgstr "కిటికీని మూసివేయి (_l)"
 #~ msgid "Background image _scrolls"
 #~ msgstr "నేపథ్యచిత్రము స్క్రాల్స్ (_s)"
 
-#~ msgid "_Transparent background"
-#~ msgstr "పారదర్శక నేపథ్యం (_T)"
+msgid "Transparent background"
+msgstr "పారదర్శక నేపథ్యం"
 
 #~ msgid "S_hade transparent or image background:"
 #~ msgstr "పారదర్శకంగా మారు లేదా చిత్రము బ్యాక్‌గ్రౌండ్ కు మారు(_h):"

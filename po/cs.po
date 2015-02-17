@@ -2358,3 +2358,15 @@ msgstr "_Zavřít okno"
 
 #~ msgid "Legacy European Encodings"
 #~ msgstr "Zastaralá evropská kódování"
+
+msgid "Transparent background"
+msgstr "Průsvitné pozadí"
+
+msgid "Title"
+msgstr "Záhlaví"
+
+msgid "_Title:"
+msgstr "Zá_hlaví:"
+
+msgid "Set Title"
+msgstr "Nastavit záhlaví"
