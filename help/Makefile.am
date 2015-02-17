@@ -35,6 +35,7 @@ HELP_FILES = \
 	pref-profile-encoding.page \
 	pref-scrolling.page \
 	pref-tab-window.page \
+	pref-theme.page \
 	pref-user-input.page \
 	profile.page \
 	prob-reset.page \
