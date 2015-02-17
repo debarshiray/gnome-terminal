@@ -2155,8 +2155,8 @@ msgstr "વિન્ડો બંધ કરો (_l)"
 #~ msgid "Default size:"
 #~ msgstr "મૂળભૂત માપ:"
 
-#~ msgid "Title"
-#~ msgstr "શીર્ષક"
+msgid "Title"
+msgstr "શીર્ષક"
 
 #~ msgid "When terminal commands set their o_wn titles:"
 #~ msgstr "જ્યારે આદેશો તેમના પોતાના શીર્ષકો સુયોજીત કરે (_w):"
@@ -2176,8 +2176,8 @@ msgstr "વિન્ડો બંધ કરો (_l)"
 #~ msgid "Close Window"
 #~ msgstr "વિન્ડો બંધ કરો"
 
-#~ msgid "Set Title"
-#~ msgstr "શીર્ષકની ગોઠવણી કરો"
+msgid "Set Title"
+msgstr "શીર્ષકની ગોઠવણી કરો"
 
 #~ msgid "The shortcut key “%s” is already bound to the “%s” action"
 #~ msgstr "ટુંકાણ કી “%s“ એ પહેલાથી ક્રિયા “%s“ સાથે બંધાયેલી છે"
@@ -2203,8 +2203,8 @@ msgstr "વિન્ડો બંધ કરો (_l)"
 #~ msgid "_Input Methods"
 #~ msgstr "ઈનપુટ માટેની પધ્ધિતિઓ (_I)"
 
-#~ msgid "_Title:"
-#~ msgstr "શીર્ષક (_T):"
+msgid "_Title:"
+msgstr "શીર્ષક (_T):"
 
 #~ msgid "Keyboard shortcut to switch to tab 1"
 #~ msgstr "ટૅબ ૧ પર જવા માટે કીબોર્ડનું ટુંકાણ"
@@ -2944,8 +2944,8 @@ msgstr "વિન્ડો બંધ કરો (_l)"
 #~ msgid "_Solid color"
 #~ msgstr "ઘટ્ટ રંગ (_S)"
 
-#~ msgid "_Transparent background"
-#~ msgstr "પારદર્શક પાશ્વ ભાગનો ભાગ (_T)"
+msgid "Transparent background"
+msgstr "પારદર્શક પાશ્વ ભાગનો ભાગ"
 
 #~ msgid "No such profile \"%s\", using default profile\n"
 #~ msgstr "\"%s\" જેવી કોઈ રૂપરેખા નથી, મૂળભૂત રૂપરેખા વાપરી રહ્યા છે\n"

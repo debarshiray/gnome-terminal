@@ -2552,3 +2552,19 @@ msgstr "_Закрыть окно"
 
 #~ msgid "_Add or Remove…"
 #~ msgstr "_Добавить или удалить…"
+
+msgid "Transparent background"
+msgstr "Прозрачный фон"
+
+msgid "Title"
+msgstr "Заголовок"
+
+msgid "_Title:"
+msgstr "За_головок:"
+
+msgctxt "title"
+msgid "'Terminal'"
+msgstr "'Терминал'"
+
+msgid "Set Title"
+msgstr "Установить заголовок"

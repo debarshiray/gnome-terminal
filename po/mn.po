@@ -217,8 +217,8 @@ msgid "<b>Background</b>"
 msgstr "<b>Дэвсгэр</b>"
 
 #: ../src/gnome-terminal.glade2.h:2
-msgid "<b>Command</b>"
-msgstr "<b>Тушаал</b>"
+msgid "Command"
+msgstr "Тушаал"
 
 #: ../src/gnome-terminal.glade2.h:3
 msgid "<b>Compatibility</b>"
@@ -618,8 +618,8 @@ msgid "_Text color:"
 msgstr "_Текстийн өнгө:"
 
 #: ../src/gnome-terminal.glade2.h:102
-msgid "_Transparent background"
-msgstr "_Тунгалаг дэвсгэр"
+msgid "Transparent background"
+msgstr "Тунгалаг дэвсгэр"
 
 #: ../src/gnome-terminal.glade2.h:103
 msgid "_Update login records when command is launched"
