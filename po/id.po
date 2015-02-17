@@ -2442,3 +2442,15 @@ msgstr "Tutup Jende_la"
 
 #~ msgid "_Detach Tab"
 #~ msgstr "_Pisahkan Tab"
+
+msgid "Transparent background"
+msgstr "Latar belakang transparan"
+
+msgid "Title"
+msgstr "Judul"
+
+msgid "_Title:"
+msgstr "_Judul:"
+
+msgid "Set Title"
+msgstr "Atur Judul"

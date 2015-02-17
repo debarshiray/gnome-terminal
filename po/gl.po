@@ -2445,3 +2445,15 @@ msgstr ""
 #: src/terminal-window.c:3224
 msgid "C_lose Window"
 msgstr "P_echar a xanela"
+
+msgid "Title"
+msgstr "Título"
+
+msgid "_Title:"
+msgstr "_Título:"
+
+msgid "Set Title"
+msgstr "Definir o título"
+
+msgid "Transparent background"
+msgstr "Fondo transparente"

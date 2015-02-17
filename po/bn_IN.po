@@ -2894,8 +2894,8 @@ msgstr "উইন্ডো বন্ধ করুন (_l)"
 #~ msgid "_Unlimited"
 #~ msgstr "সীমাহীন (_U)"
 
-#~ msgid "Set Title"
-#~ msgstr "শিরোনাম নির্ধারণ করুন"
+msgid "Set Title"
+msgstr "শিরোনাম নির্ধারণ করুন"
 
 #~ msgid "Switch to Tab 3"
 #~ msgstr "ট্যাব ৩-এ পরিবর্তন করুন"
@@ -2936,5 +2936,8 @@ msgstr "উইন্ডো বন্ধ করুন (_l)"
 #~ msgid "_Input Methods"
 #~ msgstr "ইনপুট পদ্ধতি (_I)"
 
-#~ msgid "_Title:"
-#~ msgstr "শিরোনাম: (_T)"
+msgid "_Title:"
+msgstr "শিরোনাম: (_T)"
+
+msgid "Transparent background"
+msgstr "স্বচ্চ পটভূমি "

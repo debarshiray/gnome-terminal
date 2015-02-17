@@ -2513,3 +2513,15 @@ msgstr "Fermer _la fenêtre"
 
 #~ msgid "_Detach Tab"
 #~ msgstr "_Détacher l’onglet"
+
+msgid "Transparent background"
+msgstr "Arrière-plan transparent"
+
+msgid "Title"
+msgstr "Titre"
+
+msgid "_Title:"
+msgstr "_Titre :"
+
+msgid "Set Title"
+msgstr "Définir le titre"

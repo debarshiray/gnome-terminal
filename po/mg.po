@@ -220,8 +220,8 @@ msgid "<b>Background</b>"
 msgstr "<b>Afara</b>"
 
 #: ../src/gnome-terminal.glade2.h:3
-msgid "<b>Command</b>"
-msgstr "<b>Baiko</b>"
+msgid "Command"
+msgstr "Baiko"
 
 #: ../src/gnome-terminal.glade2.h:4
 msgid "<b>Compatibility</b>"
@@ -567,8 +567,8 @@ msgid "_Text color:"
 msgstr "Lokon'ny _soratra:"
 
 #: ../src/gnome-terminal.glade2.h:86
-msgid "_Transparent background"
-msgstr "_Afara tatera-pahazavana"
+msgid "Transparent background"
+msgstr "Afara tatera-pahazavana"
 
 #: ../src/gnome-terminal.glade2.h:87
 msgid "_Update login records when command is launched"

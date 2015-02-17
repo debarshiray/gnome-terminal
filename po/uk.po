@@ -2422,3 +2422,18 @@ msgstr ""
 #: src/terminal-window.c:3224
 msgid "C_lose Window"
 msgstr "Закр_ити вікно"
+
+msgid "Title"
+msgstr "Заголовок"
+
+msgid "_Title:"
+msgstr "За_головок:"
+
+msgid "Set Title"
+msgstr "Встановлення заголовка"
+
+msgid "_Set Title…"
+msgstr "_Встановити заголовок…"
+
+msgid "Transparent background"
+msgstr "Прозоре тло"
