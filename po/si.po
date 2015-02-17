@@ -218,8 +218,8 @@ msgid "<b>Background</b>"
 msgstr "<b>පසුබිම</b>"
 
 #: ../src/gnome-terminal.glade2.h:3
-msgid "<b>Command</b>"
-msgstr "<b>විධානය</b>"
+msgid "Command"
+msgstr "විධානය"
 
 #: ../src/gnome-terminal.glade2.h:4
 msgid "<b>Compatibility</b>"
@@ -538,8 +538,8 @@ msgid "_Text color:"
 msgstr "පෙළ වර්‍ණ: (_T)"
 
 #: ../src/gnome-terminal.glade2.h:86
-msgid "_Transparent background"
-msgstr "විනිවිද පෙනෙන පසුබිම (_T)"
+msgid "Transparent background"
+msgstr "විනිවිද පෙනෙන පසුබිම"
 
 #: ../src/gnome-terminal.glade2.h:87
 msgid "_Update login records when command is launched"

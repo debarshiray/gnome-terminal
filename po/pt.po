@@ -2360,11 +2360,11 @@ msgstr "Fechar jane_la"
 #~ msgid "Default size:"
 #~ msgstr "Tamanho predefinido:"
 
-#~ msgid "Title"
-#~ msgstr "Título"
+msgid "Title"
+msgstr "Título"
 
-#~ msgid "_Title:"
-#~ msgstr "_Título:"
+msgid "_Title:"
+msgstr "_Título:"
 
 #~ msgid "Title and Command"
 #~ msgstr "Título e comando"
@@ -2372,8 +2372,8 @@ msgstr "Fechar jane_la"
 #~ msgid "_Unlimited"
 #~ msgstr "_Ilimitado"
 
-#~ msgid "Set Title"
-#~ msgstr "Definir o Título"
+msgid "Set Title"
+msgstr "Definir o Título"
 
 #~ msgid "Current Locale"
 #~ msgstr "Configuração Regional Atual"
@@ -3160,8 +3160,8 @@ msgstr "Fechar jane_la"
 #~ msgid "Background image _scrolls"
 #~ msgstr "Imagem de fundo _rola"
 
-#~ msgid "_Transparent background"
-#~ msgstr "Fundo _transparente"
+msgid "Transparent background"
+msgstr "Fundo transparente"
 
 #~ msgid "S_hade transparent or image background:"
 #~ msgstr "Transparente som_breado ou imagem de fundo:"

@@ -217,8 +217,8 @@ msgid "<b>Background</b>"
 msgstr "<b>Okungasemva</b>"
 
 #: ../src/gnome-terminal.glade2.h:2
-msgid "<b>Command</b>"
-msgstr "<b>Umyalelo</b>"
+msgid "Command"
+msgstr "Umyalelo"
 
 #: ../src/gnome-terminal.glade2.h:3
 msgid "<b>Compatibility</b>"
@@ -621,8 +621,8 @@ msgid "_Text color:"
 msgstr "_Umbala wombhalo:"
 
 #: ../src/gnome-terminal.glade2.h:102
-msgid "_Transparent background"
-msgstr "_Okungasemva okucace gca"
+msgid "Transparent background"
+msgstr "Okungasemva okucace gca"
 
 #: ../src/gnome-terminal.glade2.h:103
 msgid "_Update login records when command is launched"
@@ -2265,8 +2265,8 @@ msgid "Change _Profile"
 msgstr "Tsintsha i_Nkangeleko"
 
 #: ../src/terminal-window.c:979
-msgid "_Set Title..."
-msgstr "_Misela..."
+msgid "_Set Title…"
+msgstr "_Misela…"
 
 #: ../src/terminal-window.c:986
 msgid "Set _Character Encoding"

@@ -2580,17 +2580,17 @@ msgstr "关闭窗口(_L)"
 #~ msgid "Default size:"
 #~ msgstr "默认大小："
 
-#~ msgid "Title"
-#~ msgstr "标题"
+msgid "Title"
+msgstr "标题"
 
-#~ msgid "_Title:"
-#~ msgstr "标题(_T)："
+msgid "_Title:"
+msgstr "标题(_T)："
 
 #~ msgid "Title and Command"
 #~ msgstr "标题和命令"
 
-#~ msgid "Set Title"
-#~ msgstr "设置标题"
+msgid "Set Title"
+msgstr "设置标题"
 
 #~ msgid "Current Locale"
 #~ msgstr "当前区域"
@@ -2703,3 +2703,6 @@ msgstr "关闭窗口(_L)"
 
 #~ msgid "_Find..."
 #~ msgstr "查找(_F)..."
+
+msgid "Transparent background"
+msgstr "透明背景"

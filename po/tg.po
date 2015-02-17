@@ -2158,23 +2158,23 @@ msgstr "П_ӯшонидани равзана"
 #~ msgid "Default size:"
 #~ msgstr "Андозаи пешфарз:"
 
-#~ msgid "Title"
-#~ msgstr "Сарлавҳа"
+msgid "Title"
+msgstr "Сарлавҳа"
 
-#~ msgid "_Title:"
-#~ msgstr "_Вазифа:"
+msgid "_Title:"
+msgstr "_Вазифа:"
 
 #~ msgid "Title and Command"
 #~ msgstr "Унвон ва Фармон"
 
-#~ msgid "Set Title"
-#~ msgstr "Таъин кардани сарлавҳа"
+msgid "Set Title"
+msgstr "Таъин кардани сарлавҳа"
 
 #~ msgid "Current Locale"
 #~ msgstr "Маҳаллигардонии ҷорӣ"
 
-#~ msgid "_Set Title…"
-#~ msgstr "_Танзими сарлавҳа..."
+msgid "_Set Title…"
+msgstr "_Танзими сарлавҳа..."
 
 #~ msgid "_Next Tab"
 #~ msgstr "_Варақаи навбатӣ"

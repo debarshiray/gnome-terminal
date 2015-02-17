@@ -2909,8 +2909,8 @@ msgstr "បិទ​បង្អួច"
 #~ msgid "Background image _scrolls"
 #~ msgstr "រមូរ​រូបភាព​ផ្ទៃខាងក្រោយ"
 
-#~ msgid "_Transparent background"
-#~ msgstr "ផ្ទៃខាងក្រោយ​ថ្លា"
+msgid "Transparent background"
+msgstr "ផ្ទៃខាងក្រោយ​ថ្លា"
 
 #~ msgid "S_hade transparent or image background:"
 #~ msgstr "ដាក់​ស្រមោល​ផ្ទៃខាងក្រោយ​ថ្លា ឬ​ផ្ទៃខាងក្រោយ​​រូបភាព ៖"
