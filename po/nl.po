@@ -2218,11 +2218,11 @@ msgstr "Venster sl_uiten"
 #~ msgid "Default size:"
 #~ msgstr "Standaardgrootte:"
 
-#~ msgid "Title"
-#~ msgstr "Titel"
+msgid "Title"
+msgstr "Titel"
 
-#~ msgid "_Title:"
-#~ msgstr "_Titel:"
+msgid "_Title:"
+msgstr "_Titel:"
 
 #~ msgid "Title and Command"
 #~ msgstr "Titel en opdracht"
@@ -2230,14 +2230,14 @@ msgstr "Venster sl_uiten"
 #~ msgid "_Unlimited"
 #~ msgstr "_Onbeperkt"
 
-#~ msgid "Set Title"
-#~ msgstr "Titel instellen"
+msgid "Set Title"
+msgstr "Titel instellen"
 
 #~ msgid "Current Locale"
 #~ msgstr "Huidige locale"
 
-#~ msgid "_Set Title…"
-#~ msgstr "Titel _instellen…"
+msgid "_Set Title…"
+msgstr "Titel _instellen…"
 
 #~ msgid "_About Terminal"
 #~ msgstr "_Info over Terminal"
@@ -2352,3 +2352,6 @@ msgstr "Venster sl_uiten"
 
 #~ msgid "Switch to Tab 12"
 #~ msgstr "Ga naar tab 12"
+
+msgid "Transparent background"
+msgstr "Transparante achtergrond"

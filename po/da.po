@@ -2368,11 +2368,11 @@ msgstr "_Luk vindue"
 #~ msgid "Default size:"
 #~ msgstr "Standardstørrelse:"
 
-#~ msgid "Title"
-#~ msgstr "Titel"
+msgid "Title"
+msgstr "Titel"
 
-#~ msgid "_Title:"
-#~ msgstr "_Titel:"
+msgid "_Title:"
+msgstr "_Titel:"
 
 #~ msgid "Title and Command"
 #~ msgstr "Titel og kommando"
@@ -2380,14 +2380,14 @@ msgstr "_Luk vindue"
 #~ msgid "_Unlimited"
 #~ msgstr "_Ubegrænset"
 
-#~ msgid "Set Title"
-#~ msgstr "Sæt titel"
+msgid "Set Title"
+msgstr "Sæt titel"
 
 #~ msgid "Current Locale"
 #~ msgstr "Aktuel region"
 
-#~ msgid "_Set Title…"
-#~ msgstr "_Sæt titel…"
+msgid "_Set Title…"
+msgstr "_Sæt titel…"
 
 #~ msgid "What to do with dynamic title"
 #~ msgstr "Hvad der skal gøres med dynamisk titel"
@@ -3183,8 +3183,8 @@ msgstr "_Luk vindue"
 #~ msgid "_Solid color"
 #~ msgstr "_Ensfarvet"
 
-#~ msgid "_Transparent background"
-#~ msgstr "_Gennemsigtig baggrund"
+msgid "Transparent background"
+msgstr "Gennemsigtig baggrund"
 
 #~ msgid ""
 #~ "You already have a profile called “%s”. Do you want to create another "

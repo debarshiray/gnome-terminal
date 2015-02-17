@@ -2304,3 +2304,18 @@ msgstr "Tanca la _finestra"
 
 #~ msgid "Whether to use a dark theme variant"
 #~ msgstr "Si s'ha d'utilitzar la variant de tema fosc"
+
+msgid "Transparent background"
+msgstr "Fons transparent"
+
+msgid "Title"
+msgstr "Títol"
+
+msgid "_Title:"
+msgstr "Tít_ol:"
+
+msgid "Set Title"
+msgstr "Estableix el títol"
+
+msgid "_Set Title…"
+msgstr "_Estableix el títol…"

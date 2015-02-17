@@ -2428,23 +2428,23 @@ msgstr "Fenster _schließen"
 #~ msgid "Default size:"
 #~ msgstr "Vorgabegröße:"
 
-#~ msgid "Title"
-#~ msgstr "Titel"
+msgid "Title"
+msgstr "Titel"
 
-#~ msgid "_Title:"
-#~ msgstr "_Titel:"
+msgid "_Title:"
+msgstr "_Titel:"
 
 #~ msgid "Title and Command"
 #~ msgstr "Titel und Befehl"
 
-#~ msgid "Set Title"
-#~ msgstr "Titel festlegen"
+msgid "Set Title"
+msgstr "Titel festlegen"
 
 #~ msgid "Current Locale"
 #~ msgstr "Momentan verwendete Standorteinstellungen"
 
-#~ msgid "_Set Title…"
-#~ msgstr "T_itel festlegen …"
+msgid "_Set Title…"
+msgstr "T_itel festlegen …"
 
 #~ msgid "_Next Tab"
 #~ msgstr "_Nächster Reiter"
@@ -3263,8 +3263,8 @@ msgstr "Fenster _schließen"
 #~ msgid "Background image _scrolls"
 #~ msgstr "Hintergrundbild _folgt Bildlauf"
 
-#~ msgid "_Transparent background"
-#~ msgstr "_Transparenter Hintergrund"
+msgid "Transparent background"
+msgstr "Transparenter Hintergrund"
 
 #~ msgid "S_hade transparent or image background:"
 #~ msgstr "Transparenz und Bildhintergründe _abdunkeln:"

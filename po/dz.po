@@ -1255,8 +1255,8 @@ msgid "_Base on:"
 msgstr "གཞི་བཞག་སྟེ་:(_B)"
 
 #: ../src/profile-preferences.glade.h:1
-msgid "<b>Command</b>"
-msgstr "<b>བརྡ་བཀོད་</b>"
+msgid "Command"
+msgstr "བརྡ་བཀོད་"
 
 #: ../src/profile-preferences.glade.h:2
 #, fuzzy
@@ -1551,8 +1551,8 @@ msgid "_Text color:"
 msgstr "ཚིག་ཡིག་ཚོས་གཞི་:(_T)"
 
 #: ../src/profile-preferences.glade.h:77
-msgid "_Transparent background"
-msgstr "དྭངས་གསལ་རྒྱབ་གཞི།(_T)"
+msgid "Transparent background"
+msgstr "དྭངས་གསལ་རྒྱབ་གཞི།"
 
 #: ../src/profile-preferences.glade.h:78
 #, fuzzy

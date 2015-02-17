@@ -2297,10 +2297,9 @@ msgstr "_Zatvori prozor"
 #~ msgid "GNOME Terminal Client"
 #~ msgstr "Klijent Gnomovog terminala"
 
-#~| msgid "Terminal"
-#~ msgctxt "title"
-#~ msgid "'Terminal'"
-#~ msgstr "„Terminal“"
+msgctxt "title"
+msgid "'Terminal'"
+msgstr "„Terminal“"
 
 #~ msgid "Title for terminal"
 #~ msgstr "Naslov za terminal"
@@ -2346,11 +2345,11 @@ msgstr "_Zatvori prozor"
 #~ msgid "Default size:"
 #~ msgstr "Osnovna veličina:"
 
-#~ msgid "Title"
-#~ msgstr "Naslov"
+msgid "Title"
+msgstr "Naslov"
 
-#~ msgid "_Title:"
-#~ msgstr "_Naslov:"
+msgid "_Title:"
+msgstr "_Naslov:"
 
 #~ msgid "Title and Command"
 #~ msgstr "Naslov i naredba"
@@ -2358,14 +2357,14 @@ msgstr "_Zatvori prozor"
 #~ msgid "_Unlimited"
 #~ msgstr "_Neograničeno"
 
-#~ msgid "Set Title"
-#~ msgstr "Postavi naslov"
+msgid "Set Title"
+msgstr "Postavi naslov"
 
 #~ msgid "Current Locale"
 #~ msgstr "Tekući lokalitet"
 
-#~ msgid "_Set Title…"
-#~ msgstr "Postavi _naslov…"
+msgid "_Set Title…"
+msgstr "Postavi _naslov…"
 
 #~ msgid "Always visible"
 #~ msgstr "Uvek vidljiv"
@@ -2387,3 +2386,6 @@ msgstr "_Zatvori prozor"
 
 #~ msgid "Close Window"
 #~ msgstr "Zatvori prozor"
+
+msgid "Transparent background"
+msgstr "Providna pozadina"

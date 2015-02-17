@@ -2369,11 +2369,11 @@ msgstr "It_xi leihoa"
 #~ msgid "Default size:"
 #~ msgstr "Tamaina lehenetsia:"
 
-#~ msgid "Title"
-#~ msgstr "Titulua"
+msgid "Title"
+msgstr "Titulua"
 
-#~ msgid "_Title:"
-#~ msgstr "_Titulua:"
+msgid "_Title:"
+msgstr "_Titulua:"
 
 #~ msgid "Title and Command"
 #~ msgstr "Titulua eta komandoa"
@@ -2381,14 +2381,14 @@ msgstr "It_xi leihoa"
 #~ msgid "_Unlimited"
 #~ msgstr "_Mugagabea"
 
-#~ msgid "Set Title"
-#~ msgstr "Ezarri titulua"
+msgid "Set Title"
+msgstr "Ezarri titulua"
 
 #~ msgid "Current Locale"
 #~ msgstr "Uneko hizkuntza-ezarpena"
 
-#~ msgid "_Set Title…"
-#~ msgstr "_Ezarri titulua..."
+msgid "_Set Title…"
+msgstr "_Ezarri titulua..."
 
 #~ msgid "What to do with dynamic title"
 #~ msgstr "Zer egin titulu dinamikoarekin"
@@ -3169,8 +3169,8 @@ msgstr "It_xi leihoa"
 #~ msgid "_Solid color"
 #~ msgstr "_Kolore solidoa"
 
-#~ msgid "_Transparent background"
-#~ msgstr "_Atzeko plano gardena"
+msgid "Transparent background"
+msgstr "Atzeko plano gardena"
 
 #~ msgid ""
 #~ "You already have a profile called “%s”. Do you want to create another "

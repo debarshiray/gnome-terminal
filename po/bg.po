@@ -2281,3 +2281,15 @@ msgstr ""
 #: ../src/terminal-window.c:3727
 msgid "C_lose Window"
 msgstr "_Затваряне на този прозорец"
+
+msgid "Transparent background"
+msgstr "Прозрачен фон"
+
+msgid "_Title:"
+msgstr "_Заглавие:"
+
+msgid "Set Title"
+msgstr "Задаване на заглавие"
+
+msgid "_Set Title…"
+msgstr "_Задаване на заглавие…"

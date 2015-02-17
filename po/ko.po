@@ -2281,3 +2281,18 @@ msgstr "창 닫기(_L)"
 
 #~ msgid "Whether to use a dark theme variant"
 #~ msgstr "어두운 테마를 사용할 지 여부"
+
+msgid "Transparent background"
+msgstr "투명한 배경"
+
+msgid "Title"
+msgstr "제목"
+
+msgid "_Title:"
+msgstr "제목(_T):"
+
+msgid "Set Title"
+msgstr "제목 설정"
+
+msgid "_Set Title…"
+msgstr "제목 설정(_S)…"

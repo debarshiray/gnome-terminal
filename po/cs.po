@@ -2253,3 +2253,18 @@ msgstr ""
 #: ../src/terminal-window.c:3849
 msgid "C_lose Window"
 msgstr "_Zavřít okno"
+
+msgid "Transparent background"
+msgstr "Průsvitné pozadí"
+
+msgid "Title"
+msgstr "Záhlaví"
+
+msgid "_Title:"
+msgstr "Zá_hlaví:"
+
+msgid "Set Title"
+msgstr "Nastavit záhlaví"
+
+msgid "_Set Title…"
+msgstr "Na_stavit záhlaví…"

@@ -2375,11 +2375,11 @@ msgstr "_Ablak bezárása"
 #~ msgid "Default size:"
 #~ msgstr "Alapértelmezett méret:"
 
-#~ msgid "Title"
-#~ msgstr "Cím"
+msgid "Title"
+msgstr "Cím"
 
-#~ msgid "_Title:"
-#~ msgstr "_Cím:"
+msgid "_Title:"
+msgstr "_Cím:"
 
 #~ msgid "Title and Command"
 #~ msgstr "Cím és parancs"
@@ -2387,14 +2387,14 @@ msgstr "_Ablak bezárása"
 #~ msgid "_Unlimited"
 #~ msgstr "_Végtelen"
 
-#~ msgid "Set Title"
-#~ msgstr "Cím beállítása"
+msgid "Set Title"
+msgstr "Cím beállítása"
 
 #~ msgid "Current Locale"
 #~ msgstr "Jelenlegi területi beállítás"
 
-#~ msgid "_Set Title…"
-#~ msgstr "_Cím beállítása…"
+msgid "_Set Title…"
+msgstr "_Cím beállítása…"
 
 #~ msgid "Always visible"
 #~ msgstr "Mindig látható"
@@ -2699,3 +2699,6 @@ msgstr "_Ablak bezárása"
 
 #~ msgid "Background image"
 #~ msgstr "Háttérkép"
+
+msgid "Transparent background"
+msgstr "Áttetsző háttér"
