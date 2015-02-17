@@ -2979,8 +2979,8 @@ msgstr "विंडो बंद करें (_l)"
 #~ msgid "_Background image"
 #~ msgstr "पृष्ठभूमि छवि (_B)"
 
-#~ msgid "_Transparent background"
-#~ msgstr "पारदर्शी पृष्ठभूमि (_T)"
+msgid "Transparent background"
+msgstr "पारदर्शी पृष्ठभूमि"
 
 #~ msgid "S/Key Challenge Response"
 #~ msgstr "एस/कुंजी चैलेंज प्रतिक्रिया"

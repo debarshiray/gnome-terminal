@@ -580,8 +580,8 @@ msgid "_Text color:"
 msgstr "Colôr dal _test:"
 
 #: ../src/gnome-terminal.glade2.h:86
-msgid "_Transparent background"
-msgstr "Fondâl _trasparent"
+msgid "Transparent background"
+msgstr "Fondâl trasparent"
 
 #: ../src/gnome-terminal.glade2.h:87
 msgid "_Update login records when command is launched"

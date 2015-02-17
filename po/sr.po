@@ -2230,3 +2230,6 @@ msgstr "_Затвори прозор"
 
 #~ msgid "Close Window"
 #~ msgstr "Затвори прозор"
+
+msgid "Transparent background"
+msgstr "Провидна позадина"

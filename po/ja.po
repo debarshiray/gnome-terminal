@@ -1902,3 +1902,6 @@ msgstr "この端末には未だ実行中のプロセスが存在しています
 #: ../src/terminal-window.c:3652
 msgid "C_lose Window"
 msgstr "ウィンドウを閉じる(_L)"
+
+msgid "Transparent background"
+msgstr "透過な画像にする"

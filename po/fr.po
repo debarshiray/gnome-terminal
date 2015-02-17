@@ -2136,3 +2136,6 @@ msgstr "Fermer _la fenêtre"
 
 #~ msgid "Use _dark theme variant"
 #~ msgstr "Utiliser une variante de thème _foncée"
+
+msgid "Transparent background"
+msgstr "Arrière-plan transparent"

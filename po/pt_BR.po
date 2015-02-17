@@ -2871,3 +2871,6 @@ msgstr "_Fechar janela"
 #~ "terminal poderão usar. Essa é a paleta, na forma de uma lista de nomes de "
 #~ "cores separada por dois pontos. Os nomes de cores devem estar no formato "
 #~ "hexadecimal. Exemplo: \"#FF00FF\""
+
+msgid "Transparent background"
+msgstr "Fundo transparente"

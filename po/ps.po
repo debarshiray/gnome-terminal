@@ -1052,8 +1052,8 @@ msgid "_Text color:"
 msgstr ":د ليکنې رنګ_"
 
 #: ../src/profile-preferences.glade.h:69
-msgid "_Transparent background"
-msgstr "روڼ شاليد_"
+msgid "Transparent background"
+msgstr "روڼ شاليد"
 
 #: ../src/profile-preferences.glade.h:70
 msgid "_Update login records when command is launched"

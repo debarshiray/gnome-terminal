@@ -2280,3 +2280,6 @@ msgstr "关闭窗口(_L)"
 
 #~ msgid "_Find..."
 #~ msgstr "查找(_F)..."
+
+msgid "Transparent background"
+msgstr "透明背景"

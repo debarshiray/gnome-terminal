@@ -3016,8 +3016,8 @@ msgstr "Aizvērt _logu"
 #~ msgid "Background image _scrolls"
 #~ msgstr "Fona attēla ritināšanā_s"
 
-#~ msgid "_Transparent background"
-#~ msgstr "_Caurspīdīgs fons"
+msgid "Transparent background"
+msgstr "Caurspīdīgs fons"
 
 #~ msgid "S_hade transparent or image background:"
 #~ msgstr "_Aizēnot caurspīdīgo vai attēla fonu:"

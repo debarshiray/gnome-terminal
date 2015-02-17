@@ -2671,3 +2671,6 @@ msgstr "Đón_g cửa sổ"
 #~ "Phím tắt để đặt lại thiết bị cuối. Dùng dạng chuỗi có cùng một khuôn dạng "
 #~ "với tập tin tài nguyên GTK+. Nếu bạn đặt tùy chọn là chuỗi “disabled” (bị "
 #~ "tắt), nghĩa là không có phím tắt cho hành động này."
+
+msgid "Transparent background"
+msgstr "Nền trong suốt"

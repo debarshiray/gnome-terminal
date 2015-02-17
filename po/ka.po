@@ -568,7 +568,7 @@ msgstr "_ტექსტის ფერი:"
 
 #: ../src/gnome-terminal.glade2.h:86
 #, fuzzy
-msgid "_Transparent background"
+msgid "Transparent background"
 msgstr "გამჭირვალე"
 
 #: ../src/gnome-terminal.glade2.h:87

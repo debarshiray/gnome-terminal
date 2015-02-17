@@ -2082,3 +2082,6 @@ msgstr "_Užverti langą"
 
 #~ msgid "Use _dark theme variant"
 #~ msgstr "Nau_doti tamsų temos variantą"
+
+msgid "Transparent background"
+msgstr "Permatomas fonas"

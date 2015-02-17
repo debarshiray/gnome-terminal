@@ -2068,3 +2068,6 @@ msgstr ""
 #: ../src/terminal-window.c:3652
 msgid "C_lose Window"
 msgstr "Tutup Jende_la"
+
+msgid "Transparent background"
+msgstr "Latar belakang transparan"

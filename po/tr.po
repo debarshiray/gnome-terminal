@@ -1968,3 +1968,6 @@ msgstr "Hala bir süreç bu uçbirimde çalışıyor. Uçbirimi kapatmak onu son
 #: ../src/terminal-window.c:3652
 msgid "C_lose Window"
 msgstr "_Pencereyi Kapat"
+
+msgid "Transparent background"
+msgstr "Şeffaf arkaplan"

@@ -3008,8 +3008,8 @@ msgstr "ਵਿੰਡੋ ਬੰਦ ਕਰੋ(_l)"
 #~ msgid "_Solid color"
 #~ msgstr "ਇੱਕ ਰੰਗ ਵਰਤੋਂ(_S)"
 
-#~ msgid "_Transparent background"
-#~ msgstr "ਪਾਰਦਰਸ਼ੀ ਬੈਕਗਰਾਊਂਡ(_T)"
+msgid "Transparent background"
+msgstr "ਪਾਰਦਰਸ਼ੀ ਬੈਕਗਰਾਊਂਡ"
 
 #~ msgid "S/Key Challenge Response"
 #~ msgstr "S/ਸਵਿੱਚ ਚੈਲੰਜ਼ ਜਵਾਬ"

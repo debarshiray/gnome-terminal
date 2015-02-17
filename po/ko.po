@@ -2078,3 +2078,6 @@ msgstr "창 닫기(_L)"
 
 #~ msgid "Use _dark theme variant"
 #~ msgstr "어두운 테마 사용(_D)"
+
+msgid "Transparent background"
+msgstr "투명한 배경"

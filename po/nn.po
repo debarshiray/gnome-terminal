@@ -1428,8 +1428,8 @@ msgid "_Text color:"
 msgstr "_Tekstfarge:"
 
 #: ../src/profile-preferences.glade.h:73
-msgid "_Transparent background"
-msgstr "_Gjennomskinleg bakgrunn"
+msgid "Transparent background"
+msgstr "Gjennomskinleg bakgrunn"
 
 #: ../src/profile-preferences.glade.h:74
 msgid "_Update login records when command is launched"

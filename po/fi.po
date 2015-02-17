@@ -2069,6 +2069,9 @@ msgstr ""
 msgid "C_lose Window"
 msgstr "_Sulje ikkuna"
 
+msgid "Transparent background"
+msgstr "Läpinäkyvä tausta"
+
 #~ msgid "Set the terminal title"
 #~ msgstr "Aseta päätteen otsikko"
 

@@ -3060,8 +3060,8 @@ msgstr "Fenster _schließen"
 #~ msgid "Background image _scrolls"
 #~ msgstr "Hintergrundbild _folgt Bildlauf"
 
-#~ msgid "_Transparent background"
-#~ msgstr "_Transparenter Hintergrund"
+msgid "Transparent background"
+msgstr "Transparenter Hintergrund"
 
 #~ msgid "S_hade transparent or image background:"
 #~ msgstr "Transparenz und Bildhintergründe _abdunkeln:"

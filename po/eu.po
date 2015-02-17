@@ -2972,8 +2972,8 @@ msgstr "It_xi leihoa"
 #~ msgid "_Solid color"
 #~ msgstr "_Kolore solidoa"
 
-#~ msgid "_Transparent background"
-#~ msgstr "_Atzeko plano gardena"
+msgid "Transparent background"
+msgstr "Atzeko plano gardena"
 
 #~ msgid ""
 #~ "You already have a profile called “%s”. Do you want to create another "

@@ -3007,8 +3007,8 @@ msgstr "סגירת ה_חלון"
 #~ msgid "_Solid color"
 #~ msgstr "צבע _אחיד"
 
-#~ msgid "_Transparent background"
-#~ msgstr "רקע _שקוף"
+msgid "Transparent background"
+msgstr "רקע שקוף"
 
 #~ msgid "No such profile \"%s\", using default profile\n"
 #~ msgstr "No such profile \"%s\", using default profile\n"

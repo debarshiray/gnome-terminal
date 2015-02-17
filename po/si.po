@@ -537,8 +537,8 @@ msgid "_Text color:"
 msgstr "පෙළ වර්‍ණ: (_T)"
 
 #: ../src/gnome-terminal.glade2.h:86
-msgid "_Transparent background"
-msgstr "විනිවිද පෙනෙන පසුබිම (_T)"
+msgid "Transparent background"
+msgstr "විනිවිද පෙනෙන පසුබිම"
 
 #: ../src/gnome-terminal.glade2.h:87
 msgid "_Update login records when command is launched"

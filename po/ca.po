@@ -2111,3 +2111,6 @@ msgstr "Tanca la _finestra"
 
 #~ msgid "Use _dark theme variant"
 #~ msgstr "Utilitza la variant de tema _fosc"
+
+msgid "Transparent background"
+msgstr "Fons transparent"

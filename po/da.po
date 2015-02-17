@@ -2987,8 +2987,8 @@ msgstr "_Luk vindue"
 #~ msgid "_Solid color"
 #~ msgstr "_Ensfarvet"
 
-#~ msgid "_Transparent background"
-#~ msgstr "_Gennemsigtig baggrund"
+msgid "Transparent background"
+msgstr "Gennemsigtig baggrund"
 
 #~ msgid ""
 #~ "You already have a profile called “%s”. Do you want to create another "

@@ -2027,3 +2027,6 @@ msgstr "ذخیره به نام..."
 #: ../src/terminal-window.c:3456
 msgid "_Title:"
 msgstr "_عنوان:"
+
+msgid "Transparent background"
+msgstr "پس‌زمینه‌ی شفاف"

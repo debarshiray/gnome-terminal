@@ -2030,3 +2030,6 @@ msgstr "Терезені жа_бу"
 
 #~ msgid "Be quiet"
 #~ msgstr "Тыныш болу"
+
+msgid "Transparent background"
+msgstr "Мөлдір фон"

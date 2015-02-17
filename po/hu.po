@@ -2509,3 +2509,6 @@ msgstr "_Ablak bezárása"
 
 #~ msgid "Background type"
 #~ msgstr "Háttér típusa"
+
+msgid "Transparent background"
+msgstr "Áttetsző háttér"

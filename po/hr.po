@@ -1362,8 +1362,8 @@ msgid "_Text color:"
 msgstr "_Boja teksta:"
 
 #: ../src/profile-preferences.glade.h:69
-msgid "_Transparent background"
-msgstr "_Prozirna pozadina"
+msgid "Transparent background"
+msgstr "Prozirna pozadina"
 
 #: ../src/profile-preferences.glade.h:70
 msgid "_Update login records when command is launched"
