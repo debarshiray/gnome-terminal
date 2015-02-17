@@ -2713,3 +2713,6 @@ msgstr "_Ablak bezárása"
 
 #~ msgid "Background image"
 #~ msgstr "Háttérkép"
+
+msgid "Transparent background"
+msgstr "Áttetsző háttér"

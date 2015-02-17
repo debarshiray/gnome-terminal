@@ -3028,8 +3028,8 @@ msgstr "_l சாளரத்தை மூடவும்"
 #~ msgid "_Solid color"
 #~ msgstr "(_S) ஒரே வண்ணம்"
 
-#~ msgid "_Transparent background"
-#~ msgstr "_T புலப்பாடு பின்னணி"
+msgid "Transparent background"
+msgstr "புலப்பாடு பின்னணி"
 
 #~ msgid "No such profile \"%s\", using default profile\n"
 #~ msgstr "\"%s\" என்ற வரியுரு கிடையாது, முன்னிருப்பு வரியுரு பயன்படுத்தப்படும்\n"

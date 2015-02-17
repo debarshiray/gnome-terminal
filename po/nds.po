@@ -995,8 +995,8 @@ msgid "_Text color:"
 msgstr "_Textklöör:"
 
 #: ../src/profile-preferences.glade.h:73
-msgid "_Transparent background"
-msgstr "_Döörschienenachtergrund:"
+msgid "Transparent background"
+msgstr "Döörschienenachtergrund:"
 
 #: ../src/profile-preferences.glade.h:74
 msgid "_Update login records when command is launched"

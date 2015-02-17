@@ -3419,8 +3419,8 @@ msgstr "Tampar _la fenèstra"
 #~ msgid "Run;"
 #~ msgstr "Executar;Consòla;Shell;"
 
-#~ msgid "_Transparent background"
-#~ msgstr "Rèireplan _transparent"
+msgid "Transparent background"
+msgstr "Rèireplan transparent"
 
 #~ msgid ""
 #~ "A subset of possible encodings are presented in the Encoding submenu. "

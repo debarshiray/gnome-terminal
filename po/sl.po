@@ -2548,3 +2548,6 @@ msgstr "_Zapri okno"
 
 #~ msgid "_Profile Preferences…"
 #~ msgstr "Možnosti _profila ..."
+
+msgid "Transparent background"
+msgstr "Prosojno ozadje"

@@ -3193,8 +3193,8 @@ msgstr "Fechar jane_la"
 #~ msgid "Background image _scrolls"
 #~ msgstr "Imagem de fundo _rola"
 
-#~ msgid "_Transparent background"
-#~ msgstr "Fundo _transparente"
+msgid "Transparent background"
+msgstr "Fundo transparente"
 
 #~ msgid "S_hade transparent or image background:"
 #~ msgstr "Transparente som_breado ou imagem de fundo:"

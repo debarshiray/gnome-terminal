@@ -2092,3 +2092,6 @@ msgstr ""
 #: ../src/terminal-window.c:3645
 msgid "C_lose Window"
 msgstr "Tanca la _finestra"
+
+msgid "Transparent background"
+msgstr "Fons transparent"

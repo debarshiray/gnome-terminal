@@ -2303,3 +2303,6 @@ msgstr "Fermer _la fenêtre"
 
 #~ msgid "_Same as text color"
 #~ msgstr "_Même couleur que le texte"
+
+msgid "Transparent background"
+msgstr "Arrière-plan transparent"

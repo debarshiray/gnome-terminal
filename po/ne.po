@@ -2398,8 +2398,8 @@ msgstr "सञ्झ्याल बन्द गर्नुहोस्"
 #~ msgid "_None (use solid color)"
 #~ msgstr "कुनै पनि होइन (एउटै रङ प्रयोग गर्नुहोस्)"
 
-#~ msgid "_Transparent background"
-#~ msgstr "पारदर्शी पृष्ठभूमि"
+msgid "Transparent background"
+msgstr "पारदर्शी पृष्ठभूमि"
 
 #~ msgid "_Use the system fixed width font"
 #~ msgstr "प्रणाली निश्चित गरिएको फन्ट चौडाइ प्रयोग गर्नुहोस्"

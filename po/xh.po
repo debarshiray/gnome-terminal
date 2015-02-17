@@ -620,8 +620,8 @@ msgid "_Text color:"
 msgstr "_Umbala wombhalo:"
 
 #: ../src/gnome-terminal.glade2.h:102
-msgid "_Transparent background"
-msgstr "_Okungasemva okucace gca"
+msgid "Transparent background"
+msgstr "Okungasemva okucace gca"
 
 #: ../src/gnome-terminal.glade2.h:103
 msgid "_Update login records when command is launched"

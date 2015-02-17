@@ -2510,3 +2510,6 @@ msgstr "Κ_λείσιμο παραθύρου"
 
 #~ msgid "_Input Methods"
 #~ msgstr "_Μέθοδοι εισαγωγής"
+
+msgid "Transparent background"
+msgstr "Διάφανο παρασκήνιο"

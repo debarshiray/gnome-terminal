@@ -2318,3 +2318,6 @@ msgstr "_Закрыть окно"
 
 #~ msgid "_Same as text color"
 #~ msgstr "_Цвет как у обычного текста"
+
+msgid "Transparent background"
+msgstr "Прозрачный фон"

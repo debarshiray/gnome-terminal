@@ -2944,8 +2944,8 @@ msgstr "વિન્ડો બંધ કરો (_l)"
 #~ msgid "_Solid color"
 #~ msgstr "ઘટ્ટ રંગ (_S)"
 
-#~ msgid "_Transparent background"
-#~ msgstr "પારદર્શક પાશ્વ ભાગનો ભાગ (_T)"
+msgid "Transparent background"
+msgstr "પારદર્શક પાશ્વ ભાગનો ભાગ"
 
 #~ msgid "No such profile \"%s\", using default profile\n"
 #~ msgstr "\"%s\" જેવી કોઈ રૂપરેખા નથી, મૂળભૂત રૂપરેખા વાપરી રહ્યા છે\n"

@@ -2231,3 +2231,5 @@ msgstr ""
 msgid "C_lose Window"
 msgstr "Aizvērt _logu"
 
+msgid "Transparent background"
+msgstr "Caurspīdīgs fons"

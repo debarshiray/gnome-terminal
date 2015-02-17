@@ -2304,3 +2304,6 @@ msgstr "창 닫기(_L)"
 
 #~ msgid "Whether to use a dark theme variant"
 #~ msgstr "어두운 테마를 사용할 지 여부"
+
+msgid "Transparent background"
+msgstr "투명한 배경"

@@ -2376,3 +2376,6 @@ msgstr "關閉視窗(_L)"
 
 #~ msgid "Show session management options"
 #~ msgstr "顯示作業階段管理選項"
+
+msgid "Transparent background"
+msgstr "透明背景"

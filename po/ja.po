@@ -1907,3 +1907,6 @@ msgstr "ウィンドウを閉じる(_L)"
 
 #~ msgid "_Update login records when command is launched"
 #~ msgstr "コマンドを実行した時にログイン記録を更新する(_U)"
+
+msgid "Transparent background"
+msgstr "透過な画像にする"

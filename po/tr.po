@@ -2307,3 +2307,6 @@ msgstr "_Pencereyi Kapat"
 
 #~ msgid "_Same as text color"
 #~ msgstr "_Metin rengiyle aynı"
+
+msgid "Transparent background"
+msgstr "Şeffaf arkaplan"

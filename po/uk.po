@@ -3126,8 +3126,8 @@ msgstr "Закр_ити вікно"
 #~ msgid "_Solid color"
 #~ msgstr "_Суцільний колір"
 
-#~ msgid "_Transparent background"
-#~ msgstr "П_розоре тло"
+msgid "Transparent background"
+msgstr "Прозоре тло"
 
 #~ msgid "Switch to Tab 2"
 #~ msgstr "До вкладки 2"

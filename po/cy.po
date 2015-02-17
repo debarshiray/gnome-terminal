@@ -1447,8 +1447,8 @@ msgid "_Text color:"
 msgstr "Lliw'r _testun:"
 
 #: ../src/profile-preferences.glade.h:73
-msgid "_Transparent background"
-msgstr "Cefndir _tryloyw"
+msgid "Transparent background"
+msgstr "Cefndir tryloyw"
 
 #: ../src/profile-preferences.glade.h:74
 msgid "_Update login records when command is launched"

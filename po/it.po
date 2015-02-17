@@ -2284,3 +2284,6 @@ msgstr ""
 #: ../src/terminal-window.c:3727
 msgid "C_lose Window"
 msgstr "Chiudi _finestra"
+
+msgid "Transparent background"
+msgstr "Sfondo trasparente"

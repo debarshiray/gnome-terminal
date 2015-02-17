@@ -2294,6 +2294,9 @@ msgstr "_Sulje ikkuna"
 #~ msgid "_Update login records when command is launched"
 #~ msgstr "_Päivitä kirjautumistallenne kun komento käynnistetään"
 
+msgid "Transparent background"
+msgstr "Läpinäkyvä tausta"
+
 #~| msgid "Error parsing command: %s"
 #~ msgid "Missing command"
 #~ msgstr "Puuttuva komento"

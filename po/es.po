@@ -3303,8 +3303,8 @@ msgstr "_Cerrar ventana"
 #~ msgid "_Solid color"
 #~ msgstr "Color _sólido"
 
-#~ msgid "_Transparent background"
-#~ msgstr "Fondo _transparente"
+msgid "Transparent background"
+msgstr "Fondo transparente"
 
 #~ msgid "No such profile \"%s\", using default profile\n"
 #~ msgstr "No existe el perfil «%s», usando el perfil predeterminado\n"
