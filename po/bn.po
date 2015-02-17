@@ -1217,8 +1217,8 @@ msgid "_Base on:"
 msgstr "চিহ্নিত বস্তুর উপর ভিত্তি করে: (_B)"
 
 #: ../src/profile-preferences.glade.h:1
-msgid "<b>Command</b>"
-msgstr "<b>কমান্ড</b>"
+msgid "Command"
+msgstr "কমান্ড"
 
 #: ../src/profile-preferences.glade.h:2
 msgid "<b>Foreground, Background, and Bold</b>"
@@ -1524,8 +1524,8 @@ msgid "_Text color:"
 msgstr "পাঠ্যের রং: (_T)"
 
 #: ../src/profile-preferences.glade.h:76
-msgid "_Transparent background"
-msgstr "স্বচ্ছ পটভূমি (_T)"
+msgid "Transparent background"
+msgstr "স্বচ্ছ পটভূমি "
 
 #: ../src/profile-preferences.glade.h:77
 msgid "_Unlimited"

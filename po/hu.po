@@ -2318,3 +2318,15 @@ msgstr ""
 #: ../src/terminal-window.c:3256
 msgid "C_lose Window"
 msgstr "_Ablak bezárása"
+
+msgid "Title"
+msgstr "Cím"
+
+msgid "_Title:"
+msgstr "_Cím:"
+
+msgid "Set Title"
+msgstr "Cím beállítása"
+
+msgid "Transparent background"
+msgstr "Áttetsző háttér"

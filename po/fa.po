@@ -2631,8 +2631,8 @@ msgstr "_بستن پنجره"
 #~ msgid "Use custom default terminal si_ze"
 #~ msgstr "استفاده از اندازه‌ی _سفارشی پایانه‌ی پیش‌فرض"
 
-#~ msgid "Title"
-#~ msgstr "عنوان"
+msgid "Title"
+msgstr "عنوان"
 
 #~ msgid "When terminal commands set their o_wn titles:"
 #~ msgstr "وقتی که فرمان‌های پایانه عنوان‌های _خودشان را تنظیم می‌کنند:"
@@ -2646,8 +2646,8 @@ msgstr "_بستن پنجره"
 #~ msgid "_Unlimited"
 #~ msgstr "_نامحدود"
 
-#~ msgid "Set Title"
-#~ msgstr "تنظیم عنوان"
+msgid "Set Title"
+msgstr "تنظیم عنوان"
 
 #~ msgid "Switch to Tab 3"
 #~ msgstr "تعویض به زبانه‌ی ۳"
@@ -2688,5 +2688,8 @@ msgstr "_بستن پنجره"
 #~ msgid "_Input Methods"
 #~ msgstr "روش‌های _ورودی"
 
-#~ msgid "_Title:"
-#~ msgstr "_عنوان:"
+msgid "_Title:"
+msgstr "_عنوان:"
+
+msgid "Transparent background"
+msgstr "پس‌زمینه‌ی شفاف"

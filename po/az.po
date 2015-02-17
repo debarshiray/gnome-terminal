@@ -218,8 +218,8 @@ msgid "<b>Background</b>"
 msgstr "<b>Arxa plan</b>"
 
 #: ../src/gnome-terminal.glade2.h:2
-msgid "<b>Command</b>"
-msgstr "<b>Əmr</b>"
+msgid "Command"
+msgstr "Əmr"
 
 #: ../src/gnome-terminal.glade2.h:3
 msgid "<b>Compatibility</b>"
@@ -620,8 +620,8 @@ msgid "_Text color:"
 msgstr "_Mətn rəngi:"
 
 #: ../src/gnome-terminal.glade2.h:102
-msgid "_Transparent background"
-msgstr "_Şəffaf arxa plan"
+msgid "Transparent background"
+msgstr "Şəffaf arxa plan"
 
 #: ../src/gnome-terminal.glade2.h:103
 msgid "_Update login records when command is launched"

@@ -2735,17 +2735,17 @@ msgstr "Κ_λείσιμο παραθύρου"
 #~ msgid "Default size:"
 #~ msgstr "Προεπιλεγμένο μέγεθος:"
 
-#~ msgid "Title"
-#~ msgstr "Τίτλος"
+msgid "Title"
+msgstr "Τίτλος"
 
-#~ msgid "_Title:"
-#~ msgstr "_Τίτλος:"
+msgid "_Title:"
+msgstr "_Τίτλος:"
 
 #~ msgid "Title and Command"
 #~ msgstr "Τίτλος και εντολή"
 
-#~ msgid "Set Title"
-#~ msgstr "Ορισμός τίτλου"
+msgid "Set Title"
+msgstr "Ορισμός τίτλου"
 
 #~ msgid "Current Locale"
 #~ msgstr "Τρέχουσα τοπική ρύθμιση"
@@ -2783,3 +2783,6 @@ msgstr "Κ_λείσιμο παραθύρου"
 
 #~ msgid "_Input Methods"
 #~ msgstr "_Μέθοδοι εισαγωγής"
+
+msgid "Transparent background"
+msgstr "Διάφανο παρασκήνιο"
