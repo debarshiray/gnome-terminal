@@ -2308,23 +2308,23 @@ msgstr "ปิ_ดหน้าต่าง"
 #~ msgid "Default size:"
 #~ msgstr "ขนาดปริยาย:"
 
-#~ msgid "Title"
-#~ msgstr "หัวเรื่อง"
+msgid "Title"
+msgstr "หัวเรื่อง"
 
-#~ msgid "_Title:"
-#~ msgstr "_หัวเรื่อง:"
+msgid "_Title:"
+msgstr "_หัวเรื่อง:"
 
 #~ msgid "Title and Command"
 #~ msgstr "หัวเรื่องและคำสั่ง"
 
-#~ msgid "Set Title"
-#~ msgstr "ตั้งหัวเรื่อง"
+msgid "Set Title"
+msgstr "ตั้งหัวเรื่อง"
 
 #~ msgid "Current Locale"
 #~ msgstr "ตามโลแคลปัจจุบัน"
 
-#~ msgid "_Set Title…"
-#~ msgstr "ตั้งป้าย_ชื่อ…"
+msgid "_Set Title…"
+msgstr "ตั้งป้าย_ชื่อ…"
 
 #~ msgid "_Next Tab"
 #~ msgstr "แท็บ_ถัดไป"
@@ -2803,8 +2803,8 @@ msgstr "ปิ_ดหน้าต่าง"
 #~ msgid "_Solid color"
 #~ msgstr "สี_ทึบ"
 
-#~ msgid "_Transparent background"
-#~ msgstr "พื้นหลังโปร่งแ_สง"
+msgid "Transparent background"
+msgstr "พื้นหลังโปร่งแสง"
 
 #~ msgid ""
 #~ "You already have a profile called “%s”. Do you want to create another "

@@ -2549,8 +2549,8 @@ msgstr "Tampar _la fenèstra"
 #~ msgid "Save as..."
 #~ msgstr "Enregistrar jos..."
 
-#~ msgid "_Title:"
-#~ msgstr "_Títol :"
+msgid "_Title:"
+msgstr "_Títol :"
 
 #~ msgid "Move Tab _Right"
 #~ msgstr "Desplaçar l'onglet cap a _dreita"
@@ -2558,8 +2558,8 @@ msgstr "Tampar _la fenèstra"
 #~ msgid "Move Tab _Left"
 #~ msgstr "Desplaçar l'onglet cap a _esquèrra"
 
-#~ msgid "_Set Title…"
-#~ msgstr "_Modificar lo títol…"
+msgid "_Set Title…"
+msgstr "_Modificar lo títol…"
 
 #~ msgid "_Detach tab"
 #~ msgstr "Des_tacar l'onglet"
@@ -3019,8 +3019,8 @@ msgstr "Tampar _la fenèstra"
 #~ msgid "_Use the system fixed width font"
 #~ msgstr "_Utilizar la poliça de chassa fixa del sistèma"
 
-#~ msgid "Set Title"
-#~ msgstr "Definir lo títol"
+msgid "Set Title"
+msgstr "Definir lo títol"
 
 #~ msgid "Switch to Previous Tab"
 #~ msgstr "Onglet precedent"
@@ -3352,8 +3352,8 @@ msgstr "Tampar _la fenèstra"
 #~ msgid "Run;"
 #~ msgstr "Executar;Consòla;Shell;"
 
-#~ msgid "_Transparent background"
-#~ msgstr "Rèireplan _transparent"
+msgid "Transparent background"
+msgstr "Rèireplan transparent"
 
 #~ msgid ""
 #~ "A subset of possible encodings are presented in the Encoding submenu. "

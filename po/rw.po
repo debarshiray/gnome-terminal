@@ -749,7 +749,7 @@ msgstr "Ibara ry'Inyandiko..."
 
 #: ../src/gnome-terminal.glade2.h:102
 #, fuzzy
-msgid "_Transparent background"
+msgid "Transparent background"
 msgstr "Mbuganyuma"
 
 #: ../src/gnome-terminal.glade2.h:103
@@ -2398,7 +2398,6 @@ msgstr ""
 
 # sch/source\ui\app\menu.src:RID_MENU.WORKAROUND_22.SID_INSERT_TITLE.text
 #: ../src/terminal-screen.c:2005
-#, fuzzy
 msgid "_Title:"
 msgstr "Umutwe..."
 

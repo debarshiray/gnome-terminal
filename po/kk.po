@@ -2282,3 +2282,18 @@ msgstr "Терезені жа_бу"
 
 #~ msgid "Be quiet"
 #~ msgstr "Тыныш болу"
+
+msgid "Transparent background"
+msgstr "Мөлдір фон"
+
+msgid "Title"
+msgstr "Атауы"
+
+msgid "_Title:"
+msgstr "А_тауы:"
+
+msgid "Set Title"
+msgstr "Атауын орнату"
+
+msgid "_Set Title…"
+msgstr "Атауын ор_нату…"
