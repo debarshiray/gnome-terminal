@@ -2241,8 +2241,8 @@ msgstr "_Zarrar a finestra"
 #~ msgid "Use custom default terminal si_ze"
 #~ msgstr "Emplegar grandaria predeterminada presonali_zada de terminal"
 
-#~ msgid "Title"
-#~ msgstr "Titol"
+msgid "Title"
+msgstr "Titol"
 
 #~ msgid "When terminal commands set their o_wn titles:"
 #~ msgstr ""
@@ -2266,8 +2266,8 @@ msgstr "_Zarrar a finestra"
 #~ msgid "Close Window"
 #~ msgstr "Zarrar a finestra"
 
-#~ msgid "Set Title"
-#~ msgstr "Establir titol"
+msgid "Set Title"
+msgstr "Establir titol"
 
 #~ msgid "Switch to Tab 2"
 #~ msgstr "Cambiar a la pestanya 2"
@@ -2340,8 +2340,8 @@ msgstr "_Zarrar a finestra"
 #~ msgid "_Input Methods"
 #~ msgstr "Me_todos de dentrada"
 
-#~ msgid "_Title:"
-#~ msgstr "_Titol:"
+msgid "_Title:"
+msgstr "_Titol:"
 
 #~ msgid "Keyboard Shortcuts"
 #~ msgstr "Alcorces de teclau"

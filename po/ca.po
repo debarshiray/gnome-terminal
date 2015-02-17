@@ -2333,3 +2333,15 @@ msgstr "Tanca la _finestra"
 
 #~ msgid "Open the terminal file manager Midnight Commander"
 #~ msgstr "Obre el gestor de fitxers del terminal Midnight Commander"
+
+msgid "Transparent background"
+msgstr "Fons transparent"
+
+msgid "Title"
+msgstr "Títol"
+
+msgid "_Title:"
+msgstr "Tít_ol:"
+
+msgid "Set Title"
+msgstr "Estableix el títol"

@@ -225,8 +225,8 @@ msgid "<b>Background</b>"
 msgstr "<b>Sfondi</b>"
 
 #: ../src/gnome-terminal.glade2.h:3
-msgid "<b>Command</b>"
-msgstr "<b>Komanda</b>"
+msgid "Command"
+msgstr "Komanda"
 
 #: ../src/gnome-terminal.glade2.h:4
 msgid "<b>Compatibility</b>"
@@ -568,8 +568,8 @@ msgstr "Ngjyra e _tekstit:"
 
 # (pofilter) simplecaps: checks the capitalisation of two strings isn't wildly different
 #: ../src/gnome-terminal.glade2.h:85
-msgid "_Transparent background"
-msgstr "Sfond _Trasparent"
+msgid "Transparent background"
+msgstr "Sfond Trasparent"
 
 #: ../src/gnome-terminal.glade2.h:86
 msgid "_Update login records when command is launched"

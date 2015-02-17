@@ -757,8 +757,8 @@ msgid "_Base on:"
 msgstr ""
 
 #: ../src/profile-preferences.glade.h:1
-msgid "<b>Command</b>"
-msgstr "<b>Հրաման</b>"
+msgid "Command"
+msgstr "Հրաման"
 
 #: ../src/profile-preferences.glade.h:2
 msgid "<b>Foreground and Background</b>"
@@ -1012,8 +1012,8 @@ msgid "_Text color:"
 msgstr "_Տեքստի գույնը՝"
 
 #: ../src/profile-preferences.glade.h:73
-msgid "_Transparent background"
-msgstr "_Թափանցիկ նախադրյալ"
+msgid "Transparent background"
+msgstr "Թափանցիկ նախադրյալ"
 
 #: ../src/profile-preferences.glade.h:74
 msgid "_Update login records when command is launched"
