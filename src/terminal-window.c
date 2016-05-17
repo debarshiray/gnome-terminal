@@ -117,7 +117,8 @@ struct _TerminalWindowPrivate
 
 #define PROFILE_DATA_KEY "GT::Profile"
 
-#define FILE_NEW_TERMINAL_UI_PATH         "/menubar/File/FileNewTerminalProfiles"
+#define FILE_NEW_TERMINAL_TAB_UI_PATH     "/menubar/File/FileNewTabProfiles"
+#define FILE_NEW_TERMINAL_WINDOW_UI_PATH  "/menubar/File/FileNewWindowProfiles"
 #define SET_ENCODING_UI_PATH              "/menubar/Terminal/TerminalSetEncoding/EncodingsPH"
 #define SET_ENCODING_ACTION_NAME_PREFIX   "TerminalSetEncoding"
 
@@ -385,7 +386,6 @@ action_new_terminal_cb (GSimpleAction *action,
   gs_free char *new_working_directory = NULL;
   const char *mode_str, *uuid_str;
   TerminalNewTerminalMode mode;
-  GdkModifierType modifiers;
 
   g_assert (TERMINAL_IS_WINDOW (window));
 
@@ -397,18 +397,8 @@ action_new_terminal_cb (GSimpleAction *action,
     mode = TERMINAL_NEW_TERMINAL_MODE_TAB;
   else if (g_str_equal (mode_str, "window"))
     mode = TERMINAL_NEW_TERMINAL_MODE_WINDOW;
-  else {
-    mode = g_settings_get_enum (terminal_app_get_global_settings (app),
-                                TERMINAL_SETTING_NEW_TERMINAL_MODE_KEY);
-    if (gtk_get_current_event_state (&modifiers) &&
-        (modifiers & gtk_accelerator_get_default_mod_mask () & GDK_CONTROL_MASK)) {
-      /* Invert */
-      if (mode == TERMINAL_NEW_TERMINAL_MODE_WINDOW)
-        mode = TERMINAL_NEW_TERMINAL_MODE_TAB;
-      else
-        mode = TERMINAL_NEW_TERMINAL_MODE_WINDOW;
-    }
-  }
+  else
+    return;
 
   profiles_list = terminal_app_get_profiles_list (app);
   if (g_str_equal (uuid_str, "current"))
@@ -451,9 +441,9 @@ file_new_terminal_callback (GtkAction *action,
     uuid = g_strdup ("current");
 
   name = gtk_action_get_name (action);
-  if (g_str_has_prefix (name, "FileNewTab"))
+  if (g_str_has_prefix (name, "FileNewTab") || g_str_has_prefix (name, "PopupNewTab"))
     param = g_variant_new ("(ss)", "tab", uuid);
-  else if (g_str_has_prefix (name, "FileNewWindow"))
+  else if (g_str_has_prefix (name, "FileNewWindow") || g_str_has_prefix (name, "PopupNewTerminal"))
     param = g_variant_new ("(ss)", "window", uuid);
   else
     param = g_variant_new ("(ss)", "default", uuid);
@@ -1485,8 +1475,6 @@ terminal_window_update_new_terminal_menus (TerminalWindow *window)
   gtk_action_set_visible (action, have_single_profile);
   action = gtk_action_group_get_action (priv->action_group, "FileNewWindow");
   gtk_action_set_visible (action, have_single_profile);
-  action = gtk_action_group_get_action (priv->action_group, "FileNewTerminal");
-  gtk_action_set_visible (action, have_single_profile);
 
   if (have_single_profile)
     {
@@ -1508,7 +1496,7 @@ terminal_window_update_new_terminal_menus (TerminalWindow *window)
       GSettings *profile = (GSettings *) p->data;
       char name[32];
 
-      g_snprintf (name, sizeof (name), "FileNewTerminal.%u", n);
+      g_snprintf (name, sizeof (name), "FileNewTab.%u", n);
       terminal_window_create_new_terminal_action (window,
                                                   profile,
                                                   name,
@@ -1516,7 +1504,19 @@ terminal_window_update_new_terminal_menus (TerminalWindow *window)
                                                   G_CALLBACK (file_new_terminal_callback));
 
       gtk_ui_manager_add_ui (priv->ui_manager, priv->new_terminal_ui_id,
-                             FILE_NEW_TERMINAL_UI_PATH,
+                             FILE_NEW_TERMINAL_TAB_UI_PATH,
+                             name, name,
+                             GTK_UI_MANAGER_MENUITEM, FALSE);
+
+      g_snprintf (name, sizeof (name), "FileNewWindow.%u", n);
+      terminal_window_create_new_terminal_action (window,
+                                                  profile,
+                                                  name,
+                                                  n,
+                                                  G_CALLBACK (file_new_terminal_callback));
+
+      gtk_ui_manager_add_ui (priv->ui_manager, priv->new_terminal_ui_id,
+                             FILE_NEW_TERMINAL_WINDOW_UI_PATH,
                              name, name,
                              GTK_UI_MANAGER_MENUITEM, FALSE);
 
@@ -2457,7 +2457,8 @@ terminal_window_init (TerminalWindow *window)
     {
       /* Toplevel */
       { "File", NULL, N_("_File") },
-      { "FileNewTerminalProfiles", STOCK_NEW_WINDOW, N_("Open _Terminal")},
+      { "FileNewWindowProfiles", STOCK_NEW_WINDOW, N_("Open _Terminal")},
+      { "FileNewTabProfiles", STOCK_NEW_TAB, N_("Open Ta_b")},
       { "Edit", NULL, N_("_Edit") },
       { "View", NULL, N_("_View") },
       { "Search", NULL, N_("_Search") },
@@ -2473,9 +2474,6 @@ terminal_window_init (TerminalWindow *window)
         NULL,
         G_CALLBACK (file_new_terminal_callback) },
       { "FileNewTab", STOCK_NEW_TAB, N_("Open Ta_b"), "<shift><control>T",
-        NULL,
-        G_CALLBACK (file_new_terminal_callback) },
-      { "FileNewTerminal", STOCK_NEW_TAB, N_("Open _Terminal"), NULL,
         NULL,
         G_CALLBACK (file_new_terminal_callback) },
       { "FileNewProfile", "document-open", N_("New _Profile"), "",
@@ -2620,6 +2618,9 @@ terminal_window_init (TerminalWindow *window)
         NULL,
         G_CALLBACK (edit_paste_callback) },
       { "PopupNewTerminal", NULL, N_("Open _Terminal"), NULL,
+        NULL,
+        G_CALLBACK (file_new_terminal_callback) },
+      { "PopupNewTab", NULL, N_("Open Ta_b"), NULL,
         NULL,
         G_CALLBACK (file_new_terminal_callback) },
       { "PopupLeaveFullscreen", NULL, N_("L_eave Full Screen"), NULL,
