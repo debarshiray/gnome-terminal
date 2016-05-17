@@ -560,7 +560,7 @@ terminal_prefs_show_preferences (GtkWindow *transient_parent,
   GtkWidget *show_menubar_button, *disable_mnemonics_button, *disable_menu_accel_button;
   GtkWidget *disable_shortcuts_button;
   GtkWidget *tree_view_container, *new_button, *edit_button, *clone_button, *remove_button;
-  GtkWidget *theme_variant_label, *theme_variant_combo, *new_terminal_mode_combo;
+  GtkWidget *theme_variant_label, *theme_variant_combo;
   GtkWidget *default_hbox, *default_label;
   GtkWidget *close_button, *help_button;
   GtkTreeSelection *selection;
@@ -586,7 +586,6 @@ terminal_prefs_show_preferences (GtkWindow *transient_parent,
                                        "default-show-menubar-checkbutton", &show_menubar_button,
                                        "theme-variant-label", &theme_variant_label,
                                        "theme-variant-combobox", &theme_variant_combo,
-                                       "new-terminal-mode-combobox", &new_terminal_mode_combo,
                                        "disable-mnemonics-checkbutton", &disable_mnemonics_button,
                                        "disable-shortcuts-checkbutton", &disable_shortcuts_button,
                                        "disable-menu-accel-checkbutton", &disable_menu_accel_button,
@@ -627,12 +626,6 @@ terminal_prefs_show_preferences (GtkWindow *transient_parent,
   gtk_widget_set_visible (theme_variant_label, FALSE);
   gtk_widget_set_visible (theme_variant_combo, FALSE);
 #endif /* GTK+ 3.19 */
-
-  g_settings_bind (settings,
-                   TERMINAL_SETTING_NEW_TERMINAL_MODE_KEY,
-                   new_terminal_mode_combo,
-                   "active-id",
-                   G_SETTINGS_BIND_GET | G_SETTINGS_BIND_SET);
 
   /* Keybindings tab */
 
