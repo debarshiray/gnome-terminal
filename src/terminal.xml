@@ -1,8 +1,10 @@
 <ui>
   <menubar>
     <menu action="File">
-      <menuitem action="FileNewTerminal" />
-      <menu action="FileNewTerminalProfiles" />
+      <menuitem action="FileNewWindow" />
+      <menu action="FileNewWindowProfiles" />
+      <menuitem action="FileNewTab" />
+      <menu action="FileNewTabProfiles" />
       <separator />
       <menuitem action="FileNewProfile" />
       <menuitem action="FileSaveContents" />
@@ -91,6 +93,7 @@
     <menuitem action="PopupNumberInfo" />
     <separator />
     <menuitem action="PopupNewTerminal" />
+    <menuitem action="PopupNewTab" />
     <separator />
     <menuitem action="PopupCopy" />
     <menuitem action="PopupCopyHTML" />
