@@ -48,6 +48,7 @@
     </menu>
     <menu action="Terminal">
       <menu action="TerminalProfiles" />
+      <menuitem action="TerminalSetTitle" />
       <menu action="TerminalSetEncoding" >
         <placeholder name="EncodingsPH" />
         <separator />
@@ -111,6 +112,7 @@
     <menuitem action="TabsMoveRight"/>
     <separator />
     <menuitem action="TabsDetach"/>
+    <menuitem action="TerminalSetTitle" />
     <separator />
     <menuitem action="FileCloseTab"/>
   </popup>
