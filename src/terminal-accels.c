@@ -75,6 +75,7 @@
 #define KEY_RESET               "reset"
 #define KEY_SAVE_CONTENTS       "save-contents"
 #define KEY_SELECT_ALL          "select-all"
+#define KEY_SET_TERMINAL_TITLE  "set-terminal-title"
 #define KEY_TOGGLE_MENUBAR      "toggle-menubar"
 #define KEY_ZOOM_IN             "zoom-in"
 #define KEY_ZOOM_NORMAL         "zoom-normal"
@@ -109,6 +110,7 @@
 #define ACCEL_PATH_KEY_RESET_AND_CLEAR      ACCEL_PATH_ROOT "TerminalResetClear"
 #define ACCEL_PATH_KEY_SAVE_CONTENTS        ACCEL_PATH_ROOT "FileSaveContents"
 #define ACCEL_PATH_KEY_SELECT_ALL           ACCEL_PATH_ROOT "EditSelectAll"
+#define ACCEL_PATH_KEY_SET_TERMINAL_TITLE   ACCEL_PATH_ROOT "TerminalSetTitle"
 #define ACCEL_PATH_KEY_TOGGLE_MENUBAR       ACCEL_PATH_ROOT "ViewMenubar"
 #define ACCEL_PATH_KEY_ZOOM_IN              ACCEL_PATH_ROOT "ViewZoomIn"
 #define ACCEL_PATH_KEY_ZOOM_NORMAL          ACCEL_PATH_ROOT "ViewZoom100"
@@ -193,6 +195,7 @@ static KeyEntry terminal_entries[] = {
   ENTRY (N_("Read-Only"),       KEY_READ_ONLY,          "read-only", NULL, NULL   ),
   ENTRY (N_("Reset"),           KEY_RESET,              "reset",     "b",  "false"),
   ENTRY (N_("Reset and Clear"), KEY_RESET_AND_CLEAR,    "reset",     "b",  "true" ),
+  ENTRY (N_("Set Title"),       KEY_SET_TERMINAL_TITLE, "set-title", NULL, NULL   ),
 };
 
 static KeyEntry tabs_entries[] = {
