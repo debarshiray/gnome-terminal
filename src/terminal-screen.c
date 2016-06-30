@@ -114,8 +114,11 @@ struct _TerminalScreenPrivate
   ExecData *exec_data;
 
   gboolean between_preexec_and_precmd;
+  gboolean user_title; /* title was manually set */
   char *current_cmdline;
-  char *title;
+  char *raw_title;
+  char *cooked_title;
+  char *override_title;
   guint contents_changed_source_id;
   guint shell_preexec_source_id;
 };
@@ -132,8 +135,7 @@ enum
 enum {
   PROP_0,
   PROP_PROFILE,
-  PROP_TITLE,
-  PROP_DESCRIPTION
+  PROP_TITLE
 };
 
 enum
@@ -183,8 +185,13 @@ static void terminal_screen_window_title_changed      (VteTerminal *vte_terminal
 
 static void update_color_scheme                      (TerminalScreen *screen);
 
+static gboolean terminal_screen_format_title (TerminalScreen *screen, const char *raw_title, char **old_cooked_title);
+
+static void terminal_screen_cook_title      (TerminalScreen *screen);
+
 static char* terminal_screen_check_hyperlink   (TerminalScreen            *screen,
                                                 GdkEvent                  *event);
+
 static void terminal_screen_check_extra (TerminalScreen *screen,
                                          GdkEvent       *event,
                                          char           **number_info);
@@ -565,6 +572,9 @@ terminal_screen_init (TerminalScreen *screen)
   gtk_target_table_free (targets, n_targets);
   gtk_target_list_unref (target_list);
 
+  priv->override_title = NULL;
+  priv->user_title = FALSE;
+
   g_signal_connect (screen, "window-title-changed",
                     G_CALLBACK (terminal_screen_window_title_changed),
                     screen);
@@ -598,9 +608,6 @@ terminal_screen_get_property (GObject *object,
       case PROP_TITLE:
         g_value_set_string (value, terminal_screen_get_title (screen));
         break;
-      case PROP_DESCRIPTION:
-        g_value_take_string (value, terminal_screen_get_description (screen));
-        break;
       default:
         G_OBJECT_WARN_INVALID_PROPERTY_ID (object, prop_id, pspec);
         break;
@@ -621,7 +628,6 @@ terminal_screen_set_property (GObject *object,
         terminal_screen_set_profile (screen, g_value_get_object (value));
         break;
       case PROP_TITLE:
-      case PROP_DESCRIPTION:
         /* not writable */
       default:
         G_OBJECT_WARN_INVALID_PROPERTY_ID (object, prop_id, pspec);
@@ -710,13 +716,6 @@ terminal_screen_class_init (TerminalScreenClass *klass)
      g_param_spec_string ("title", NULL, NULL,
                           NULL,
                           G_PARAM_READABLE | G_PARAM_STATIC_NAME | G_PARAM_STATIC_NICK | G_PARAM_STATIC_BLURB));
-
-  g_object_class_install_property (object_class,
-                                   PROP_DESCRIPTION,
-                                   g_param_spec_string ("description", NULL, NULL,
-                                                        NULL,
-                                                        G_PARAM_READABLE |
-                                                        G_PARAM_STATIC_STRINGS));
 
   g_type_class_add_private (object_class, sizeof (TerminalScreenPrivate));
 
@@ -814,7 +813,9 @@ terminal_screen_finalize (GObject *object)
 
   g_free (priv->uuid);
   g_free (priv->current_cmdline);
-  g_free (priv->title);
+  g_free (priv->raw_title);
+  g_free (priv->cooked_title);
+  g_free (priv->override_title);
 
   G_OBJECT_CLASS (terminal_screen_parent_class)->finalize (object);
 }
@@ -834,28 +835,8 @@ terminal_screen_new (GSettings       *profile,
                          g_settings_get_int (profile, TERMINAL_PROFILE_DEFAULT_SIZE_COLUMNS_KEY),
                          g_settings_get_int (profile, TERMINAL_PROFILE_DEFAULT_SIZE_ROWS_KEY));
 
-  /* If given an initial title, strip it of control characters and
-   * feed it to the terminal.
-   */
-  if (title) {
-    GString *seq;
-    const char *p;
-
-    seq = g_string_new ("\033]0;");
-    for (p = title; *p; p = g_utf8_next_char (p)) {
-      gunichar c = g_utf8_get_char (p);
-      if (c < 0x20 || (c >= 0x7f && c <= 0x9f))
-        continue;
-      else if (c == ';')
-        break;
-
-      g_string_append_unichar (seq, c);
-    }
-    g_string_append (seq, "\033\\");
-
-    vte_terminal_feed (VTE_TERMINAL (screen), seq->str, seq->len);
-    g_string_free (seq, TRUE);
-  }
+  if (title)
+    terminal_screen_set_override_title (screen, title);
 
   vte_terminal_set_font_scale (VTE_TERMINAL (screen), zoom);
   terminal_screen_set_font (screen);
@@ -1054,27 +1035,138 @@ terminal_screen_exec (TerminalScreen *screen,
 }
 
 const char*
-terminal_screen_get_title (TerminalScreen *screen)
-{
-  return vte_terminal_get_window_title (VTE_TERMINAL (screen));
-}
-
-char *
-terminal_screen_get_description (TerminalScreen *screen)
+terminal_screen_get_raw_title (TerminalScreen *screen)
 {
   TerminalScreenPrivate *priv = screen->priv;
-  gs_free char *title_string = NULL;
-  const char *title;
+
+  if (priv->raw_title)
+    return priv->raw_title;
+
+  return "";
+}
+
+const char*
+terminal_screen_get_title (TerminalScreen *screen)
+{
+  TerminalScreenPrivate *priv = screen->priv;
+
+  if (priv->cooked_title == NULL)
+    terminal_screen_cook_title (screen);
+
+  /* cooked_title may still be NULL */
+  if (priv->cooked_title != NULL)
+    return priv->cooked_title;
+  else
+    return "";
+}
+
+/* Supported format specifiers:
+ * %S = static title
+ * %D = dynamic title
+ * %A = dynamic title, falling back to static title if empty
+ * %- = separator, if not at start or end of string (excluding whitespace)
+ */
+static const char *
+terminal_screen_get_title_format (TerminalScreen *screen)
+{
+  TerminalScreenPrivate *priv = screen->priv;
+  static const char *formats[] = {
+    "%A"      /* TERMINAL_TITLE_REPLACE */,
+    "%D%-%S"  /* TERMINAL_TITLE_BEFORE  */,
+    "%S%-%D"  /* TERMINAL_TITLE_AFTER   */,
+    "%S"      /* TERMINAL_TITLE_IGNORE  */
+  };
+
+  return formats[g_settings_get_enum (priv->profile, TERMINAL_PROFILE_TITLE_MODE_KEY)];
+}
+
+/**
+ * terminal_screen_format_title::
+ * @screen:
+ * @raw_title: main ingredient
+ * @titleptr <inout>: pointer of the current title string
+ *
+ * Format title according @format, and stores it in <literal>*titleptr</literal>.
+ * Always ensures that *titleptr will be non-NULL.
+ *
+ * Returns: %TRUE iff the title changed
+ */
+static gboolean
+terminal_screen_format_title (TerminalScreen *screen,
+                              const char *raw_title,
+                              char **titleptr)
+{
+  TerminalScreenPrivate *priv = screen->priv;
+  gs_free char *static_title_string = NULL;
+  const char *format, *arg;
+  const char *static_title = NULL;
+  GString *title;
+  gboolean add_sep = FALSE;
+
+  g_assert (titleptr);
 
   /* use --title argument if one was supplied, otherwise ask the profile */
-  if (priv->title)
-    title = priv->title;
+  if (priv->override_title)
+    static_title = priv->override_title;
   else
-    title = title_string = g_settings_get_string (priv->profile, TERMINAL_PROFILE_TITLE_KEY);
+    static_title = static_title_string = g_settings_get_string (priv->profile, TERMINAL_PROFILE_TITLE_KEY);
 
-  return g_strdup_printf ("%s — %d",
-                          title && title[0] ? title : _("Terminal"),
-                          screen->priv->child_pid);
+  title = g_string_sized_new (128);
+
+  format = terminal_screen_get_title_format (screen);
+  for (arg = format; *arg; arg += 2)
+    {
+      const char *text_to_append = NULL;
+
+      g_assert (arg[0] == '%');
+
+      switch (arg[1])
+        {
+          case 'A':
+            text_to_append = raw_title ? raw_title : static_title;
+            break;
+          case 'D':
+            text_to_append = raw_title;
+            break;
+          case 'S':
+            text_to_append = static_title;
+            break;
+          case '-':
+            text_to_append = NULL;
+            add_sep = TRUE;
+            break;
+          default:
+            g_assert_not_reached ();
+        }
+
+      if (!text_to_append || !text_to_append[0])
+        continue;
+
+      if (add_sep && title->len > 0)
+        g_string_append (title, " — ");
+
+      g_string_append (title, text_to_append);
+      add_sep = FALSE;
+    }
+
+  if (*titleptr == NULL || strcmp (title->str, *titleptr) != 0)
+    {
+      g_free (*titleptr);
+      *titleptr = g_string_free (title, FALSE);
+      return TRUE;
+    }
+
+  g_string_free (title, TRUE);
+  return FALSE;
+}
+
+static void
+terminal_screen_cook_title (TerminalScreen *screen)
+{
+  TerminalScreenPrivate *priv = screen->priv;
+
+  if (terminal_screen_format_title (screen, priv->raw_title, &priv->cooked_title))
+    g_object_notify (G_OBJECT (screen), "title");
 }
 
 static void
@@ -1117,9 +1209,10 @@ terminal_screen_profile_changed_cb (GSettings     *profile,
     }
 
   if (!prop_name ||
+      prop_name == I_(TERMINAL_PROFILE_TITLE_MODE_KEY) ||
       prop_name == I_(TERMINAL_PROFILE_TITLE_KEY))
     {
-      g_object_notify (object, "description");
+      terminal_screen_cook_title (screen);
     }
 
   if (gtk_widget_get_realized (GTK_WIDGET (screen)) &&
@@ -1407,7 +1500,6 @@ terminal_screen_set_profile (TerminalScreen *screen,
     g_object_unref (old_profile);
 
   g_object_notify (G_OBJECT (screen), "profile");
-  g_object_notify (G_OBJECT (screen), "description");
 }
 
 GSettings*
@@ -1752,8 +1844,6 @@ spawn_result_cb (VteTerminal *terminal,
 
   priv->child_pid = pid;
 
-  g_object_notify (G_OBJECT (screen), "description");
-
   if (error) {
      // FIXMEchpe should be unnecessary, vte already does this internally
     vte_terminal_set_pty (terminal, NULL);
@@ -2029,33 +2119,45 @@ terminal_screen_focus_in (GtkWidget     *widget,
   return GTK_WIDGET_CLASS (terminal_screen_parent_class)->focus_in_event (widget, event);
 }
 
-void
-terminal_screen_set_user_title (TerminalScreen *screen,
-                                const char     *title)
+static void
+terminal_screen_set_dynamic_title (TerminalScreen *screen,
+                                   const char     *title,
+				   gboolean	  userset)
 {
   TerminalScreenPrivate *priv = screen->priv;
 
-  g_return_if_fail (TERMINAL_IS_SCREEN (screen));
+  g_assert (TERMINAL_IS_SCREEN (screen));
 
-  if (g_strcmp0 (priv->title, title) == 0)
+  if ((priv->user_title && !userset) ||
+      (priv->raw_title && title &&
+       strcmp (priv->raw_title, title) == 0))
     return;
 
-  g_free (priv->title);
-  priv->title = title && title[0] ? g_strdup (title) : NULL;
+  g_free (priv->raw_title);
+  priv->raw_title = g_strdup (title);
+  terminal_screen_cook_title (screen);
+}
 
-  g_object_notify (G_OBJECT (screen), "description");
+void
+terminal_screen_set_override_title (TerminalScreen *screen,
+                                    const char     *title)
+{
+  TerminalScreenPrivate *priv = screen->priv;
+  char *old_title;
+
+  old_title = priv->override_title;
+  priv->override_title = g_strdup (title);
+  g_free (old_title);
+
+  terminal_screen_set_dynamic_title (screen, title, FALSE);
 }
 
 const char*
-terminal_screen_get_user_title (TerminalScreen *screen)
+terminal_screen_get_dynamic_title (TerminalScreen *screen)
 {
-  TerminalScreenPrivate *priv;
-
   g_return_val_if_fail (TERMINAL_IS_SCREEN (screen), NULL);
 
-  priv = screen->priv;
-
-  return priv->title ? priv->title : _("Terminal");
+  return screen->priv->raw_title;
 }
 
 /**
@@ -2088,7 +2190,9 @@ static void
 terminal_screen_window_title_changed (VteTerminal *vte_terminal,
                                       TerminalScreen *screen)
 {
-  g_object_notify (G_OBJECT (screen), "title");
+  terminal_screen_set_dynamic_title (screen,
+                                     vte_terminal_get_window_title (vte_terminal),
+				     FALSE);
 }
 
 static void
@@ -2110,8 +2214,6 @@ terminal_screen_child_exited (VteTerminal *terminal,
                          screen);
 
   priv->child_pid = -1;
-
-  g_object_notify (G_OBJECT (screen), "description");
 
   action = g_settings_get_enum (priv->profile, TERMINAL_PROFILE_EXIT_ACTION_KEY);
 
@@ -2153,6 +2255,23 @@ terminal_screen_child_exited (VteTerminal *terminal,
 
     default:
       break;
+    }
+}
+
+void
+terminal_screen_set_user_title (TerminalScreen *screen,
+                                const char *text)
+{
+  TerminalScreenPrivate *priv = screen->priv;
+
+  /* The user set the title to nothing, let's understand that as a
+     request to revert to dynamically setting the title again. */
+  if (!text || !text[0])
+    priv->user_title = FALSE;
+  else
+    {
+      priv->user_title = TRUE;
+      terminal_screen_set_dynamic_title (screen, text, TRUE);
     }
 }
 
