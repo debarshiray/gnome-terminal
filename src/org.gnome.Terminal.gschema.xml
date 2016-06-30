@@ -24,6 +24,13 @@
 -->
 <schemalist gettext-domain="gnome-terminal">
 
+  <enum id='org.gnome.Terminal.TitleMode'>
+    <value nick='replace' value='0'/>
+    <value nick='before' value='1'/>
+    <value nick='after' value='2'/>
+    <value nick='ignore' value='3'/>
+  </enum>
+
    <enum id='org.gnome.Terminal.NewTerminalMode'>
     <value nick='window' value='0'/>
     <value nick='tab' value='1'/>
@@ -182,6 +189,11 @@
       <default>'#ffffff'</default>
       <summary>Highlight foreground colour</summary>
       <description>Custom color for the foreground of the text character at the terminal’s highlight position, as a color specification (can be HTML-style hex digits, or a color name such as “red”). This is ignored if highlight-colors-set is false.</description>
+    </key>
+    <key name="title-mode" enum="org.gnome.Terminal.TitleMode">
+      <default>'replace'</default>
+      <summary>What to do with dynamic title</summary>
+      <description>If the application in the terminal sets the title (most typically people have their shell set up to do this), the dynamically-set title can erase the configured title, go before it, go after it, or replace it. The possible values are "replace", "before", "after", and "ignore".</description>
     </key>
     <key name="title" type="s">
       <default l10n="messages" context="title">'Terminal'</default>
