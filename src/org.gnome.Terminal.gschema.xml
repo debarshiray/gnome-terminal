@@ -209,6 +209,11 @@
       <summary>Whether to enable SIXEL images</summary>
       <description>If true, SIXEL sequences are parsed and images are rendered.</description>
     </key>
+    <key name="title" type="s">
+      <default l10n="messages" context="title">'Terminal'</default>
+      <summary>Title for terminal</summary>
+      <description>Title to display for the terminal window or tab. This title may be replaced by or combined with the title set by the application inside the terminal, depending on the title_mode setting.</description>
+    </key>
     <key name="bold-is-bright" type="b">
       <default>false</default>
       <summary>Whether bold is also bright</summary>
