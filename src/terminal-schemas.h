@@ -66,6 +66,7 @@ G_BEGIN_DECLS
 #define TERMINAL_PROFILE_SCROLL_ON_KEYSTROKE_KEY        "scroll-on-keystroke"
 #define TERMINAL_PROFILE_SCROLL_ON_OUTPUT_KEY           "scroll-on-output"
 #define TERMINAL_PROFILE_TEXT_BLINK_MODE_KEY            "text-blink-mode"
+#define TERMINAL_PROFILE_TITLE_MODE_KEY                 "title-mode"
 #define TERMINAL_PROFILE_TITLE_KEY                      "title"
 #define TERMINAL_PROFILE_USE_CUSTOM_COMMAND_KEY         "use-custom-command"
 #define TERMINAL_PROFILE_USE_SKEY_KEY                   "use-skey"

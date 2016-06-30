@@ -1206,6 +1206,15 @@ profile_prefs_load (const char *uuid, GSettings *profile)
                                gtk_builder_get_object (builder, "title-entry"),
                                "text",
                                G_SETTINGS_BIND_GET | G_SETTINGS_BIND_SET);
+  profile_prefs_settings_bind_with_mapping (profile,
+                                            TERMINAL_PROFILE_TITLE_MODE_KEY,
+                                            gtk_builder_get_object (builder,
+                                                                    "title-mode-combobox"),
+                                            "active",
+                                            G_SETTINGS_BIND_GET | G_SETTINGS_BIND_SET,
+                                            (GSettingsBindGetMapping) string_to_enum,
+                                            (GSettingsBindSetMapping) enum_to_string,
+                                            terminal_title_mode_get_type, NULL);
   profile_prefs_settings_bind (profile, TERMINAL_PROFILE_USE_CUSTOM_COMMAND_KEY,
                                gtk_builder_get_object (builder,
                                                        "use-custom-command-checkbutton"),
