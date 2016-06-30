@@ -767,6 +767,12 @@ terminal_set_title_dialog_response_cb (GtkWidget *dialog,
   gtk_widget_destroy (dialog);
 }
 
+static const char *
+terminal_screen_get_user_title (TerminalScreen *screen)
+{
+  return terminal_screen_get_raw_title (screen);
+}
+
 static void
 action_set_title_cb (GSimpleAction *action,
                      GVariant *parameter,
@@ -2524,8 +2530,7 @@ sync_screen_title (TerminalScreen *screen,
     return;
 
   title = terminal_screen_get_title (screen);
-  gtk_window_set_title (GTK_WINDOW (window),
-                        title && title[0] ? title : _("Terminal"));
+  gtk_window_set_title (GTK_WINDOW (window), title);
 }
 
 static void
