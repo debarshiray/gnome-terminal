@@ -1331,6 +1331,11 @@ profile_prefs_load (const char *uuid, GSettings *profile)
                                             (GSettingsBindSetMapping) enum_to_string,
                                             terminal_preserve_working_directory_get_type, NULL);
 
+  profile_prefs_settings_bind (profile,
+                               TERMINAL_PROFILE_TITLE_KEY,
+                               gtk_builder_get_object (builder, "title-entry"),
+                               "text",
+                               G_SETTINGS_BIND_GET | G_SETTINGS_BIND_SET);
   profile_prefs_settings_bind (profile, TERMINAL_PROFILE_USE_CUSTOM_COMMAND_KEY,
                                gtk_builder_get_object (builder,
                                                        "use-custom-command-checkbutton"),
