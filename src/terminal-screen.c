@@ -111,6 +111,7 @@ struct _TerminalScreenPrivate
 
   gboolean between_preexec_and_precmd;
   char *current_cmdline;
+  char *title;
   guint contents_changed_source_id;
   guint shell_preexec_source_id;
 };
@@ -128,6 +129,7 @@ enum {
   PROP_0,
   PROP_PROFILE,
   PROP_TITLE,
+  PROP_DESCRIPTION
 };
 
 enum
@@ -592,6 +594,9 @@ terminal_screen_get_property (GObject *object,
       case PROP_TITLE:
         g_value_set_string (value, terminal_screen_get_title (screen));
         break;
+      case PROP_DESCRIPTION:
+        g_value_take_string (value, terminal_screen_get_description (screen));
+        break;
       default:
         G_OBJECT_WARN_INVALID_PROPERTY_ID (object, prop_id, pspec);
         break;
@@ -612,6 +617,7 @@ terminal_screen_set_property (GObject *object,
         terminal_screen_set_profile (screen, g_value_get_object (value));
         break;
       case PROP_TITLE:
+      case PROP_DESCRIPTION:
         /* not writable */
       default:
         G_OBJECT_WARN_INVALID_PROPERTY_ID (object, prop_id, pspec);
@@ -700,6 +706,13 @@ terminal_screen_class_init (TerminalScreenClass *klass)
      g_param_spec_string ("title", NULL, NULL,
                           NULL,
                           G_PARAM_READABLE | G_PARAM_STATIC_NAME | G_PARAM_STATIC_NICK | G_PARAM_STATIC_BLURB));
+
+  g_object_class_install_property (object_class,
+                                   PROP_DESCRIPTION,
+                                   g_param_spec_string ("description", NULL, NULL,
+                                                        NULL,
+                                                        G_PARAM_READABLE |
+                                                        G_PARAM_STATIC_STRINGS));
 
   g_type_class_add_private (object_class, sizeof (TerminalScreenPrivate));
 
@@ -797,6 +810,7 @@ terminal_screen_finalize (GObject *object)
 
   g_free (priv->uuid);
   g_free (priv->current_cmdline);
+  g_free (priv->title);
 
   G_OBJECT_CLASS (terminal_screen_parent_class)->finalize (object);
 }
@@ -1054,6 +1068,21 @@ const char*
 terminal_screen_get_title (TerminalScreen *screen)
 {
   return vte_terminal_get_window_title (VTE_TERMINAL (screen));
+}
+
+char *
+terminal_screen_get_description (TerminalScreen *screen)
+{
+  TerminalScreenPrivate *priv = screen->priv;
+  const char *title;
+
+  /* use --title argument if one was supplied, otherwise ask the profile */
+  if (priv->title)
+    title = priv->title;
+
+  return g_strdup_printf ("%s — %d",
+                          title && title[0] ? title : _("Terminal"),
+                          screen->priv->child_pid);
 }
 
 static void
@@ -1384,6 +1413,7 @@ terminal_screen_set_profile (TerminalScreen *screen,
     g_object_unref (old_profile);
 
   g_object_notify (G_OBJECT (screen), "profile");
+  g_object_notify (G_OBJECT (screen), "description");
 }
 
 GSettings*
@@ -1654,6 +1684,8 @@ spawn_result_cb (VteTerminal *terminal,
   TerminalScreenPrivate *priv = screen->priv;
 
   priv->child_pid = pid;
+
+  g_object_notify (G_OBJECT (screen), "description");
 
   if (error) {
      // FIXMEchpe should be unnecessary, vte already does this internally
@@ -1939,6 +1971,35 @@ terminal_screen_focus_in (GtkWidget     *widget,
   return GTK_WIDGET_CLASS (terminal_screen_parent_class)->focus_in_event (widget, event);
 }
 
+void
+terminal_screen_set_user_title (TerminalScreen *screen,
+                                const char     *title)
+{
+  TerminalScreenPrivate *priv = screen->priv;
+
+  g_return_if_fail (TERMINAL_IS_SCREEN (screen));
+
+  if (g_strcmp0 (priv->title, title) == 0)
+    return;
+
+  g_free (priv->title);
+  priv->title = title && title[0] ? g_strdup (title) : NULL;
+
+  g_object_notify (G_OBJECT (screen), "description");
+}
+
+const char*
+terminal_screen_get_user_title (TerminalScreen *screen)
+{
+  TerminalScreenPrivate *priv;
+
+  g_return_val_if_fail (TERMINAL_IS_SCREEN (screen), NULL);
+
+  priv = screen->priv;
+
+  return priv->title ? priv->title : _("Terminal");
+}
+
 /**
  * terminal_screen_get_current_dir:
  * @screen:
@@ -1991,6 +2052,8 @@ terminal_screen_child_exited (VteTerminal *terminal,
                          screen);
 
   priv->child_pid = -1;
+
+  g_object_notify (G_OBJECT (screen), "description");
 
   action = g_settings_get_enum (priv->profile, TERMINAL_PROFILE_EXIT_ACTION_KEY);
 
