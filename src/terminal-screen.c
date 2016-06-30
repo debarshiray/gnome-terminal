@@ -717,7 +717,7 @@ terminal_screen_new (GSettings       *profile,
   /* If given an initial title, strip it of control characters and
    * feed it to the terminal.
    */
-  if (title != NULL) {
+  if (title) {
     GString *seq;
     const char *p;
 
