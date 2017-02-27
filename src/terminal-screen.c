@@ -908,7 +908,6 @@ update_color_scheme (TerminalScreen *screen)
   GdkRGBA *cursor_bgp = NULL, *cursor_fgp = NULL;
   GdkRGBA *highlight_bgp = NULL, *highlight_fgp = NULL;
   GtkStyleContext *context;
-  GtkWidget *toplevel;
   gboolean transparent;
   gboolean use_theme_colors;
 
