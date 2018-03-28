@@ -94,6 +94,7 @@ gnome_terminal_server_SOURCES = \
 nodist_gnome_terminal_server_SOURCES = $(gnome_terminal_server_built)
 
 gnome_terminal_server_CPPFLAGS = \
+	-DDISUNIFY_NEW_TERMINAL_SECTION \
 	-DTERMINAL_COMPILATION \
 	-DTERM_LOCALEDIR="\"$(datadir)/locale\"" \
 	-DTERM_LIBEXECDIR="\"$(libexecdir)\"" \
