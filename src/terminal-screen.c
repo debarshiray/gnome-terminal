@@ -111,6 +111,11 @@ struct _TerminalScreenPrivate
   gboolean exec_on_realize;
   guint idle_exec_source;
   ExecData *exec_data;
+
+  gboolean between_preexec_and_precmd;
+  char *current_cmdline;
+  guint contents_changed_source_id;
+  guint shell_preexec_source_id;
 };
 
 enum
@@ -159,6 +164,12 @@ static void terminal_screen_hierarchy_changed (GtkWidget *widget,
                                                GtkWidget *previous_toplevel);
 static void terminal_screen_child_exited  (VteTerminal *terminal,
                                            int status);
+
+static void terminal_screen_contents_changed (VteTerminal *terminal);
+
+static void terminal_screen_shell_precmd (VteTerminal *terminal);
+
+static void terminal_screen_shell_preexec (VteTerminal *terminal);
 
 static void terminal_screen_window_title_changed      (VteTerminal *vte_terminal,
                                                        TerminalScreen *screen);
@@ -629,6 +640,9 @@ terminal_screen_class_init (TerminalScreenClass *klass)
   widget_class->hierarchy_changed = terminal_screen_hierarchy_changed;
 
   terminal_class->child_exited = terminal_screen_child_exited;
+  terminal_class->contents_changed = terminal_screen_contents_changed;
+  terminal_class->shell_precmd = terminal_screen_shell_precmd;
+  terminal_class->shell_preexec = terminal_screen_shell_preexec;
 
   signals[PROFILE_SET] =
     g_signal_new (I_("profile-set"),
@@ -728,6 +742,18 @@ terminal_screen_dispose (GObject *object)
                                         0, 0, NULL, NULL,
                                         screen);
 
+  if (priv->contents_changed_source_id != 0)
+    {
+      g_source_remove (priv->contents_changed_source_id);
+      priv->contents_changed_source_id = 0;
+    }
+
+  if (priv->shell_preexec_source_id != 0)
+    {
+      g_source_remove (priv->shell_preexec_source_id);
+      priv->shell_preexec_source_id = 0;
+    }
+
   if (priv->idle_exec_source != 0)
     {
       g_source_remove (priv->idle_exec_source);
@@ -764,6 +790,7 @@ terminal_screen_finalize (GObject *object)
   g_slist_free_full (priv->match_tags, (GDestroyNotify) free_tag_data);
 
   g_free (priv->uuid);
+  g_free (priv->current_cmdline);
 
   G_OBJECT_CLASS (terminal_screen_parent_class)->finalize (object);
 }
@@ -2008,6 +2035,123 @@ terminal_screen_child_exited (VteTerminal *terminal,
     }
 }
 
+static gboolean
+terminal_screen_contents_changed_cb (TerminalScreen *screen)
+{
+  TerminalScreenPrivate *priv = screen->priv;
+  gs_free char *cmdline = NULL;
+
+  g_return_val_if_fail (priv->between_preexec_and_precmd, G_SOURCE_REMOVE);
+  g_return_val_if_fail (priv->shell_preexec_source_id == 0, G_SOURCE_REMOVE);
+
+  _terminal_debug_print (TERMINAL_DEBUG_SHELL_COMMAND, "Contents changed [timeout]\n");
+
+  if (!terminal_screen_has_foreground_process (screen, NULL, &cmdline))
+    goto out;
+
+  if (g_strcmp0 (priv->current_cmdline, cmdline) == 0)
+    goto out;
+
+  g_free (priv->current_cmdline);
+  priv->current_cmdline = g_steal_pointer (&cmdline);
+  _terminal_debug_print (TERMINAL_DEBUG_SHELL_COMMAND, "Current foreground command-line: %s\n", priv->current_cmdline);
+
+ out:
+  priv->contents_changed_source_id = 0;
+  return G_SOURCE_REMOVE;
+}
+
+static void
+terminal_screen_contents_changed (VteTerminal *terminal)
+{
+  TerminalScreen *screen = TERMINAL_SCREEN (terminal);
+  TerminalScreenPrivate *priv = screen->priv;
+
+  _terminal_debug_print (TERMINAL_DEBUG_SHELL_COMMAND, "Contents changed\n");
+
+  if (!priv->between_preexec_and_precmd)
+    return;
+
+  if (priv->shell_preexec_source_id != 0)
+    return;
+
+  if (priv->contents_changed_source_id != 0)
+    return;
+
+  priv->contents_changed_source_id = g_timeout_add (500,
+                                                    (GSourceFunc) terminal_screen_contents_changed_cb,
+                                                    screen);
+}
+
+static void
+terminal_screen_shell_precmd (VteTerminal *terminal)
+{
+  TerminalScreen *screen = TERMINAL_SCREEN (terminal);
+  TerminalScreenPrivate *priv = screen->priv;
+
+  _terminal_debug_print (TERMINAL_DEBUG_SHELL_COMMAND, "Shell precmd\n");
+
+  priv->between_preexec_and_precmd = FALSE;
+
+  if (priv->contents_changed_source_id != 0)
+    {
+      g_source_remove (priv->contents_changed_source_id);
+      priv->contents_changed_source_id = 0;
+    }
+
+  if (priv->shell_preexec_source_id != 0)
+    {
+      g_source_remove (priv->shell_preexec_source_id);
+      priv->shell_preexec_source_id = 0;
+    }
+
+  g_clear_pointer (&priv->current_cmdline, g_free);
+  _terminal_debug_print (TERMINAL_DEBUG_SHELL_COMMAND, "Current foreground command-line: (none)\n");
+}
+
+static gboolean
+terminal_screen_shell_preexec_cb (TerminalScreen *screen)
+{
+  TerminalScreenPrivate *priv = screen->priv;
+  gboolean retval = G_SOURCE_CONTINUE;
+  gs_free char *cmdline = NULL;
+
+  g_return_val_if_fail (priv->between_preexec_and_precmd, G_SOURCE_REMOVE);
+  g_return_val_if_fail (priv->current_cmdline == NULL, G_SOURCE_REMOVE);
+
+  _terminal_debug_print (TERMINAL_DEBUG_SHELL_COMMAND, "Shell preexec [timeout]\n");
+
+  if (!terminal_screen_has_foreground_process (screen, NULL, &cmdline))
+    goto out;
+
+  priv->current_cmdline = g_steal_pointer (&cmdline);
+  _terminal_debug_print (TERMINAL_DEBUG_SHELL_COMMAND, "Current foreground command-line: %s\n", priv->current_cmdline);
+
+  priv->shell_preexec_source_id = 0;
+  retval = G_SOURCE_REMOVE;
+
+ out:
+  return retval;
+}
+
+static void
+terminal_screen_shell_preexec (VteTerminal *terminal)
+{
+  TerminalScreen *screen = TERMINAL_SCREEN (terminal);
+  TerminalScreenPrivate *priv = screen->priv;
+
+  g_return_if_fail (!priv->between_preexec_and_precmd);
+  g_return_if_fail (priv->contents_changed_source_id == 0);
+  g_return_if_fail (priv->current_cmdline == NULL);
+  g_return_if_fail (priv->shell_preexec_source_id == 0);
+
+  _terminal_debug_print (TERMINAL_DEBUG_SHELL_COMMAND, "Shell preexec\n");
+
+  priv->between_preexec_and_precmd = TRUE;
+
+  priv->shell_preexec_source_id = g_timeout_add (200, (GSourceFunc) terminal_screen_shell_preexec_cb, screen);
+}
+
 static void
 terminal_screen_drag_data_received (GtkWidget        *widget,
                                     GdkDragContext   *context,
@@ -2353,7 +2497,11 @@ terminal_screen_has_foreground_process (TerminalScreen *screen,
   if (fd == -1)
     return FALSE;
 
+  _terminal_debug_print (TERMINAL_DEBUG_SHELL_COMMAND, "Child PID: %d\n", priv->child_pid);
+
   fgpid = tcgetpgrp (fd);
+  _terminal_debug_print (TERMINAL_DEBUG_SHELL_COMMAND, "Current foreground process group [tcgetpgrp]: %d\n", fgpid);
+
   if (fgpid == -1 || fgpid == priv->child_pid)
     return FALSE;
 
