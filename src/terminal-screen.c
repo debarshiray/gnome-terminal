@@ -1709,6 +1709,8 @@ terminal_screen_focus_in (GtkWidget     *widget,
   TerminalApp *app;
   TerminalWindow *window;
 
+  _terminal_debug_print (TERMINAL_DEBUG_NOTIFICATIONS, "Notification withdrawn\n");
+
   window = terminal_screen_get_window (screen);
   if (window != NULL)
     {
@@ -1851,6 +1853,9 @@ terminal_screen_contents_changed_cb (TerminalScreen *screen)
 
   g_free (priv->current_cmdline);
   priv->current_cmdline = g_steal_pointer (&cmdline);
+  _terminal_debug_print (TERMINAL_DEBUG_NOTIFICATIONS,
+                         "Current foreground command-line: %s\n",
+                         priv->current_cmdline);
 
  out:
   priv->contents_changed_source_id = 0;
@@ -1910,6 +1915,7 @@ terminal_screen_show_notification (TerminalScreen *screen)
           terminal_tab_label_set_icon (TERMINAL_TAB_LABEL (tab_label),
                                        "dialog-information-symbolic",
                                        _("Command completed"));
+          _terminal_debug_print (TERMINAL_DEBUG_NOTIFICATIONS, "Notify tab\n");
         }
     }
   else
@@ -1925,6 +1931,7 @@ terminal_screen_show_notification (TerminalScreen *screen)
 
       app = terminal_app_get ();
       g_application_send_notification (G_APPLICATION (app), priv->uuid, notification);
+      _terminal_debug_print (TERMINAL_DEBUG_NOTIFICATIONS, "Notify desktop\n");
     }
 }
 
@@ -1968,6 +1975,9 @@ terminal_screen_shell_preexec_cb (TerminalScreen *screen)
     goto out;
 
   priv->current_cmdline = g_steal_pointer (&cmdline);
+  _terminal_debug_print (TERMINAL_DEBUG_NOTIFICATIONS,
+                         "Current foreground command-line: %s\n",
+                         priv->current_cmdline);
 
   priv->shell_preexec_source_id = 0;
   retval = G_SOURCE_REMOVE;
