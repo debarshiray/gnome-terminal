@@ -70,6 +70,7 @@ G_BEGIN_DECLS
 #define TERMINAL_PROFILE_SCROLLBAR_POLICY_KEY           "scrollbar-policy"
 #define TERMINAL_PROFILE_SCROLL_ON_KEYSTROKE_KEY        "scroll-on-keystroke"
 #define TERMINAL_PROFILE_SCROLL_ON_OUTPUT_KEY           "scroll-on-output"
+#define TERMINAL_PROFILE_SHOW_FOREGROUND_PROCESS_IN_TITLE "show-foreground-process-in-title"
 #define TERMINAL_PROFILE_TEXT_BLINK_MODE_KEY            "text-blink-mode"
 #define TERMINAL_PROFILE_TITLE_MODE_KEY                 "title-mode"
 #define TERMINAL_PROFILE_TITLE_KEY                      "title"
