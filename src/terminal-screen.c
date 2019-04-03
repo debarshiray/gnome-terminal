@@ -113,7 +113,9 @@ struct _TerminalScreenPrivate
   guint idle_exec_source;
   ExecData *exec_data;
 
+  gboolean application_title; /* title was set by an application */
   gboolean between_preexec_and_precmd;
+  gboolean show_foreground_process;
   gboolean user_title; /* title was manually set */
   char *current_cmdline;
   char *raw_title;
@@ -1149,6 +1151,26 @@ terminal_screen_format_title (TerminalScreen *screen,
       add_sep = FALSE;
     }
 
+  if (priv->show_foreground_process &&
+      !priv->application_title &&
+      !priv->user_title &&
+      priv->current_cmdline != NULL &&
+      priv->current_cmdline[0] != '\0')
+    {
+      gs_free char *current_cmdline_truncated = NULL;
+      gs_free char *current_cmdline_valid = NULL;
+      glong len_truncated;
+      glong len_valid;
+
+      current_cmdline_valid = g_utf8_make_valid (priv->current_cmdline, -1);
+      len_valid = g_utf8_strlen (current_cmdline_valid, -1);
+
+      len_truncated = len_valid > 1024 ? 1024 : len_valid;
+      current_cmdline_truncated = g_utf8_substring (current_cmdline_valid, 0, len_truncated);
+
+      g_string_append_printf (title, " — %s", current_cmdline_truncated);
+    }
+
   if (*titleptr == NULL || strcmp (title->str, *titleptr) != 0)
     {
       g_free (*titleptr);
@@ -1178,6 +1200,7 @@ terminal_screen_profile_changed_cb (GSettings     *profile,
   GObject *object = G_OBJECT (screen);
   VteTerminal *vte_terminal = VTE_TERMINAL (screen);
   TerminalWindow *window;
+  gboolean cook_title = FALSE;
 
   g_object_freeze_notify (object);
 
@@ -1212,7 +1235,7 @@ terminal_screen_profile_changed_cb (GSettings     *profile,
       prop_name == I_(TERMINAL_PROFILE_TITLE_MODE_KEY) ||
       prop_name == I_(TERMINAL_PROFILE_TITLE_KEY))
     {
-      terminal_screen_cook_title (screen);
+      cook_title = TRUE;
     }
 
   if (gtk_widget_get_realized (GTK_WIDGET (screen)) &&
@@ -1239,6 +1262,13 @@ terminal_screen_profile_changed_cb (GSettings     *profile,
       prop_name == I_(TERMINAL_PROFILE_USE_TRANSPARENT_BACKGROUND) ||
       prop_name == I_(TERMINAL_PROFILE_BACKGROUND_TRANSPARENCY_PERCENT))
     update_color_scheme (screen);
+
+  if (!prop_name || prop_name == I_(TERMINAL_PROFILE_SHOW_FOREGROUND_PROCESS_IN_TITLE))
+    {
+      priv->show_foreground_process = g_settings_get_boolean (profile,
+                                                              TERMINAL_PROFILE_SHOW_FOREGROUND_PROCESS_IN_TITLE);
+      cook_title = TRUE;
+    }
 
   if (!prop_name || prop_name == I_(TERMINAL_PROFILE_AUDIBLE_BELL_KEY))
       vte_terminal_set_audible_bell (vte_terminal, g_settings_get_boolean (profile, TERMINAL_PROFILE_AUDIBLE_BELL_KEY));
@@ -1299,6 +1329,9 @@ terminal_screen_profile_changed_cb (GSettings     *profile,
       g_settings_get (profile, TERMINAL_PROFILE_WORD_CHAR_EXCEPTIONS_KEY, "ms", &word_char_exceptions);
       vte_terminal_set_word_char_exceptions (vte_terminal, word_char_exceptions);
     }
+
+  if (cook_title)
+    terminal_screen_cook_title (screen);
 
   g_object_thaw_notify (object);
 }
@@ -2190,6 +2223,9 @@ static void
 terminal_screen_window_title_changed (VteTerminal *vte_terminal,
                                       TerminalScreen *screen)
 {
+  TerminalScreenPrivate *priv = screen->priv;
+
+  priv->application_title = priv->between_preexec_and_precmd;
   terminal_screen_set_dynamic_title (screen,
                                      vte_terminal_get_window_title (vte_terminal),
 				     FALSE);
@@ -2296,6 +2332,8 @@ terminal_screen_contents_changed_cb (TerminalScreen *screen)
   priv->current_cmdline = g_steal_pointer (&cmdline);
   _terminal_debug_print (TERMINAL_DEBUG_SHELL_COMMAND, "Current foreground command-line: %s\n", priv->current_cmdline);
 
+  terminal_screen_cook_title (screen);
+
  out:
   priv->contents_changed_source_id = 0;
   return G_SOURCE_REMOVE;
@@ -2388,6 +2426,7 @@ terminal_screen_shell_precmd (VteTerminal *terminal)
 
   _terminal_debug_print (TERMINAL_DEBUG_SHELL_COMMAND, "Shell precmd\n");
 
+  priv->application_title = FALSE;
   priv->between_preexec_and_precmd = FALSE;
 
   if (priv->contents_changed_source_id != 0)
@@ -2407,6 +2446,8 @@ terminal_screen_shell_precmd (VteTerminal *terminal)
 
   g_clear_pointer (&priv->current_cmdline, g_free);
   _terminal_debug_print (TERMINAL_DEBUG_SHELL_COMMAND, "Current foreground command-line: (none)\n");
+
+  terminal_screen_cook_title (screen);
 }
 
 static gboolean
@@ -2426,6 +2467,8 @@ terminal_screen_shell_preexec_cb (TerminalScreen *screen)
 
   priv->current_cmdline = g_steal_pointer (&cmdline);
   _terminal_debug_print (TERMINAL_DEBUG_SHELL_COMMAND, "Current foreground command-line: %s\n", priv->current_cmdline);
+
+  terminal_screen_cook_title (screen);
 
   priv->shell_preexec_source_id = 0;
   retval = G_SOURCE_REMOVE;
