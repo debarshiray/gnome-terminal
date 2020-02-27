@@ -108,6 +108,12 @@ gboolean terminal_screen_reexec_from_screen (TerminalScreen *screen,
                                              GCancellable *cancellable,
                                              GError **error);
 
+gboolean terminal_screen_reexec_from_screen_with_override_command (TerminalScreen *screen,
+                                                                   TerminalScreen *parent_screen,
+                                                                   char **override_command,
+                                                                   GCancellable *cancellable,
+                                                                   GError **error);
+
 void terminal_screen_set_profile (TerminalScreen *screen,
                                   GSettings      *profile);
 GSettings* terminal_screen_get_profile (TerminalScreen *screen);
