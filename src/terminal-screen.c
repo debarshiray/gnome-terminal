@@ -882,6 +882,25 @@ terminal_screen_reexec_from_screen (TerminalScreen *screen,
                                     GCancellable *cancellable,
                                     GError **error)
 {
+  _terminal_debug_print (TERMINAL_DEBUG_PROCESSES,
+                         "[screen %p] reexec_from_screen: parent:%p\n",
+                         screen,
+                         parent_screen);
+
+  return terminal_screen_reexec_from_screen_with_override_command (screen,
+                                                                   parent_screen,
+                                                                   NULL,
+                                                                   cancellable,
+                                                                   error);
+}
+
+gboolean
+terminal_screen_reexec_from_screen_with_override_command (TerminalScreen *screen,
+                                                          TerminalScreen *parent_screen,
+                                                          char **override_command,
+                                                          GCancellable *cancellable,
+                                                          GError **error)
+{
   g_return_val_if_fail (TERMINAL_IS_SCREEN (screen), FALSE);
 
   if (parent_screen == NULL)
@@ -892,8 +911,17 @@ terminal_screen_reexec_from_screen (TerminalScreen *screen,
   terminal_unref_exec_data ExecData* data = exec_data_clone (parent_screen->priv->exec_data, FALSE);
   gs_free char* cwd = terminal_screen_get_current_dir (parent_screen);
 
+  if (override_command != NULL)
+    {
+      g_strfreev (data->argv);
+      data->argv = g_strdupv (override_command);
+
+      g_free (data->cwd);
+      data->cwd = g_strdup (cwd);
+    }
+
   _terminal_debug_print (TERMINAL_DEBUG_PROCESSES,
-                         "[screen %p] reexec_from_screen: parent:%p cwd:%s\n",
+                         "[screen %p] reexec_from_screen_with_override_command: parent:%p cwd:%s\n",
                          screen,
                          parent_screen,
                          cwd);

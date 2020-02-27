@@ -405,8 +405,30 @@ action_new_terminal_cb (GSimpleAction *action,
   terminal_window_switch_screen (window, screen);
   gtk_widget_grab_focus (GTK_WIDGET (screen));
 
-  /* Start child process, if possible by using the same args as the parent screen */
-  terminal_screen_reexec_from_screen (screen, parent_screen, NULL, NULL);
+  const char *container_name = vte_terminal_get_current_container_name (VTE_TERMINAL (parent_screen));
+  const char *container_runtime = vte_terminal_get_current_container_runtime (VTE_TERMINAL (parent_screen));
+  if (g_strcmp0 (container_runtime, "toolbox") == 0 && container_name != NULL && container_name[0] != '\0')
+    {
+      gs_free_error GError *error = NULL;
+      gs_free char *override_command_str = NULL;
+      gs_strfreev char **override_command = NULL;
+
+      override_command_str = g_strdup_printf ("toolbox enter --container %s", container_name);
+      if (!g_shell_parse_argv (override_command_str, NULL, &override_command, &error))
+        g_printerr ("Failed to parse '%s': %s\n", override_command_str, error->message);
+
+      /* Start child process, if possible by using the same args as the parent screen */
+      terminal_screen_reexec_from_screen_with_override_command (screen,
+                                                                parent_screen,
+                                                                override_command,
+                                                                NULL,
+                                                                NULL);
+    }
+  else
+    {
+      /* Start child process, if possible by using the same args as the parent screen */
+      terminal_screen_reexec_from_screen (screen, parent_screen, NULL, NULL);
+    }
 
   if (mode == TERMINAL_NEW_TERMINAL_MODE_WINDOW)
     gtk_window_present (GTK_WINDOW (window));
